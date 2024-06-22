@@ -1,0 +1,1153 @@
+version: '3.1'
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - salut
+    - bonjour
+    - bonsoir
+    - salutations
+    - coucou
+    - salut à tous
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - à plus
+    - à bientôt
+    - au revoir
+    - à la prochaine
+    - à plus tard
+    - ciao
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolument
+    - bien sûr
+    - exactement
+    - tout à fait
+    - oui
+    - en effet
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - absolument pas
+    - non
+    - jamais
+    - je ne pense pas
+    - pas vraiment
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - je vais super bien
+    - je suis en pleine forme
+    - tout va bien
+    - je me sens super
+    - je suis très heureux
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so sad
+    - ça ne va pas
+    - je suis triste
+    - je me sens mal
+    - je suis déçu
+    - c'est une mauvaise journée
+    - je ne vais pas bien
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - es-tu un robot?
+    - es-tu un humain?
+    - suis-je en train de parler à un robot?
+    - suis-je en train de parler à un humain?
+    - es-tu réel?
+    - es-tu une IA?
+
+- intent: handle_bonjour
+  examples: |
+    - bonjour
+    - salut
+    - hello
+    - hi
+    - bonjour à tous
+    - bonjour tout le monde
+
+- intent: handle_salut
+  examples: |
+    - salut
+    - hello
+    - hi
+    - salutations
+    - salut tout le monde
+    - salut à tous
+
+- intent: handle_bonsoir
+  examples: |
+    - bonsoir
+    - bonne soirée
+    - salut
+    - hello
+    - hi
+    - bonsoir tout le monde
+    - bonsoir à tous
+
+- intent: handle_infos_sur_lesp
+  examples: |
+    - Infos sur l'ESP
+    - informations sur l'ESP
+    - pouvez-vous me parler de l'ESP?
+    - que savez-vous sur l'ESP?
+    - parlez-moi de l'ESP
+    - je voudrais des infos sur l'ESP
+
+- intent: handle_quels_sont_les_programmes_de_formation_de_lesp
+  examples: |
+    - Quels sont les programmes de formation de l'ESP?
+    - quelles formations propose l'ESP?
+    - quels sont les cours offerts par l'ESP?
+    - quels programmes offre l'ESP?
+    - pouvez-vous me dire les formations disponibles à l'ESP?
+
+- intent: handle_que_vise_lesp_?
+  examples: |
+    - Que vise l'ESP?
+    - quels sont les objectifs de l'ESP?
+    - quelles sont les missions de l'ESP?
+    - quelles sont les ambitions de l'ESP?
+    - quels sont les buts de l'ESP?
+- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+  examples: |
+    - Quels sont les frais de scolarité annuel de la formation DST Informatique à l'ESP?
+    - combien coûte la formation DST Informatique à l'ESP?
+    - quels sont les coûts pour la formation DST Informatique à l'ESP?
+    - combien dois-je payer pour la formation DST Informatique à l'ESP?
+    - pouvez-vous me dire les frais pour la formation DST Informatique à l'ESP?
+
+- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+  examples: |
+    - Quels sont les frais de scolarité annuel de la formation Systèmes et réseaux?
+    - combien coûte la formation Systèmes et réseaux?
+    - quels sont les coûts pour la formation Systèmes et réseaux?
+    - combien dois-je payer pour la formation Systèmes et réseaux?
+    - pouvez-vous me dire les frais pour la formation Systèmes et réseaux?
+
+- intent: handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+  examples: |
+    - Quelles sont les étapes à suivre pour postuler à un programme de DST Informatique/Licence/Master à l'ESP?
+    - comment puis-je postuler pour un programme de DST Informatique/Licence/Master à l'ESP?
+    - quelles sont les démarches pour postuler à un programme de DST Informatique/Licence/Master à l'ESP?
+    - comment postuler à un programme de DST Informatique/Licence/Master à l'ESP?
+    - quelles étapes suivre pour postuler à l'ESP?
+
+- intent: handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+  examples: |
+    - Quelles sont les dates limites pour soumettre ma candidature?
+    - quand dois-je soumettre ma candidature?
+    - quelle est la date limite pour postuler?
+    - pouvez-vous me dire les dates limites pour candidater?
+    - jusqu'à quand puis-je soumettre ma candidature?
+
+- intent: handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+  examples: |
+    - Quand commencent les inscriptions pour le semestre prochain?
+    - quand débutent les inscriptions pour le prochain semestre?
+    - à quelle date commencent les inscriptions pour le prochain semestre?
+    - pouvez-vous me dire quand commencent les inscriptions pour le semestre suivant?
+    - quand puis-je m'inscrire pour le prochain semestre?
+
+- intent: handle_comment_vérifier_le_statut_de_ma_candidature_?
+  examples: |
+    - Comment vérifier le statut de ma candidature?
+    - comment puis-je savoir si ma candidature a été acceptée?
+    - où vérifier le statut de ma candidature?
+    - comment suivre ma candidature?
+    - comment voir l'avancement de ma candidature?
+
+- intent: handle_combien_de_départements_lesp_dispose_?
+  examples: |
+    - Combien de départements l'ESP dispose?
+    - combien de départements y a-t-il à l'ESP?
+    - quels sont les départements de l'ESP?
+    - combien de sections a l'ESP?
+    - pouvez-vous me dire le nombre de départements à l'ESP?
+
+- intent: handle_pourquoi_choisir_lesp_?
+  examples: |
+    - Pourquoi choisir l'ESP?
+    - pourquoi devrais-je choisir l'ESP?
+    - quels sont les avantages de choisir l'ESP?
+    - qu'est-ce qui rend l'ESP spécial?
+    - pourquoi recommanderiez-vous l'ESP?
+
+- intent: handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+  examples: |
+    - Quelles sont les formations spécifiques proposées par le Département Génie Chimique?
+    - quelles formations offre le département Génie Chimique?
+    - pouvez-vous me dire les formations spécifiques du département Génie Chimique?
+    - quels cours sont proposés par le département Génie Chimique?
+    - quelles sont les spécialités du département Génie Chimique?
+
+- intent: handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+  examples: |
+    - Quels sont les objectifs pédagogiques des formations en Génie Chimique offertes par le Département?
+    - quels sont les buts pédagogiques des formations en Génie Chimique?
+    - quelles sont les ambitions pédagogiques des cours en Génie Chimique?
+    - pouvez-vous me dire les objectifs pédagogiques des formations en Génie Chimique?
+    - quels sont les objectifs éducatifs des cours en Génie Chimique?
+
+- intent: handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+  examples: |
+    - Quels sont les niveaux de formation disponibles en Génie Chimique dans le Département?
+    - quels sont les niveaux offerts en Génie Chimique?
+    - quels niveaux de formation propose le département de Génie Chimique?
+    - pouvez-vous me dire les niveaux disponibles en Génie Chimique?
+    - quels sont les diplômes offerts en Génie Chimique?
+
+- intent: handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+  examples: |
+    - Quelles compétences les étudiants acquièrent-ils en suivant les formations du Département Génie Chimique?
+    - quelles compétences développe-t-on en suivant les cours de Génie Chimique?
+    - quelles aptitudes acquièrent les étudiants en Génie Chimique?
+    - pouvez-vous me dire les compétences acquises en Génie Chimique?
+    - quelles sont les compétences des diplômés en Génie Chimique?
+
+- intent: handle_qui_est_le_chef_du_département_génie_chimique_?
+  examples: |
+    - Qui est le chef du département Génie Chimique?
+    - qui dirige le département Génie Chimique?
+    - pouvez-vous me dire le nom du chef du département Génie Chimique?
+    - qui est le responsable du département Génie Chimique?
+    - qui est à la tête du département Génie Chimique?
+
+- intent: handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+  examples: |
+    - Quels sont les domaines couverts par le Département de Génie Électrique?
+    - quels sont les champs d'étude du département de Génie Électrique?
+    - quelles sont les spécialités du département de Génie Électrique?
+    - pouvez-vous me dire les domaines du département de Génie Électrique?
+    - quels secteurs sont couverts par le Génie Électrique?
+
+- intent: handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+  examples: |
+    - Quels types de diplômes offre le Département de Génie Électrique?
+    - quels diplômes propose le département de Génie Électrique?
+    - quels sont les diplômes disponibles en Génie Électrique?
+    - pouvez-vous me dire les diplômes offerts par le Génie Électrique?
+    - quels niveaux de diplômes offre le département de Génie Électrique?
+
+- intent: handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+  examples: |
+    - Combien d'enseignants compte le Département de Génie Électrique et quels sont leurs niveaux?
+    - combien de professeurs y a-t-il au département de Génie Électrique?
+    - combien d'enseignants y a-t-il en Génie Électrique et quels sont leurs titres?
+    - pouvez-vous me dire le nombre et les niveaux des enseignants en Génie Électrique?
+    - quels sont les niveaux des professeurs en Génie Électrique?
+
+- intent: handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+  examples: |
+    - Quel est le rôle du personnel administratif, technique et de service au sein du Département?
+    - quels sont les rôles du personnel administratif et technique dans le département?
+    - quelles sont les fonctions du personnel de service dans le département?
+    - pouvez-vous me dire le rôle du personnel administratif au département?
+    - quels sont les rôles du personnel technique et de service au sein du département?
+
+- intent: handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+  examples: |
+    - Quelles sont les possibilités d'évolution de carrière offertes par le Département de Génie Électrique?
+    - quelles sont les opportunités de carrière en Génie Électrique?
+    - quelles évolutions de carrière propose le département de Génie Électrique?
+    - pouvez-vous me dire les carrières possibles en Génie Électrique?
+    - quelles sont les perspectives d'évolution en Génie Électrique?
+
+- intent: handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+  examples: |
+    - Comment le Département est-il soutenu au niveau des enseignements?
+    - comment le département bénéficie-t-il de soutien pédagogique?
+    - quels sont les supports pour les enseignements du département?
+    - pouvez-vous me dire comment le département est soutenu pour les cours?
+    - comment les enseignements sont-ils appuyés au département?
+
+- intent: handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+  examples: |
+    - Quels sont les secteurs d'activité dans lesquels les diplômés du Département de Génie Électrique peuvent travailler?
+    - quels sont les domaines d'emploi pour les diplômés en Génie Électrique?
+    - quels secteurs recrutent les diplômés en Génie Électrique?
+    - pouvez-vous me dire les secteurs d'activité pour les diplômés en Génie Électrique?
+    - où peuvent travailler les diplômés en Génie Électrique?
+
+- intent: handle_qui_est_le_chef_du_département_génie_électrique_?
+  examples: |
+    - Qui est le chef du département Génie Électrique?
+    - qui dirige le département Génie Électrique?
+    - pouvez-vous me dire le nom du chef du département Génie Électrique?
+    - qui est le responsable du département Génie Électrique?
+    - qui est à la tête du département Génie Électrique?
+- intent: handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+  examples: |
+    - Quels sont les objectifs du Département Informatique en termes de formation?
+    - quels sont les buts de formation du département Informatique?
+    - quelles sont les ambitions du département Informatique pour les formations?
+    - pouvez-vous me dire les objectifs de formation en Informatique?
+    - quels sont les objectifs pédagogiques du département Informatique?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  examples: |
+    - Comment peut-on contacter le département Génie Informatique?
+    - comment joindre le département Génie Informatique?
+    - pouvez-vous me dire comment contacter le département Génie Informatique?
+    - comment entrer en contact avec le département Génie Informatique?
+    - quels sont les contacts du département Génie Informatique?
+    - Comment peut on contacter le departement Genie Informatique?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  examples: |
+    - Comment peut-on contacter le département Génie Mécanique?
+    - comment joindre le département Génie Mécanique?
+    - pouvez-vous me dire comment contacter le département Génie Mécanique?
+    - comment entrer en contact avec le département Génie Mécanique?
+    - quels sont les contacts du département Génie Mécanique?
+    - Comment peut on contacter le departement Genie Mecanique?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  examples: |
+    - Comment peut-on contacter le département Génie Électrique?
+    - comment joindre le département Génie Électrique?
+    - pouvez-vous me dire comment contacter le département Génie Électrique?
+    - comment entrer en contact avec le département Génie Électrique?
+    - quels sont les contacts du département Génie Électrique?
+    - Comment peut on contacter le departement Genie Electrique?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  examples: |
+    - Comment peut-on contacter le département Génie Civil?
+    - comment joindre le département Génie Civil?
+    - pouvez-vous me dire comment contacter le département Génie Civil?
+    - comment entrer en contact avec le département Génie Civil?
+    - quels sont les contacts du département Génie Civil?
+    - Comment peut on contacter le departement Genie Civil?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  examples: |
+    - Comment peut-on contacter le département Génie Chimique?
+    - comment joindre le département Génie Chimique?
+    - pouvez-vous me dire comment contacter le département Génie Chimique?
+    - comment entrer en contact avec le département Génie Chimique?
+    - quels sont les contacts du département Génie Chimique?
+    - Comment peut on contacter le departement Genie Chimique?
+
+- intent: handle_comment_peut_on_contacter_le_departement_gestion_?
+  examples: |
+    - Comment peut-on contacter le département Gestion?
+    - comment joindre le département Gestion?
+    - pouvez-vous me dire comment contacter le département Gestion?
+    - comment entrer en contact avec le département Gestion?
+    - quels sont les contacts du département Gestion?
+    - Comment peut on contacter le departement Gestion?
+
+- intent: handle_qui_est_le_chef_du_departement_genie_informatique_?
+  examples: |
+    - Qui est le chef du département Génie Informatique?
+    - qui dirige le département Génie Informatique?
+    - pouvez-vous me dire le nom du chef du département Génie Informatique?
+    - qui est le responsable du département Génie Informatique?
+    - qui est à la tête du département Génie Informatique?
+    - Qui est le chef du departement Genie Informatique?
+
+- intent: handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  examples: |
+    - Qui est le chef du département Génie Mécanique?
+    - qui dirige le département Génie Mécanique?
+    - pouvez-vous me dire le nom du chef du département Génie Mécanique?
+    - qui est le responsable du département Génie Mécanique?
+    - qui est à la tête du département Génie Mécanique?
+    - Qui est le chef du departement Genie Mecanique?
+
+- intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
+  examples: |
+    - Qui est le chef du département Génie Électrique?
+    - qui dirige le département Génie Électrique?
+    - pouvez-vous me dire le nom du chef du département Génie Électrique?
+    - qui est le responsable du département Génie Électrique?
+    - qui est à la tête du département Génie Électrique?
+    - Qui est le chef du departement Genie Electrique?
+
+- intent: handle_qui_est_le_chef_du_departement_genie_civil_?
+  examples: |
+    - Qui est le chef du département Génie Civil?
+    - qui dirige le département Génie Civil?
+    - pouvez-vous me dire le nom du chef du département Génie Civil?
+    - qui est le responsable du département Génie Civil?
+    - qui est à la tête du département Génie Civil?
+    - Qui est le chef du departement Genie Civil?
+
+- intent: handle_qui_est_le_chef_du_departement_genie_chimique_?
+  examples: |
+    - Qui est le chef du département Génie Chimique?
+    - qui dirige le département Génie Chimique?
+    - pouvez-vous me dire le nom du chef du département Génie Chimique?
+    - qui est le responsable du département Génie Chimique?
+    - qui est à la tête du département Génie Chimique?
+    - Qui est le chef du departement Genie Chimique?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  examples: |
+    - Quelles sont les formations qu'offre le département Génie Mécanique de l'ESP?
+    - quelles formations propose le département Génie Mécanique?
+    - quels cours offre le département Génie Mécanique?
+    - pouvez-vous me dire les formations en Génie Mécanique?
+    - quels sont les programmes d'études en Génie Mécanique?
+    - Quelles sont les formations qu'offre le departement genie Mecanique de l'ESP?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  examples: |
+    - Quelles sont les formations qu'offre le département Génie Informatique de l'ESP?
+    - quelles formations propose le département Génie Informatique?
+    - quels cours offre le département Génie Informatique?
+    - pouvez-vous me dire les formations en Génie Informatique?
+    - quels sont les programmes d'études en Génie Informatique?
+    - Quelles sont les formations qu'offre le departement genie Informatique de l'ESP?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  examples: |
+    - Quelles sont les formations qu'offre le département Génie Chimique de l'ESP?
+    - quelles formations propose le département Génie Chimique?
+    - quels cours offre le département Génie Chimique?
+    - pouvez-vous me dire les formations en Génie Chimique?
+    - quels sont les programmes d'études en Génie Chimique?
+    - Quelles sont les formations qu'offre le departement genie chimique de l'ESP?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  examples: |
+    - Quelles sont les formations qu'offre le département de Gestion de l'ESP ?
+    - Quelles formations propose le département de Gestion ?
+    - Quels cours offre le département de Gestion ?
+    - Pouvez-vous me dire les formations en Gestion ?
+    - Quels sont les programmes d'études en Gestion ?
+- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  examples: |
+    - Quelle est l'une des plus prestigieuses écoles d'ingénieur et de management en Afrique francophone?
+    - Pouvez-vous nommer une école d'ingénieur et de management très réputée en Afrique francophone?
+    - Quelle institution est reconnue comme l'une des meilleures en ingénierie et management en Afrique francophone?
+    - Quelle école d'ingénieur et de management est considérée prestigieuse en Afrique francophone?
+
+- intent: handle_quand_a_été_créée_lesp_de_dakar?
+  examples: |
+    - Quand a été créée l'ESP de Dakar?
+    - Quelle est la date de création de l'ESP de Dakar?
+    - En quelle année l'ESP de Dakar a-t-elle été fondée?
+    - À quelle époque l'ESP de Dakar a-t-elle vu le jour?
+
+- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  examples: |
+    - Combien de diplômés l'ESP a-t-elle formés au moins?
+    - Quel est le nombre minimum de diplômés formés par l'ESP?
+    - Pouvez-vous indiquer combien de diplômés ont été formés par l'ESP au fil des années?
+    - Combien d'anciens étudiants l'ESP a-t-elle déjà diplômés?
+
+- intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  examples: |
+    - Quels types de diplômes l'ESP offre-t-elle?
+    - Quels sont les diplômes disponibles à l'ESP?
+    - Quels diplômes peut-on obtenir à l'ESP?
+    - Quelles qualifications l'ESP propose-t-elle?
+
+- intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  examples: |
+    - Que présente la troisième édition du catalogue des formations de l'ESP?
+    - Quelles informations contient la troisième édition du catalogue des formations de l'ESP?
+    - Que trouve-t-on dans la troisième édition du catalogue des formations de l'ESP?
+    - Que dévoile la troisième édition du catalogue des formations de l'ESP?
+
+- intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  examples: |
+    - Quelle preuve le document du catalogue de formations fournit-il?
+    - Quel type de preuve est fourni par le document du catalogue de formations?
+    - En quoi le document du catalogue de formations sert-il de preuve?
+    - Qu'est-ce que le document du catalogue de formations prouve?
+
+- intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  examples: |
+    - À quoi sont régulièrement soumises les formations de l'ESP?
+    - Quelles évaluations les formations de l'ESP subissent-elles régulièrement?
+    - À quelles procédures sont assujetties les formations de l'ESP de manière régulière?
+    - Quels contrôles sont effectués régulièrement sur les formations de l'ESP?
+
+- intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  examples: |
+    - Pourquoi les formations de l'ESP sont-elles soumises à l'évaluation de l'ANAQ-Sup?
+    - Quelle est la raison pour laquelle les formations de l'ESP sont évaluées par l'ANAQ-Sup?
+    - Pourquoi l'ANAQ-Sup évalue-t-elle les formations de l'ESP?
+    - Pour quelle raison les formations de l'ESP doivent-elles être validées par l'ANAQ-Sup?
+
+- intent: handle_qui_participe_aux_formations_de_lesp?
+  examples: |
+    - Qui participe aux formations de l'ESP?
+    - Quels individus participent aux formations de l'ESP?
+    - Qui sont les participants aux formations de l'ESP?
+    - Qui peut prendre part aux formations de l'ESP?
+
+- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+  examples: |
+    - Comment l'ESP place-t-elle l'étudiant ou l'apprenant au cœur de son dispositif d'enseignement/apprentissage?
+    - De quelle manière l'ESP centre-t-elle son enseignement sur l'étudiant?
+    - Comment l'ESP assure-t-elle que l'étudiant est au centre de son dispositif d'apprentissage?
+    - Par quels moyens l'ESP met-elle l'étudiant au cœur de son dispositif pédagogique?
+
+- intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  examples: |
+    - Comment l'ESP maintient-elle ses relations avec le milieu du travail?
+    - Par quels moyens l'ESP entretient-elle ses liens avec le monde professionnel?
+    - Comment l'ESP garde-t-elle contact avec le secteur professionnel?
+    - Comment l'ESP reste-t-elle connectée avec le milieu du travail?
+
+- intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  examples: |
+    - Que prouve le réseau des alumni de l'ESP?
+    - Qu'est-ce que le réseau des anciens élèves de l'ESP prouve?
+    - Que démontre l'existence du réseau des alumni de l'ESP?
+    - Quelle est la signification du réseau des alumni de l'ESP?
+
+- intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  examples: |
+    - Quel message le directeur adresse-t-il aux étudiants à la fin de son mot?
+    - Que dit le directeur aux étudiants pour conclure son discours?
+    - Quel est le message final du directeur aux étudiants?
+    - Quelle est la dernière remarque du directeur aux étudiants dans son discours?
+
+- intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  examples: |
+    - Quelles étaient les anciennes dénominations de l'École Supérieure Polytechnique (ESP)?
+    - Quels noms l'École Supérieure Polytechnique (ESP) a-t-elle portés dans le passé?
+    - Comment l'École Supérieure Polytechnique (ESP) était-elle appelée avant?
+    - Quelles ont été les anciennes appellations de l'ESP?
+- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  examples: |
+    - Quelle est l'une des plus prestigieuses écoles d'ingénieur et de management en Afrique francophone?
+    - Pouvez-vous nommer une école d'ingénieur et de management très réputée en Afrique francophone?
+    - Quelle institution est reconnue comme l'une des meilleures en ingénierie et management en Afrique francophone?
+    - Quelle école d'ingénieur et de management est considérée prestigieuse en Afrique francophone?
+
+- intent: handle_quand_a_été_créée_lesp_de_dakar?
+  examples: |
+    - Quand a été créée l'ESP de Dakar?
+    - Quelle est la date de création de l'ESP de Dakar?
+    - En quelle année l'ESP de Dakar a-t-elle été fondée?
+    - À quelle époque l'ESP de Dakar a-t-elle vu le jour?
+
+- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  examples: |
+    - Combien de diplômés l'ESP a-t-elle formés au moins?
+    - Quel est le nombre minimum de diplômés formés par l'ESP?
+    - Pouvez-vous indiquer combien de diplômés ont été formés par l'ESP au fil des années?
+    - Combien d'anciens étudiants l'ESP a-t-elle déjà diplômés?
+
+- intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  examples: |
+    - Quels types de diplômes l'ESP offre-t-elle?
+    - Quels sont les diplômes disponibles à l'ESP?
+    - Quels diplômes peut-on obtenir à l'ESP?
+    - Quelles qualifications l'ESP propose-t-elle?
+
+- intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  examples: |
+    - Que présente la troisième édition du catalogue des formations de l'ESP?
+    - Quelles informations contient la troisième édition du catalogue des formations de l'ESP?
+    - Que trouve-t-on dans la troisième édition du catalogue des formations de l'ESP?
+    - Que dévoile la troisième édition du catalogue des formations de l'ESP?
+
+- intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  examples: |
+    - Quelle preuve le document du catalogue de formations fournit-il?
+    - Quel type de preuve est fourni par le document du catalogue de formations?
+    - En quoi le document du catalogue de formations sert-il de preuve?
+    - Qu'est-ce que le document du catalogue de formations prouve?
+
+- intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  examples: |
+    - À quoi sont régulièrement soumises les formations de l'ESP?
+    - Quelles évaluations les formations de l'ESP subissent-elles régulièrement?
+    - À quelles procédures sont assujetties les formations de l'ESP de manière régulière?
+    - Quels contrôles sont effectués régulièrement sur les formations de l'ESP?
+
+- intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  examples: |
+    - Pourquoi les formations de l'ESP sont-elles soumises à l'évaluation de l'ANAQ-Sup?
+    - Quelle est la raison pour laquelle les formations de l'ESP sont évaluées par l'ANAQ-Sup?
+    - Pourquoi l'ANAQ-Sup évalue-t-elle les formations de l'ESP?
+    - Pour quelle raison les formations de l'ESP doivent-elles être validées par l'ANAQ-Sup?
+
+- intent: handle_qui_participe_aux_formations_de_lesp?
+  examples: |
+    - Qui participe aux formations de l'ESP?
+    - Quels individus participent aux formations de l'ESP?
+    - Qui sont les participants aux formations de l'ESP?
+    - Qui peut prendre part aux formations de l'ESP?
+
+- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+  examples: |
+    - Comment l'ESP place-t-elle l'étudiant ou l'apprenant au cœur de son dispositif d'enseignement/apprentissage?
+    - De quelle manière l'ESP centre-t-elle son enseignement sur l'étudiant?
+    - Comment l'ESP assure-t-elle que l'étudiant est au centre de son dispositif d'apprentissage?
+    - Par quels moyens l'ESP met-elle l'étudiant au cœur de son dispositif pédagogique?
+
+- intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  examples: |
+    - Comment l'ESP maintient-elle ses relations avec le milieu du travail?
+    - Par quels moyens l'ESP entretient-elle ses liens avec le monde professionnel?
+    - Comment l'ESP garde-t-elle contact avec le secteur professionnel?
+    - Comment l'ESP reste-t-elle connectée avec le milieu du travail?
+
+- intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  examples: |
+    - Que prouve le réseau des alumni de l'ESP?
+    - Qu'est-ce que le réseau des anciens élèves de l'ESP prouve?
+    - Que démontre l'existence du réseau des alumni de l'ESP?
+    - Quelle est la signification du réseau des alumni de l'ESP?
+
+- intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  examples: |
+    - Quel message le directeur adresse-t-il aux étudiants à la fin de son mot?
+    - Que dit le directeur aux étudiants pour conclure son discours?
+    - Quel est le message final du directeur aux étudiants?
+    - Quelle est la dernière remarque du directeur aux étudiants dans son discours?
+
+- intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  examples: |
+    - Quelles étaient les anciennes dénominations de l'École Supérieure Polytechnique (ESP)?
+    - Quels noms l'École Supérieure Polytechnique (ESP) a-t-elle portés dans le passé?
+    - Comment l'École Supérieure Polytechnique (ESP) était-elle appelée avant?
+    - Quelles ont été les anciennes appellations de l'ESP?
+
+- intent: handle_quelle_est_la_vocation_de_lesp?
+  examples: |
+    - Quelle est la vocation de l'ESP?
+    - Quelle mission principale poursuit l'ESP?
+    - Quel est l'objectif principal de l'ESP?
+    - Quelle est la raison d'être de l'ESP?
+
+- intent: handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+  examples: |
+    - Quand a été créée l'ESP et par quelle loi?
+    - En quelle année et par quelle loi l'ESP a-t-elle été fondée?
+    - Quelle loi a institué la création de l'ESP et quand?
+    - Quelle est la date et la loi de création de l'ESP?
+
+- intent: handle_quelle_est_la_personnalité_de_lesp?
+  examples: |
+    - Quelle est la personnalité de l'ESP?
+    - Comment définiriez-vous la personnalité de l'ESP?
+    - Qu'est-ce qui caractérise la personnalité de l'ESP?
+    - Quelle est la nature de la personnalité de l'ESP?
+
+- intent: handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+  examples: |
+    - Quand l'ESP a-t-elle fêté ses 50 années?
+    - En quelle année l'ESP a-t-elle célébré son 50ème anniversaire?
+    - À quelle date l'ESP a-t-elle commémoré ses 50 ans?
+    - Quand a eu lieu le cinquantenaire de l'ESP?
+
+- intent: handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+  examples: |
+    - Quel événement majeur s'est produit le 20 mai 1964 concernant l'ESP?
+    - Qu'est-ce qui s'est passé d'important le 20 mai 1964 pour l'ESP?
+    - Quel événement significatif a eu lieu le 20 mai 1964 à propos de l'ESP?
+    - Quelle est l'importance du 20 mai 1964 pour l'ESP?
+
+- intent: handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+  examples: |
+    - Quels décrets présidentiels ont créé l'IUT et quand?
+    - En quelle année et par quels décrets présidentiels l'IUT a-t-il été créé?
+    - Quels sont les décrets présidentiels ayant institué l'IUT et à quelle date?
+    - Quand et par quels décrets présidentiels l'IUT a-t-il été fondé?
+
+- intent: handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+  examples: |
+    - Que s'est-il passé le 30 avril 1973 pour l'IUT?
+    - Quel événement important a eu lieu le 30 avril 1973 pour l'IUT?
+    - Qu'est-il arrivé à l'IUT le 30 avril 1973?
+    - Quelle est la signification du 30 avril 1973 pour l'IUT?
+
+- intent: handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+  examples: |
+    - Quelle réforme a eu lieu en 1973-1974 concernant l'ENTPB?
+    - Quelles modifications ont été apportées à l'ENTPB en 1973-1974?
+    - Quelle réforme a affecté l'ENTPB durant la période 1973-1974?
+    - En quoi consistait la réforme de l'ENTPB en 1973-1974?
+
+- intent: handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+  examples: |
+    - Quelle est la nouvelle appellation de l'Institut après avoir dispensé des enseignements en commerce et administration des entreprises?
+    - Quel nouveau nom a été donné à l'Institut après l'introduction des enseignements en commerce et administration des entreprises?
+    - Quelle nouvelle dénomination a été adoptée par l'Institut suite aux enseignements en commerce et administration des entreprises?
+    - Comment l'Institut est-il désormais appelé après avoir enseigné le commerce et l'administration des entreprises?
+
+- intent: handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+  examples: |
+    - Quels diplômes complémentaires l'Institut délivre-t-il?
+    - Quels sont les diplômes supplémentaires délivrés par l'Institut?
+    - Quels diplômes additionnels sont offerts par l'Institut?
+    - Quels types de diplômes complémentaires l'Institut propose-t-il?
+
+- intent: handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+  examples: |
+    - Quand la loi 94-78 a-t-elle créé l'École Supérieure Polytechnique (ESP)?
+    - En quelle année la loi 94-78 a-t-elle institué l'École Supérieure Polytechnique (ESP)?
+    - Quelle est la date de création de l'École Supérieure Polytechnique (ESP) par la loi 94-78?
+    - Quand la loi 94-78 a-t-elle fondé l'École Supérieure Polytechnique (ESP)?
+
+- intent: handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+  examples: |
+    - Quels établissements composent l'ESP créée par la loi 94-78?
+    - Quels sont les établissements formant l'ESP selon la loi 94-78?
+    - Quels établissements ont été intégrés dans l'ESP par la loi 94-78?
+    - Quels établissements constituent l'ESP telle que définie par la loi 94-78?
+
+- intent: handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+  examples: |
+    - De quelle division l'ESP s'est-elle séparée au moment de sa création en 1994?
+    - Quelle division a été dissociée de l'ESP lors de sa création en 1994?
+    - De quelle division l'ESP a-t-elle été séparée en 1994?
+    - Quelle division a été détachée de l'ESP en 1994?
+
+- intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  examples: |
+    - Combien de centres compose l'ESP et où sont-ils situés?
+    - Quel est le nombre de centres formant l'ESP et où se trouvent-ils?
+    - Combien de centres constituent l'ESP et où se localisent-ils?
+    - Quels sont les centres de l'ESP et leurs emplacements?
+
+- intent: handle_quest-il_arrivé_à_lenset_en_2005?
+  examples: |
+    - Qu'est-il arrivé à l'ENSET en 2005?
+    - Que s'est-il passé en 2005 pour l'ENSET?
+    - Quel événement a marqué l'ENSET en 2005?
+    - Quelle transformation a eu lieu à l'ENSET en 2005?
+
+- intent: handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+  examples: |
+    - Quelle transformation a eu lieu en 2006 concernant la division tertiaire de l'ENSUT?
+    - Quelles modifications ont été apportées à la division tertiaire de l'ENSUT en 2006?
+    - Quelle réforme a touché la division tertiaire de l'ENSUT en 2006?
+    - En quoi consistait la transformation de la division tertiaire de l'ENSUT en 2006?
+
+- intent: handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+  examples: |
+    - Qu'est-il arrivé à l'ex Centre de Thiès de l'ESP en 2007?
+    - Que s'est-il passé en 2007 avec l'ex Centre de Thiès de l'ESP?
+    - Quelle est la situation de l'ex Centre de Thiès de l'ESP en 2007?
+    - Quel événement a affecté l'ex Centre de Thiès de l'ESP en 2007?
+
+- intent: handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+  examples: |
+    - Quelle est la mission de l'École Supérieure Polytechnique (ESP)?
+    - Quelle mission poursuit l'École Supérieure Polytechnique (ESP)?
+    - Quel est l'objectif de l'École Supérieure Polytechnique (ESP)?
+    - Quelle est la raison d'être de l'École Supérieure Polytechnique (ESP)?
+
+- intent: handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+  examples: |
+    - Quelles sont les fonctions préparées par l'ESP?
+    - Quels rôles l'ESP prépare-t-elle?
+    - Quelles fonctions sont développées par l'ESP?
+    - Quelles compétences sont formées par l'ESP?
+
+- intent: handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+  examples: |
+    - Quels types d'enseignement et d'activités de recherche l'ESP dispense-t-elle?
+    - Quels sont les enseignements et les activités de recherche offerts par l'ESP?
+    - Quels enseignements et activités de recherche sont fournis par l'ESP?
+    - Quelles catégories d'enseignement et de recherche l'ESP propose-t-elle?
+
+- intent: handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+  examples: |
+    - Dans quel cadre l'ESP procède-t-elle à des expertises?
+    - Dans quel contexte l'ESP réalise-t-elle des expertises?
+    - Quel est le cadre des expertises menées par l'ESP?
+    - Dans quel environnement l'ESP effectue-t-elle des expertises?
+
+- intent: handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+  examples: |
+    - Quel est l'un des objectifs de l'ESP concernant la communauté?
+    - Quels objectifs communautaires l'ESP poursuit-elle?
+    - Quel but l'ESP vise-t-elle en relation avec la communauté?
+    - Quels sont les objectifs de l'ESP envers la communauté?
+
+- intent: handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+  examples: |
+    - Dans combien de départements les activités pédagogiques de l'École Supérieure Polytechnique se déroulent-elles?
+    - Combien de départements sont impliqués dans les activités pédagogiques de l'École Supérieure Polytechnique?
+    - Quels sont les départements où se déroulent les activités pédagogiques de l'École Supérieure Polytechnique?
+    - Dans combien de départements se tiennent les activités pédagogiques de l'École Supérieure Polytechnique?
+- intent: handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+  examples: |
+    - Quels sont les départements de l'École Supérieure Polytechnique ?
+    - Pouvez-vous nommer les départements de l'École Supérieure Polytechnique ?
+    - Quels départements existent à l'École Supérieure Polytechnique ?
+    - Quels sont les différents départements de l'École Supérieure Polytechnique ?
+
+- intent: handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+  examples: |
+    - Quels types de formations l'École Supérieure Polytechnique délivre-t-elle ?
+    - Quels sont les types de formations offertes par l'École Supérieure Polytechnique ?
+    - Quelles formations sont disponibles à l'École Supérieure Polytechnique ?
+    - Quels types de diplômes l'École Supérieure Polytechnique délivre-t-elle ?
+
+- intent: handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+  examples: |
+    - Quelles sont les catégories de formations prises en charge par l'État du Sénégal ?
+    - Quels types de formations sont financés par l'État du Sénégal ?
+    - Quelles formations sont subventionnées par l'État du Sénégal ?
+    - Quelles catégories de formations sont couvertes par l'État du Sénégal ?
+
+- intent: handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+  examples: |
+    - Quelles sont les catégories de formations prises en charge par un tiers ?
+    - Quels types de formations sont financés par un tiers ?
+    - Quelles formations sont subventionnées par un tiers ?
+    - Quelles catégories de formations sont couvertes par un tiers ?
+
+- intent: handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+  examples: |
+    - Quels diplômes sont pris en charge par l'État du Sénégal ?
+    - Quels sont les diplômes financés par l'État du Sénégal ?
+    - Quels diplômes sont subventionnés par l'État du Sénégal ?
+    - Quels types de diplômes sont couverts par l'État du Sénégal ?
+
+- intent: handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+  examples: |
+    - Quels diplômes sont pris en charge par un tiers ?
+    - Quels diplômes sont financés par un tiers ?
+    - Quels sont les diplômes subventionnés par un tiers ?
+    - Quels types de diplômes sont couverts par un tiers ?
+
+- intent: handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+  examples: |
+    - Quelle est la note importante à retenir pour les formations prises en charge par un tiers ?
+    - Quelle information essentielle doit-on savoir pour les formations financées par un tiers ?
+    - Quelles sont les remarques importantes pour les formations subventionnées par un tiers ?
+    - Quelle est la note cruciale pour les formations couvertes par un tiers ?
+
+- intent: handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+  examples: |
+    - Quelles sont les missions de l'École Supérieure Polytechnique (ESP) ?
+    - Quelles missions poursuit l'École Supérieure Polytechnique (ESP) ?
+    - Quels sont les objectifs de l'École Supérieure Polytechnique (ESP) ?
+    - Quelle est la mission principale de l'École Supérieure Polytechnique (ESP) ?
+
+- intent: handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+  examples: |
+    - Quels sont les départements de l'École Supérieure Polytechnique (ESP) ?
+    - Pouvez-vous nommer les départements de l'École Supérieure Polytechnique (ESP) ?
+    - Quels départements existent à l'École Supérieure Polytechnique (ESP) ?
+    - Quels sont les différents départements de l'École Supérieure Polytechnique (ESP) ?
+
+- intent: handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  examples: |
+    - Combien de départements propose l'école pour l'excellence ?
+    - Quel est le nombre de départements proposés par l'école pour l'excellence ?
+    - Combien de départements sont disponibles à l'école pour l'excellence ?
+    - Combien de départements l'école pour l'excellence offre-t-elle ?
+
+- intent: handle_quels_sont_les_départements_de_lécole_?
+  examples: |
+    - Quels sont les départements de l'école ?
+    - Pouvez-vous nommer les départements de l'école ?
+    - Quels départements existent dans cette école ?
+    - Quels sont les différents départements de l'école ?
+
+- intent: handle_quels_sont_les_types_de_formations_offertes_?
+  examples: |
+    - Quels sont les types de formations offertes ?
+    - Quelles formations sont disponibles ?
+    - Quels types de formations proposez-vous ?
+    - Quelles formations sont proposées ?
+
+- intent: handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  examples: |
+    - Quelles sont les formations prises en charge par l'État du Sénégal ?
+    - Quelles formations sont financées par l'État du Sénégal ?
+    - Quelles formations sont subventionnées par l'État du Sénégal ?
+    - Quelles formations l'État du Sénégal prend-il en charge ?
+
+- intent: handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  examples: |
+    - Quelles sont les formations prises en charge par un Tiers ?
+    - Quelles formations sont financées par un tiers ?
+    - Quelles formations sont subventionnées par un tiers ?
+    - Quelles formations un tiers prend-il en charge ?
+
+- intent: handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  examples: |
+    - Que se passe-t-il si une année entamée est abandonnée ?
+    - Quelle est la procédure si une année commencée est abandonnée ?
+    - Que faire en cas d'abandon d'une année en cours ?
+    - Quels sont les impacts de l'abandon d'une année entamée ?
+
+- intent: handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+  examples: |
+    - Quelles sont les modalités pour le dépôt physique pour les élèves en classe de terminale ?
+    - Comment se fait le dépôt physique pour les élèves en terminale ?
+    - Quelle est la procédure de dépôt physique pour les élèves en classe de terminale ?
+    - Quels sont les critères pour le dépôt physique des élèves en terminale ?
+
+- intent: handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+  examples: |
+    - Comment se fait le dépôt électronique pour les élèves en classe de terminale ?
+    - Quelle est la procédure de dépôt électronique pour les élèves en terminale ?
+    - Comment déposer électroniquement les documents pour les élèves en terminale ?
+    - Quelle est la méthode de dépôt électronique pour les terminales ?
+
+- intent: handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+  examples: |
+    - Quelles sont les modalités pour le dépôt physique pour les bacheliers ?
+    - Comment se fait le dépôt physique pour les bacheliers ?
+    - Quelle est la procédure de dépôt physique pour les bacheliers ?
+    - Quels sont les critères pour le dépôt physique des bacheliers ?
+- intent: handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+  examples: |
+    - Comment se fait le dépôt électronique pour les bacheliers ?
+    - Quelle est la procédure de dépôt électronique pour les bacheliers ?
+    - Comment les bacheliers peuvent-ils soumettre leurs documents en ligne ?
+    - Quelles sont les étapes pour le dépôt électronique des bacheliers ?
+
+- intent: handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+  examples: |
+    - Quelles sont les conditions d'admission pour l'ESP ?
+    - Quels sont les critères pour être admis à l'ESP ?
+    - Quelles sont les exigences pour l'admission à l'ESP ?
+    - Comment puis-je être admis à l'ESP ?
+
+- intent: handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+  examples: |
+    - Quels sont les frais d'inscription pour les nouveaux étudiants ?
+    - Combien coûte l'inscription pour les nouveaux étudiants ?
+    - Quels sont les coûts d'inscription pour les nouveaux venus à l'ESP ?
+    - Quels sont les frais de scolarité pour les nouveaux étudiants ?
+
+- intent: handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+  examples: |
+    - Y a-t-il des résidences universitaires sur le campus ?
+    - Existe-t-il des logements étudiants sur le campus ?
+    - Y a-t-il des dortoirs pour les étudiants sur le campus ?
+    - Les étudiants peuvent-ils loger sur le campus ?
+
+- intent: handle_quels_événements_culturels_sont_organisés_par_lesp_?
+  examples: |
+    - Quels événements culturels sont organisés par l'ESP ?
+    - Quels types d'événements culturels sont prévus à l'ESP ?
+    - Y a-t-il des festivals culturels à l'ESP ?
+    - Quels événements artistiques l'ESP propose-t-elle ?
+
+- intent: handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+  examples: |
+    - Comment puis-je m'impliquer dans les activités étudiantes ?
+    - Quelles sont les façons de s'impliquer dans la vie étudiante ?
+    - Comment puis-je participer aux clubs étudiants ?
+    - Comment puis-je devenir membre d'une organisation étudiante ?
+
+- intent: handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+  examples: |
+    - Quels laboratoires sont disponibles pour les étudiants en ingénierie ?
+    - Quels laboratoires peuvent utiliser les étudiants en ingénierie ?
+    - Y a-t-il des laboratoires spécialisés pour les étudiants en ingénierie ?
+    - Quels équipements de laboratoire sont accessibles pour les étudiants en ingénierie ?
+
+- intent: handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+  examples: |
+    - Comment puis-je accéder à la bibliothèque de l'ESP ?
+    - Quelle est la procédure pour utiliser la bibliothèque de l'ESP ?
+    - Comment puis-je emprunter des livres à la bibliothèque de l'ESP ?
+    - Quels sont les horaires d'ouverture de la bibliothèque de l'ESP ?
+
+- intent: handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+  examples: |
+    - Quelles installations sportives sont disponibles sur le campus ?
+    - Y a-t-il des terrains de sport sur le campus ?
+    - Quels équipements sportifs sont accessibles aux étudiants ?
+    - Le campus dispose-t-il d'un gymnase ou d'un stade ?
+
+- intent: handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+  examples: |
+    - Y a-t-il des espaces de coworking pour les étudiants ?
+    - Le campus offre-t-il des espaces de travail collaboratif pour les étudiants ?
+    - Existe-t-il des zones de coworking à l'ESP ?
+    - Les étudiants peuvent-ils utiliser des espaces de coworking sur le campus ?
+
+- intent: handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+  examples: |
+    - Quels sont les équipements informatiques disponibles pour les étudiants ?
+    - Quels types de ressources informatiques l'ESP propose-t-elle ?
+    - Y a-t-il des salles informatiques pour les étudiants à l'ESP ?
+    - Quels logiciels et matériels informatiques sont accessibles aux étudiants ?
+
+- intent: handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+  examples: |
+    - Quels services de carrière sont offerts par l'ESP ?
+    - L'ESP propose-t-elle une aide à l'orientation professionnelle ?
+    - Quels sont les services d'accompagnement pour la recherche d'emploi ?
+    - Y a-t-il des conseillers en carrière disponibles à l'ESP ?
+
+- intent: handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+  examples: |
+    - Y a-t-il des programmes de stage disponibles pour les étudiants ?
+    - Comment puis-je trouver un stage via l'ESP ?
+    - L'ESP offre-t-elle des stages pour ses étudiants ?
+    - Y a-t-il des opportunités de stage proposées par l'ESP ?
+
+- intent: handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+  examples: |
+    - Comment puis-je obtenir de l'aide pour la recherche d'emploi ?
+    - Quels services d'accompagnement pour la recherche d'emploi sont disponibles ?
+    - Qui peut m'aider à trouver un emploi après mes études ?
+    - Comment l'ESP soutient-elle les étudiants dans leur recherche d'emploi ?
+
+- intent: handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+  examples: |
+    - Quelles entreprises recrutent des diplômés de l'ESP ?
+    - Quels employeurs cherchent des diplômés de l'ESP ?
+    - Quelles sociétés embauchent les diplômés de l'ESP ?
+    - Où les diplômés de l'ESP trouvent-ils généralement un emploi ?
+
+- intent: handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+  examples: |
+    - Quels sont les taux de placement des diplômés de l'ESP ?
+    - Quel pourcentage de diplômés de l'ESP trouvent un emploi rapidement ?
+    - Quels sont les taux d'emploi des diplômés de l'ESP ?
+    - Quelle est la réussite des diplômés de l'ESP sur le marché du travail ?
+
+- intent: handle_quels_événements_académiques_sont_prévus_cette_année_?
+  examples: |
+    - Quels événements académiques sont prévus cette année ?
+    - Quels sont les prochains événements académiques à l'ESP ?
+    - Y a-t-il des conférences ou séminaires prévus cette année à l'ESP ?
+    - Quels événements académiques sont au programme cette année ?
+
+- intent: handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+  examples: |
+    - Comment puis-je participer aux conférences organisées par l'ESP ?
+    - Quelle est la procédure pour assister aux conférences de l'ESP ?
+    - Comment s'inscrire aux conférences de l'ESP ?
+    - Puis-je assister aux conférences organisées par l'ESP ?
+
+- intent: handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+  examples: |
+    - Y a-t-il des journées portes ouvertes à l'ESP ?
+    - Quand sont les prochaines journées portes ouvertes à l'ESP ?
+    - L'ESP organise-t-elle des journées portes ouvertes ?
+    - Puis-je visiter l'ESP lors des journées portes ouvertes ?
+
+- intent: handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+  examples: |
+    - Quelles sont les activités de sensibilisation prévues ?
+    - Quels événements de sensibilisation sont planifiés ?
+    - Y a-t-il des campagnes de sensibilisation à l'ESP ?
+    - Quelles sont les prochaines activités de sensibilisation ?
+
+- intent: handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+  examples: |
+    - Comment puis-je m'inscrire aux ateliers et séminaires ?
+    - Quelle est la procédure pour participer aux ateliers et séminaires ?
+    - Comment m'inscrire aux séminaires de l'ESP ?
+    - Puis-je participer aux ateliers organisés par l'ESP ?
+
+- intent: handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+  examples: |
+    - Quels sont les principaux domaines de recherche à l'ESP ?
+    - Quels sont les axes de recherche prioritaires à l'ESP ?
+    - Quelles sont les principales thématiques de recherche à l'ESP ?
+    - Sur quels sujets de recherche l'ESP se concentre-t-elle ?
+
+- intent: handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+  examples: |
+    - Comment puis-je postuler pour un projet de recherche ?
+    - Quelle est la procédure pour candidater à un projet de recherche à l'ESP ?
+    - Comment soumettre ma candidature pour un projet de recherche ?
+    - Quels sont les critères pour postuler à un projet de recherche à l'ESP ?
+
+- intent: handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+  examples: |
+    - Y a-t-il des collaborations internationales en recherche ?
+    - L'ESP collabore-t-elle avec des institutions internationales en recherche ?
+    - Existe-t-il des partenariats internationaux de recherche à l'ESP ?
+    - Quels projets de recherche internationaux sont en cours à l'ESP ?
+
+- intent: handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+  examples: |
+    - Comment puis-je accéder aux publications de recherche de l'ESP ?
+    - Où puis-je trouver les publications de recherche de l'ESP ?
+    - Comment consulter les articles de recherche publiés par l'ESP ?
+    - Quels sont les moyens pour accéder aux travaux de recherche de l'ESP ?
+
+- intent: handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+  examples: |
+    - Quels sont les laboratoires de recherche disponibles ?
+    - Quels laboratoires de recherche sont accessibles aux étudiants ?
+    - Quels sont les équipements des laboratoires de recherche de l'ESP ?
+    - L'ESP dispose-t-elle de laboratoires de recherche spécifiques ?
+

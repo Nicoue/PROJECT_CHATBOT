@@ -1,0 +1,652 @@
+version: '3.1'
+
+stories:
+- steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  story: happy path
+- steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  story: sad path 1
+- steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  story: sad path 2
+- steps:
+  - intent: handle_bonjour
+  - action: utter_handle_bonjour
+  story: Story for handle_bonjour
+- steps:
+  - intent: handle_salut
+  - action: utter_handle_salut
+  story: Story for handle_salut
+- steps:
+  - intent: handle_bonsoir
+  - action: utter_handle_bonsoir
+  story: Story for handle_bonsoir
+- steps:
+  - intent: handle_infos_sur_lesp
+  - action: utter_handle_infos_sur_lesp
+  story: Story for handle_infos_sur_lesp
+- steps:
+  - intent: handle_quels_sont_les_programmes_de_formation_de_lesp
+  - action: utter_handle_quels_sont_les_programmes_de_formation_de_lesp
+  story: Story for handle_quels_sont_les_programmes_de_formation_de_lesp
+- steps:
+  - intent: handle_que_vise_lesp_?
+  - action: utter_handle_que_vise_lesp_?
+  story: Story for handle_que_vise_lesp_?
+- steps:
+  - intent: handle_queles_sont_les_objectifs_de_lesp_?
+  - action: utter_handle_queles_sont_les_objectifs_de_lesp_?
+  story: Story for handle_queles_sont_les_objectifs_de_lesp_?
+- steps:
+  - intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+  - action: utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+  story: Story for handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+- steps:
+  - intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+  - action: utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+  story: Story for handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+- steps:
+  - intent: handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+  - action: utter_handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+  story: Story for handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+  - action: utter_handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+  story: Story for handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+- steps:
+  - intent: handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+  - action: utter_handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+  story: Story for handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+- steps:
+  - intent: handle_comment_vérifier_le_statut_de_ma_candidature_?
+  - action: utter_handle_comment_vérifier_le_statut_de_ma_candidature_?
+  story: Story for handle_comment_vérifier_le_statut_de_ma_candidature_?
+- steps:
+  - intent: handle_combien_de_départements_lesp_dispose_?
+  - action: utter_handle_combien_de_départements_lesp_dispose_?
+  story: Story for handle_combien_de_départements_lesp_dispose_?
+- steps:
+  - intent: handle_pourquoi_choisir_lesp_?
+  - action: utter_handle_pourquoi_choisir_lesp_?
+  story: Story for handle_pourquoi_choisir_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+  - action: utter_handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+  story: Story for handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+- steps:
+  - intent: handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+  - action: utter_handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+  story: Story for handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+- steps:
+  - intent: handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+  - action: utter_handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+  story: Story for handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+- steps:
+  - intent: handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+  - action: utter_handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+  story: Story for handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_département_génie_chimique_?
+  - action: utter_handle_qui_est_le_chef_du_département_génie_chimique_?
+  story: Story for handle_qui_est_le_chef_du_département_génie_chimique_?
+- steps:
+  - intent: handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+  - action: utter_handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+  story: Story for handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+- steps:
+  - intent: handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+  - action: utter_handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+  story: Story for handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+- steps:
+  - intent: handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+  - action: utter_handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+  story: Story for handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+- steps:
+  - intent: handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+  - action: utter_handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+  story: Story for handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+- steps:
+  - intent: handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+  - action: utter_handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+  story: Story for handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+- steps:
+  - intent: handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+  - action: utter_handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+  story: Story for handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+- steps:
+  - intent: handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+  - action: utter_handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+  story: Story for handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_département_génie_électrique_?
+  - action: utter_handle_qui_est_le_chef_du_département_génie_électrique_?
+  story: Story for handle_qui_est_le_chef_du_département_génie_électrique_?
+- steps:
+  - intent: handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+  - action: utter_handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+  story: Story for handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_civil_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_gestion_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_gestion_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_gestion_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_informatique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_informatique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_informatique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_mecanique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_electrique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_electrique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_civil_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_civil_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_civil_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_chimique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_chimique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_chimique_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+- steps:
+  - intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  - action: utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  story: Story for handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+- steps:
+  - intent: handle_quand_a_été_créée_lesp_de_dakar?
+  - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
+  story: Story for handle_quand_a_été_créée_lesp_de_dakar?
+- steps:
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+- steps:
+  - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  story: Story for handle_quels_types_de_diplômes_lesp_offre-t-elle?
+- steps:
+  - intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  - action: utter_handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  story: Story for handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+- steps:
+  - intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  - action: utter_handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  story: Story for handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+- steps:
+  - intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  - action: utter_handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  story: Story for handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+- steps:
+  - intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  - action: utter_handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  story: Story for handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+- steps:
+  - intent: handle_qui_participe_aux_formations_de_lesp?
+  - action: utter_handle_qui_participe_aux_formations_de_lesp?
+  story: Story for handle_qui_participe_aux_formations_de_lesp?
+- steps:
+  - intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+  - action: utter_handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+  story: Story for handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+- steps:
+  - intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  - action: utter_handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  story: Story for handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+- steps:
+  - intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  - action: utter_handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  story: Story for handle_que_prouve_le_réseau_des_alumni_de_lesp?
+- steps:
+  - intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  - action: utter_handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  story: Story for handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+- steps:
+  - intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  - action: utter_handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  story: Story for handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+- steps:
+  - intent: handle_quelle_est_la_vocation_de_lesp?
+  - action: utter_handle_quelle_est_la_vocation_de_lesp?
+  story: Story for handle_quelle_est_la_vocation_de_lesp?
+- steps:
+  - intent: handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+  - action: utter_handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+  story: Story for handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+- steps:
+  - intent: handle_quelle_est_la_personnalité_de_lesp?
+  - action: utter_handle_quelle_est_la_personnalité_de_lesp?
+  story: Story for handle_quelle_est_la_personnalité_de_lesp?
+- steps:
+  - intent: handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+  - action: utter_handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+  story: Story for handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+- steps:
+  - intent: handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+  - action: utter_handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+  story: Story for handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+- steps:
+  - intent: handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+  - action: utter_handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+  story: Story for handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+- steps:
+  - intent: handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+  - action: utter_handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+  story: Story for handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+- steps:
+  - intent: handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+  - action: utter_handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+  story: Story for handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+- steps:
+  - intent: handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+  - action: utter_handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+  story: Story for handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+- steps:
+  - intent: handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+  - action: utter_handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+  story: Story for handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+- steps:
+  - intent: handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+  - action: utter_handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+  story: Story for handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+- steps:
+  - intent: handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+  - action: utter_handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+  story: Story for handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+- steps:
+  - intent: handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+  - action: utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+  story: Story for handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+- steps:
+  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+- steps:
+  - intent: handle_quest-il_arrivé_à_lenset_en_2005?
+  - action: utter_handle_quest-il_arrivé_à_lenset_en_2005?
+  story: Story for handle_quest-il_arrivé_à_lenset_en_2005?
+- steps:
+  - intent: handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+  - action: utter_handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+  story: Story for handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+- steps:
+  - intent: handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+  - action: utter_handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+  story: Story for handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+- steps:
+  - intent: handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+  - action: utter_handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+  story: Story for handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+- steps:
+  - intent: handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+  - action: utter_handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+  story: Story for handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+- steps:
+  - intent: handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+  - action: utter_handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+  story: Story for handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+- steps:
+  - intent: handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+  - action: utter_handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+  story: Story for handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+- steps:
+  - intent: handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+  - action: utter_handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+  story: Story for handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+- steps:
+  - intent: handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+  - action: utter_handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+  story: Story for handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+- steps:
+  - intent: handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+  - action: utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+  story: Story for handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+- steps:
+  - intent: handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+  - action: utter_handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+  story: Story for handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+- steps:
+  - intent: handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+  - action: utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+  story: Story for handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+- steps:
+  - intent: handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+  - action: utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+  story: Story for handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+- steps:
+  - intent: handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+  - action: utter_handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+  story: Story for handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+- steps:
+  - intent: handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+  - action: utter_handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+  story: Story for handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+- steps:
+  - intent: handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+  - action: utter_handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+  story: Story for handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+- steps:
+  - intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  - action: utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  story: Story for handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+- steps:
+  - intent: handle_quand_a_été_créée_lesp_de_dakar?
+  - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
+  story: Story for handle_quand_a_été_créée_lesp_de_dakar?
+- steps:
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+- steps:
+  - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  story: Story for handle_quels_types_de_diplômes_lesp_offre-t-elle?
+- steps:
+  - intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  - action: utter_handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  story: Story for handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+- steps:
+  - intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  - action: utter_handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  story: Story for handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+- steps:
+  - intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  - action: utter_handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  story: Story for handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+- steps:
+  - intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  - action: utter_handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  story: Story for handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+- steps:
+  - intent: handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+  - action: utter_handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+  story: Story for handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+- steps:
+  - intent: handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+  - action: utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+  story: Story for handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+- steps:
+  - intent: handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  - action: utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  story: Story for handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+- steps:
+  - intent: handle_quels_sont_les_départements_de_lécole_?
+  - action: utter_handle_quels_sont_les_départements_de_lécole_?
+  story: Story for handle_quels_sont_les_départements_de_lécole_?
+- steps:
+  - intent: handle_quels_sont_les_types_de_formations_offertes_?
+  - action: utter_handle_quels_sont_les_types_de_formations_offertes_?
+  story: Story for handle_quels_sont_les_types_de_formations_offertes_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  - action: utter_handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  story: Story for handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  - action: utter_handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  story: Story for handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+- steps:
+  - intent: handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  - action: utter_handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  story: Story for handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+- steps:
+  - intent: handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  - action: utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  story: Story for handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+- steps:
+  - intent: handle_quels_sont_les_départements_de_lécole_?
+  - action: utter_handle_quels_sont_les_départements_de_lécole_?
+  story: Story for handle_quels_sont_les_départements_de_lécole_?
+- steps:
+  - intent: handle_quels_sont_les_types_de_formations_offertes_?
+  - action: utter_handle_quels_sont_les_types_de_formations_offertes_?
+  story: Story for handle_quels_sont_les_types_de_formations_offertes_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  - action: utter_handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  story: Story for handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  - action: utter_handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  story: Story for handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+- steps:
+  - intent: handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  - action: utter_handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  story: Story for handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+- steps:
+  - intent: handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+  - action: utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+  story: Story for handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+- steps:
+  - intent: handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+  - action: utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+  story: Story for handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+- steps:
+  - intent: handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+  - action: utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+  story: Story for handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+- steps:
+  - intent: handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+  - action: utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+  story: Story for handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_civil_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+- steps:
+  - intent: handle_comment_peut_on_contacter_le_departement_gestion_?
+  - action: utter_handle_comment_peut_on_contacter_le_departement_gestion_?
+  story: Story for handle_comment_peut_on_contacter_le_departement_gestion_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_informatique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_informatique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_informatique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_mecanique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_electrique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_electrique_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_civil_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_civil_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_civil_?
+- steps:
+  - intent: handle_qui_est_le_chef_du_departement_genie_chimique_?
+  - action: utter_handle_qui_est_le_chef_du_departement_genie_chimique_?
+  story: Story for handle_qui_est_le_chef_du_departement_genie_chimique_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+  - action: utter_handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+  story: Story for handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+- steps:
+  - intent: handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+  - action: utter_handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+  story: Story for handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+- steps:
+  - intent: handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+  - action: utter_handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+  story: Story for handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+- steps:
+  - intent: handle_quels_événements_culturels_sont_organisés_par_lesp_?
+  - action: utter_handle_quels_événements_culturels_sont_organisés_par_lesp_?
+  story: Story for handle_quels_événements_culturels_sont_organisés_par_lesp_?
+- steps:
+  - intent: handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+  - action: utter_handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+  story: Story for handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+- steps:
+  - intent: handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+  - action: utter_handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+  story: Story for handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+- steps:
+  - intent: handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+  - action: utter_handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+  story: Story for handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+- steps:
+  - intent: handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+  - action: utter_handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+  story: Story for handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+- steps:
+  - intent: handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+  - action: utter_handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+  story: Story for handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+- steps:
+  - intent: handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+  - action: utter_handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+  story: Story for handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+- steps:
+  - intent: handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+  - action: utter_handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+  story: Story for handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+- steps:
+  - intent: handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+  - action: utter_handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+  story: Story for handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+- steps:
+  - intent: handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+  - action: utter_handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+  story: Story for handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+- steps:
+  - intent: handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+  - action: utter_handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+  story: Story for handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+- steps:
+  - intent: handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+  - action: utter_handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+  story: Story for handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+- steps:
+  - intent: handle_quels_événements_académiques_sont_prévus_cette_année_?
+  - action: utter_handle_quels_événements_académiques_sont_prévus_cette_année_?
+  story: Story for handle_quels_événements_académiques_sont_prévus_cette_année_?
+- steps:
+  - intent: handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+  - action: utter_handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+  story: Story for handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+- steps:
+  - intent: handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+  - action: utter_handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+  story: Story for handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+- steps:
+  - intent: handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+  - action: utter_handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+  story: Story for handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+- steps:
+  - intent: handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+  - action: utter_handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+  story: Story for handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+- steps:
+  - intent: handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+  - action: utter_handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+  story: Story for handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+- steps:
+  - intent: handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+  - action: utter_handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+  story: Story for handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+- steps:
+  - intent: handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+  - action: utter_handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+  story: Story for handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+- steps:
+  - intent: handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+  - action: utter_handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+  story: Story for handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+- steps:
+  - intent: handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+  - action: utter_handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+  story: Story for handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+
