@@ -165,133 +165,804 @@ nlu:
     - que savez-vous sur l'ESP?
     - parlez-moi de l'ESP
     - je voudrais des infos sur l'ESP
-
+    - Donnez-moi des informations sur l'ESP.
+    - Quelles sont les informations sur l'ESP ?
+    - Quels sont les détails de l'ESP ?
+    - Pourriez-vous me donner des infos sur l'ESP ?
+    - Je cherche des infos sur l'ESP.
+    - J'ai besoin d'infos sur l'ESP.
+    - Auriez-vous des informations sur l'ESP ?
+    - Pouvez-vous m'expliquer ce qu'est l'ESP ?
+    - Quels détails pouvez-vous me donner sur l'ESP ?
+    - Je voudrais connaître les infos sur l'ESP.
+    - Expliquez-moi ce qu'est l'ESP.
+    - Qu'est-ce que vous savez sur l'ESP ?
+    - Renseignez-moi sur l'ESP.
+    - Des informations sur l'ESP, s'il vous plaît.
+    - Pouvez-vous me fournir des informations sur l'ESP ?
+    - Que pouvez-vous me dire sur l'ESP ?
+    - Quelles informations avez-vous sur l'ESP ?
+    - Quels renseignements pouvez-vous me donner sur l'ESP ?
+    - Pouvez-vous m'informer sur l'ESP ?
+    - Quels sont les détails concernant l'ESP ?
+    - Quels sont les éléments importants de l'ESP ?
+    - Donnez-moi plus de détails sur l'ESP.
+    - Je voudrais en savoir plus sur l'ESP.
+    - Quelles sont les principales informations sur l'ESP ?
+    - Quels renseignements pouvez-vous fournir sur l'ESP ?
+    - Je cherche des renseignements sur l'ESP.
+    - Quelles sont les données sur l'ESP ?
+    - Avez-vous des infos sur l'ESP ?
+    - Pouvez-vous me dire quelque chose sur l'ESP ?
+    - Quels sont les points essentiels à savoir sur l'ESP ?
 - intent: handle_quels_sont_les_programmes_de_formation_de_lesp
   examples: |
-    - Quels sont les programmes de formation de l'ESP?
-    - quelles formations propose l'ESP?
-    - quels sont les cours offerts par l'ESP?
-    - quels programmes offre l'ESP?
-    - pouvez-vous me dire les formations disponibles à l'ESP?
+    - Quels sont les programmes de formation de l'ESP ?
+    - Quelles formations propose l'ESP ?
+    - Quels sont les cours offerts par l'ESP ?
+    - Quels programmes offre l'ESP ?
+    - Pouvez-vous me dire les formations disponibles à l'ESP ?
+    - Quelles sont les formations disponibles à l'ESP ?
+    - L'ESP offre-t-elle des programmes de formation ?
+    - Quels cours sont disponibles à l'ESP ?
+    - Quels sont les programmes éducatifs de l'ESP ?
+    - Quelles sont les formations proposées par l'ESP ?
+    - Y a-t-il des programmes de formation à l'ESP ?
+    - Que propose l'ESP comme formations ?
+    - Quelles sont les options de formation à l'ESP ?
+    - Quels types de formations sont disponibles à l'ESP ?
+    - Pouvez-vous lister les programmes de formation de l'ESP ?
+    - Quels programmes d'études sont disponibles à l'ESP ?
+    - Quels cursus l'ESP offre-t-elle ?
+    - Quelles sont les formations en ligne proposées par l'ESP ?
+    - Quels sont les cours et programmes disponibles à l'ESP ?
+    - L'ESP propose-t-elle des programmes de formation continue ?
+    - Quels sont les diplômes offerts par l'ESP ?
+    - L'ESP a-t-elle des formations spécifiques ?
+    - Quels programmes professionnels sont disponibles à l'ESP ?
+    - Quels sont les programmes académiques offerts par l'ESP ?
+    - L'ESP propose-t-elle des cours de formation professionnelle ?
+    - Quels sont les programmes de formation en entreprise de l'ESP ?
+    - L'ESP offre-t-elle des programmes de certification ?
+    - Quelles formations diplômantes sont disponibles à l'ESP ?
+    - Quels sont les cours spécialisés offerts par l'ESP ?
+    - Quels types de programmes éducatifs l'ESP propose-t-elle ?
+    - Pouvez-vous me parler des programmes de formation de l'ESP ?
+    - Quels sont les programmes de développement professionnel de l'ESP ?
+    - L'ESP propose-t-elle des formations continues ?
+    - Quels sont les principaux programmes de formation de l'ESP ?
+    - Quels sont les programmes de formation courte à l'ESP ?
+    - Quelles sont les formations de perfectionnement à l'ESP ?
+    - Quels sont les programmes d'apprentissage offerts par l'ESP ?
+    - L'ESP offre-t-elle des formations en ligne ?
+    - Je voudrais savoir les types de formations de l'ESP.
+    - Quelles formations l'ESP propose-t-elle ?
+    - Pouvez-vous me dire les types de formations de l'ESP ?
+    - Je cherche à connaître les types de formations de l'ESP.
+    - Quels types de programmes l'ESP offre-t-elle ?
+    - L'ESP propose-t-elle différents types de formations ?
+    - Quels sont les types de formations disponibles à l'ESP ?
+    - Quels sont les types de cours offerts par l'ESP ?
+    - Quels genres de formations l'ESP propose-t-elle ?
+    - Je voudrais connaître les types de cours de l'ESP.
+    - Quels types de programmes de formation propose l'ESP ?
+    - Quels sont les types de formations proposés à l'ESP ?
 
 - intent: handle_que_vise_lesp_?
   examples: |
-    - Que vise l'ESP?
-    - quels sont les objectifs de l'ESP?
-    - quelles sont les missions de l'ESP?
-    - quelles sont les ambitions de l'ESP?
-    - quels sont les buts de l'ESP?
-- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+    - Que vise l'ESP ?
+    - Quels sont les objectifs de l'ESP ?
+    - Quelles sont les missions de l'ESP ?
+    - Quelles sont les ambitions de l'ESP ?
+    - Quels sont les buts de l'ESP ?
+    - Quels sont les objectifs principaux de l'ESP ?
+    - Quels objectifs l'ESP cherche-t-elle à atteindre ?
+    - Que cherche à accomplir l'ESP ?
+    - Quels sont les objectifs à long terme de l'ESP ?
+    - Quelle est la mission de l'ESP ?
+    - Quels sont les objectifs stratégiques de l'ESP ?
+    - Quelles sont les finalités de l'ESP ?
+    - Quels sont les objectifs clés de l'ESP ?
+    - Que veut réaliser l'ESP ?
+    - Quels sont les principaux objectifs de l'ESP ?
+    - Quelles sont les priorités de l'ESP ?
+    - Quels sont les objectifs à court terme de l'ESP ?
+    - Quelles sont les grandes lignes des objectifs de l'ESP ?
+    - Quelles sont les intentions de l'ESP ?
+    - Quels sont les projets futurs de l'ESP ?
+    - Que vise à accomplir l'ESP ?
+    - Quels sont les buts de l'ESP pour l'avenir ?
+    - Quelles sont les aspirations de l'ESP ?
+    - Quels objectifs l'ESP s'est-elle fixés ?
+    - Que cherche l'ESP à réaliser ?
+    - Quelles sont les cibles de l'ESP ?
+    - Quels sont les plans de l'ESP ?
+    - Quels sont les buts de l'ESP à atteindre ?
+    - Quels sont les objectifs de développement de l'ESP ?
+    - Quelles sont les ambitions futures de l'ESP ?
+    - Quels sont les objectifs stratégiques et opérationnels de l'ESP ?
+    - Quelles sont les visées de l'ESP pour l'avenir ?
+    - Quel est le but principal de l'ESP ?
+    - Quels sont les projets de croissance de l'ESP ?
+    - Quelle est la vision de l'ESP ?
+    - Quelles sont les orientations de l'ESP ?
+    - Quels sont les objectifs à moyen terme de l'ESP ?
+    - Quels sont les objectifs de transformation de l'ESP ?
+    - Pourquoi l'ESP a-t-elle été créée ?
+    - Comment l'ESP envisage-t-elle son avenir ?
+    - Quelles sont les raisons derrière l'existence de l'ESP ?
+    - Quelle est la raison d'être de l'ESP ?
+    - Comment l'ESP contribue-t-elle à son environnement ?
+    - Quelle est la mission de l'ESP envers ses étudiants ?
+    - Quel est le rôle de l'ESP dans la société ?
+    - Comment l'ESP améliore-t-elle ses programmes ?
+    - Comment l'ESP se distingue-t-elle des autres établissements ?
+    - Comment l'ESP soutient-elle l'éducation ?
+    - Pourquoi choisir l'ESP plutôt qu'un autre établissement ?
+    - Qu'est-ce qui rend l'ESP unique ?
+    - Comment l'ESP aide-t-elle ses étudiants à réussir ?
+    - Qu'est-ce qui motive l'ESP à innover ?
+    - Comment l'ESP prépare-t-elle ses étudiants à l'avenir ?
+
+
+- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_a_lesp_?
   examples: |
-    - Quels sont les frais de scolarité annuel de la formation DST Informatique à l'ESP?
-    - combien coûte la formation DST Informatique à l'ESP?
-    - quels sont les coûts pour la formation DST Informatique à l'ESP?
-    - combien dois-je payer pour la formation DST Informatique à l'ESP?
-    - pouvez-vous me dire les frais pour la formation DST Informatique à l'ESP?
+    - Quels sont les frais de scolarité annuels de la formation DST Informatique à l'ESP ?
+    - Combien coûte la formation DST Informatique à l'ESP ?
+    - Quels sont les coûts pour la formation DST Informatique à l'ESP ?
+    - Combien dois-je payer pour la formation DST Informatique à l'ESP ?
+    - Pouvez-vous me dire les frais pour la formation DST Informatique à l'ESP ?
+    - Quel est le tarif de la formation DST Informatique à l'ESP ?
+    - Quel est le montant des frais de scolarité pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais annuels pour la formation DST Informatique à l'ESP ?
+    - Combien cela coûte-t-il par an pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité de la formation DST Informatique à l'ESP ?
+    - A combien s'élèvent les frais de la formation DST Informatique à l'ESP ?
+    - Quels frais dois-je prévoir pour la formation DST Informatique à l'ESP ?
+    - Quel est le coût total de la formation DST Informatique à l'ESP ?
+    - Quels sont les tarifs annuels pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité pour la formation en DST Informatique à l'ESP ?
+    - Quel est le montant à payer chaque année pour la formation DST Informatique à l'ESP ?
+    - Je voudrais savoir les frais de scolarité annuels de la formation DST Informatique à l'ESP.
+    - Pourriez-vous m'indiquer le coût de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais pour suivre la formation DST Informatique à l'ESP ?
+    - Quel est le prix de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais à prévoir pour la formation DST Informatique à l'ESP ?
+    - Quels sont les coûts annuels de la formation DST Informatique à l'ESP ?
+    - Est-ce que vous pouvez me donner les tarifs pour la formation DST Informatique à l'ESP ?
+    - Quel est le montant des frais d'études pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité pour la formation à l'ESP en DST Informatique ?
+    - Pourriez-vous m'expliquer les frais de scolarité annuels de la formation DST Informatique à l'ESP ?
+    - Quel montant dois-je payer pour suivre la formation DST Informatique à l'ESP ?
+    - Pourriez-vous me renseigner sur les frais de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais pour étudier la DST Informatique à l'ESP ?
+    - Combien coûte l'inscription à la formation DST Informatique à l'ESP ?
+    - Quel est le coût de la scolarité annuelle pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais d'inscription à la formation DST Informatique à l'ESP ?
+    - Quels sont les coûts annuels pour étudier la DST Informatique à l'ESP ?
+    - Pourriez-vous me dire combien ça coûte de faire la formation DST Informatique à l'ESP ?
+    - Quel est le montant à verser chaque année pour la formation DST Informatique à l'ESP ?
+    - Je voulais savoir les frais pour la formation DST Informatique à l'ESP.
+    - Quels sont les tarifs de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de la DST Informatique à l'ESP ?
+    - Combien faut-il débourser pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité de la formation DST Informatique à l'ESP ?
+    - Quel est le coût total de la scolarité pour la formation DST Informatique à l'ESP ?
+    - Pourriez-vous me donner les détails financiers pour la formation DST Informatique à l'ESP ?
+    - Quel est le montant des frais de scolarité pour la formation en DST Informatique à l'ESP ?
+    - Quels sont les frais pour suivre la formation DST Informatique à l'ESP ?
+    - Quel est le coût annuel pour la formation DST Informatique à l'ESP ?
+    - Pourriez-vous me renseigner sur les coûts annuels de la formation DST Informatique à l'ESP ?
+    - Quel est le tarif de la formation en DST Informatique à l'ESP ?
+    - Quels sont les coûts à prévoir pour la formation en DST Informatique à l'ESP ?
+    - Je souhaite connaître les frais de scolarité pour la formation DST Informatique à l'ESP.
+    - Combien cela coûte-t-il par an pour la formation en DST Informatique à l'ESP ?
+    - Quel est le coût de la formation de DST Informatique à l'ESP ?
+    - Quels frais suis-je susceptible de payer pour la formation DST Informatique à l'ESP ?
+    - Quel est le montant des frais de scolarité pour la DST Informatique à l'ESP ?
+    - Quels sont les frais pour suivre la DST Informatique à l'ESP ?
+    - Quel est le prix annuel pour la formation DST Informatique à l'ESP ?
+    - Quel est le tarif pour suivre la formation DST Informatique à l'ESP ?
+    - Je voulais savoir combien coûte la formation DST Informatique à l'ESP.
+    - Quels sont les frais d'inscription pour la DST Informatique à l'ESP ?
+    - Combien coûte l'éducation à la DST Informatique à l'ESP ?
+    - Quel montant devrais-je payer pour la formation DST Informatique à l'ESP ?
+    - Pourriez-vous me donner les détails sur les frais de scolarité pour la formation DST Informatique à l'ESP ?
+    - Quels sont les frais de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais pour la DST Informatique à l'ESP ?
+    - Quel est le prix pour la DST Informatique à l'ESP ?
+    - Quels sont les coûts annuels pour la DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité pour la formation à l'ESP en DST Informatique ?
+    - Pourriez-vous me donner le coût de la formation DST Informatique à l'ESP ?
+    - Quels sont les frais à payer pour la formation DST Informatique à l'ESP ?
+    - Je voulais savoir combien coûte la scolarité pour la formation DST Informatique à l'ESP.
+    - Quel est le tarif annuel pour la formation DST Informatique à l'ESP ?
+    - Combien coûte la scolarité pour la formation en DST Informatique à l'ESP ?
+    - Quels sont les frais pour la formation de DST Informatique à l'ESP ?
+    - Quels sont les frais de scolarité annuels pour la formation DST Informatique à l'ESP ?
+    - Quel est le montant des frais de la formation DST Informatique à l'ESP ?
+    - Quels sont les coûts pour la formation de DST Informatique à l'ESP ?
+    - Combien coûtent les études de DST Informatique à l'ESP ?
+    - Quels sont les frais d'étude pour la DST Informatique à l'ESP ?
+    - Quels sont les frais de la DST Informatique à l'ESP ?
+    - Quel montant dois-je payer chaque année pour la formation DST Informatique à l'ESP ?
+    - Pourriez-vous me dire combien ça coûte de faire la formation DST Informatique à l'ESP ?
+    - Quel est le montant à verser chaque année pour la formation DST Informatique à l'ESP ?
+
 
 - intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
   examples: |
-    - Quels sont les frais de scolarité annuel de la formation Systèmes et réseaux?
-    - combien coûte la formation Systèmes et réseaux?
-    - quels sont les coûts pour la formation Systèmes et réseaux?
-    - combien dois-je payer pour la formation Systèmes et réseaux?
-    - pouvez-vous me dire les frais pour la formation Systèmes et réseaux?
+    - Quels sont les frais de scolarité annuels de la formation Systèmes et réseaux ?
+    - Combien coûte la formation Systèmes et réseaux ?
+    - Quels sont les coûts pour la formation Systèmes et réseaux ?
+    - Combien dois-je payer pour la formation Systèmes et réseaux ?
+    - Pouvez-vous me dire les frais pour la formation Systèmes et réseaux ?
+    - Quel est le tarif de la formation Systèmes et réseaux ?
+    - Quel est le montant des frais de scolarité pour la formation Systèmes et réseaux ?
+    - Quels sont les frais annuels pour la formation Systèmes et réseaux ?
+    - Combien cela coûte-t-il par an pour la formation Systèmes et réseaux ?
+    - Quels sont les frais de scolarité de la formation Systèmes et réseaux ?
+    - A combien s'élèvent les frais de la formation Systèmes et réseaux ?
+    - Quels frais dois-je prévoir pour la formation Systèmes et réseaux ?
+    - Quel est le coût total de la formation Systèmes et réseaux ?
+    - Quels sont les tarifs annuels pour la formation Systèmes et réseaux ?
+    - Quels sont les frais de scolarité pour la formation en Systèmes et réseaux ?
+    - Quel est le montant à payer chaque année pour la formation Systèmes et réseaux ?
+    - Je voudrais savoir les frais de scolarité annuels de la formation Systèmes et réseaux.
+    - Pourriez-vous m'indiquer le coût de la formation Systèmes et réseaux ?
+    - Quels sont les frais pour suivre la formation Systèmes et réseaux ?
+    - Quel est le prix de la formation Systèmes et réseaux ?
+    - Quels sont les frais à prévoir pour la formation Systèmes et réseaux ?
+    - Quels sont les coûts annuels de la formation Systèmes et réseaux ?
+    - Est-ce que vous pouvez me donner les tarifs pour la formation Systèmes et réseaux ?
+    - Quel est le montant des frais d'études pour la formation Systèmes et réseaux ?
+    - Quels sont les frais de scolarité pour la formation à l'ESP en Systèmes et réseaux ?
+    - Pourriez-vous m'expliquer les frais de scolarité annuels de la formation Systèmes et réseaux ?
+    - Quel montant dois-je payer pour suivre la formation Systèmes et réseaux ?
+    - Pourriez-vous me renseigner sur les frais de la formation Systèmes et réseaux ?
+    - Quels sont les frais pour étudier la Systèmes et réseaux à l'ESP ?
+    - Combien coûte l'inscription à la formation Systèmes et réseaux ?
+    - Quel est le coût de la scolarité annuelle pour la formation Systèmes et réseaux ?
+    - Quels sont les frais d'inscription à la formation Systèmes et réseaux ?
+    - Quels sont les coûts annuels pour étudier la Systèmes et réseaux à l'ESP ?
+    - Pourriez-vous me dire combien ça coûte de faire la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le montant à verser chaque année pour la formation Systèmes et réseaux ?
+    - Je voulais savoir les frais pour la formation Systèmes et réseaux à l'ESP.
+    - Quels sont les tarifs de la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de la Systèmes et réseaux à l'ESP ?
+    - Combien faut-il débourser pour la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de scolarité de la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le coût total de la scolarité pour la formation Systèmes et réseaux à l'ESP ?
+    - Pourriez-vous me donner les détails financiers pour la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le montant des frais de scolarité pour la formation en Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais pour suivre la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le coût annuel pour la formation Systèmes et réseaux à l'ESP ?
+    - Pourriez-vous me renseigner sur les coûts annuels de la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le tarif de la formation en Systèmes et réseaux à l'ESP ?
+    - Quels sont les coûts à prévoir pour la formation en Systèmes et réseaux à l'ESP ?
+    - Je souhaite connaître les frais de scolarité pour la formation Systèmes et réseaux à l'ESP.
+    - Combien cela coûte-t-il par an pour la formation en Systèmes et réseaux à l'ESP ?
+    - Quel est le coût de la formation de Systèmes et réseaux à l'ESP ?
+    - Quels frais suis-je susceptible de payer pour la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le montant des frais de scolarité pour la Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais pour suivre la Systèmes et réseaux à l'ESP ?
+    - Quel est le prix annuel pour la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le tarif pour suivre la formation Systèmes et réseaux à l'ESP ?
+    - Je voulais savoir combien coûte la formation Systèmes et réseaux à l'ESP.
+    - Quels sont les frais d'inscription pour la Systèmes et réseaux à l'ESP ?
+    - Combien coûte l'éducation à la Systèmes et réseaux à l'ESP ?
+    - Quel montant devrais-je payer pour la formation Systèmes et réseaux à l'ESP ?
+    - Pourriez-vous me donner les détails sur les frais de scolarité pour la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais pour la Systèmes et réseaux à l'ESP ?
+    - Quel est le prix pour la Systèmes et réseaux à l'ESP ?
+    - Quels sont les coûts annuels pour la Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de scolarité pour la formation à l'ESP en Systèmes et réseaux ?
+    - Pourriez-vous me donner le coût de la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais à payer pour la formation Systèmes et réseaux à l'ESP ?
+    - Je voulais savoir combien coûte la scolarité pour la formation Systèmes et réseaux à l'ESP.
+    - Quel est le tarif annuel pour la formation Systèmes et réseaux à l'ESP ?
+    - Combien coûte la scolarité pour la formation en Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais pour la formation de Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de scolarité annuels pour la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le montant des frais de la formation Systèmes et réseaux à l'ESP ?
+    - Quels sont les coûts pour la formation de Systèmes et réseaux à l'ESP ?
+    - Combien coûtent les études de Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais d'étude pour la Systèmes et réseaux à l'ESP ?
+    - Quels sont les frais de la Systèmes et réseaux à l'ESP ?
+    - Quel montant dois-je payer chaque année pour la formation Systèmes et réseaux à l'ESP ?
+    - Pourriez-vous me dire combien ça coûte de faire la formation Systèmes et réseaux à l'ESP ?
+    - Quel est le montant à verser chaque année pour la formation Systèmes et réseaux à l'ESP ?
+
 
 - intent: handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
   examples: |
-    - Quelles sont les étapes à suivre pour postuler à un programme de DST Informatique/Licence/Master à l'ESP?
-    - comment puis-je postuler pour un programme de DST Informatique/Licence/Master à l'ESP?
-    - quelles sont les démarches pour postuler à un programme de DST Informatique/Licence/Master à l'ESP?
-    - comment postuler à un programme de DST Informatique/Licence/Master à l'ESP?
-    - quelles étapes suivre pour postuler à l'ESP?
+    - Quelles sont les étapes à suivre pour postuler à un programme de DST Informatique Licence/Master à l'ESP ?
+    - Comment puis-je postuler pour un programme de DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les démarches pour postuler à un programme de DST Informatique Licence/Master à l'ESP ?
+    - Comment postuler à un programme de DST Informatique Licence/Master à l'ESP ?
+    - Quelles étapes suivre pour postuler à l'ESP ?
+    - Quel est le processus d'inscription pour la DST Informatique Licence/Master à l'ESP ?
+    - Comment faire pour intégrer le programme DST Informatique Licence/Master à l'ESP ?
+    - Pouvez-vous me guider sur les étapes de candidature pour la DST Informatique Licence/Master à l'ESP ?
+    - Que faut-il faire pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quels sont les prérequis pour s'inscrire au programme de DST Informatique Licence/Master à l'ESP ?
+    - Comment s'inscrire à la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les conditions pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes nécessaires pour rejoindre le programme DST Informatique Licence/Master à l'ESP ?
+    - Quelle est la procédure d'admission pour la DST Informatique Licence/Master à l'ESP ?
+    - Comment accéder au programme DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes pour être admis au programme DST Informatique Licence/Master à l'ESP ?
+    - Comment procéder à l'inscription pour la DST Informatique Licence/Master à l'ESP ?
+    - Quels sont les documents requis pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Comment fonctionne le processus de candidature pour la DST Informatique Licence/Master à l'ESP ?
+    - Quel est le formulaire d'inscription pour la DST Informatique Licence/Master à l'ESP ?
+    - Quelles informations sont nécessaires pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quel est le calendrier de candidature pour la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes pour s'inscrire au programme DST Informatique Licence/Master à l'ESP ?
+    - Comment est organisée la sélection pour la DST Informatique Licence/Master à l'ESP ?
+    - Quels sont les critères d'admission pour la DST Informatique Licence/Master à l'ESP ?
+    - Comment être accepté dans le programme DST Informatique Licence/Master à l'ESP ?
+    - Quelles étapes suivre pour intégrer la DST Informatique Licence/Master à l'ESP ?
+    - Quel est le processus pour devenir étudiant en DST Informatique Licence/Master à l'ESP ?
+    - Comment réussir à être admis à la DST Informatique Licence/Master à l'ESP ?
+    - Quel est le processus pour faire une demande d'inscription à la DST Informatique Licence/Master à l'ESP ?
+    - Comment candidater pour la DST Informatique Licence/Master à l'ESP ?
+    - Quelles étapes sont nécessaires pour obtenir une place en DST Informatique Licence/Master à l'ESP ?
+    - Comment postuler efficacement à la DST Informatique Licence/Master à l'ESP ?
+    - Quels formulaires remplir pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes de candidature pour la DST Informatique Licence/Master à l'ESP ?
+    - Comment se préparer pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les modalités pour intégrer la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes clés pour l'inscription à la DST Informatique Licence/Master à l'ESP ?
+    - Comment faire pour être accepté dans la formation DST Informatique Licence/Master à l'ESP ?
+    - Quel est le processus pour demander l'admission à la DST Informatique Licence/Master à l'ESP ?
+    - Quelles sont les étapes à suivre pour postuler à la formation DST Informatique Licence/Master à l'ESP ?
+    - Comment postuler à la DST Informatique Licence/Master à l'ESP en toute simplicité ?
+    - Quels documents fournir pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Quels sont les délais à respecter pour postuler à la DST Informatique Licence/Master à l'ESP ?
+    - Comment se passe le processus d'inscription pour la DST Informatique Licence/Master à l'ESP ?
+
 
 - intent: handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
   examples: |
-    - Quelles sont les dates limites pour soumettre ma candidature?
-    - quand dois-je soumettre ma candidature?
-    - quelle est la date limite pour postuler?
-    - pouvez-vous me dire les dates limites pour candidater?
-    - jusqu'à quand puis-je soumettre ma candidature?
+    - Quelles sont les dates limites pour soumettre ma candidature ?
+    - Quand dois-je soumettre ma candidature ?
+    - Quelle est la date limite pour postuler ?
+    - Pouvez-vous me dire les dates limites pour candidater ?
+    - Jusqu'à quand puis-je soumettre ma candidature ?
+    - À quelle date expire le délai pour soumettre ma candidature ?
+    - Quel est le dernier jour pour envoyer ma candidature ?
+    - Quand est-ce que ma candidature doit être soumise ?
+    - Quelles sont les échéances pour l'inscription ?
+    - À quelle date est la clôture des candidatures ?
+    - Quand est la fin du délai pour postuler ?
+    - Quelle est la deadline pour la candidature ?
+    - Quand est-ce que je dois finaliser ma candidature ?
+    - Quel est le délai pour soumettre ma candidature ?
+    - Quelles sont les dates limites pour postuler ?
+    - Quand est le dernier jour pour soumettre ma candidature ?
+    - Jusqu'à quand est-ce que je peux postuler ?
+    - À quelle date ma candidature doit-elle être soumise ?
+    - Quand est-ce que la période de candidature se termine ?
+    - Quand est-ce que je dois envoyer ma candidature ?
+    - Quand est-ce que je devrais finaliser ma demande ?
+    - Quelle est la date de clôture pour les inscriptions ?
+    - Quand est la date limite pour déposer ma candidature ?
+    - Quand est le dernier délai pour envoyer ma candidature ?
+    - Quand est la clôture pour les demandes ?
+    - Quand est-ce que la période de candidature prend fin ?
+    - Quand est-ce que je devrais envoyer ma demande ?
+    - Quand est la fin de la période de candidature ?
+    - Quand est-ce que je dois compléter ma candidature ?
+    - Quel est le calendrier de candidature ?
+    - Quand est-ce que je devrais finaliser ma demande d'admission ?
+    - Quand est la date limite pour compléter ma candidature ?
+    - Quand est-ce que je dois soumettre ma candidature pour être considéré ?
+    - Quand est la fin du processus de candidature ?
+    - Quand est-ce que les inscriptions se terminent ?
+    - Quand est-ce que je devrais envoyer ma candidature pour être pris en compte ?
+    - Quand est-ce que la période de dépôt des candidatures se clôture ?
+    - Quand est-ce que la fenêtre de candidature se ferme ?
+    - Quand est-ce que je devrais terminer ma candidature ?
+    - Quand est la date limite d'inscription ?
+    - Quand est-ce que je dois présenter ma candidature ?
+    - Quand est la fin de la période de demande ?
+    - Quand est-ce que je dois compléter ma demande pour la DST Informatique ?
+    - Quand est la clôture pour la DST Informatique Licence/Master ?
+    - Quand est-ce que je dois envoyer ma candidature pour la DST Informatique ?
+    - Quand est la fin de la période de candidature pour la DST Informatique ?
+    - Quand est-ce que je dois compléter ma candidature pour la DST Informatique Licence/Master ?
+    - Quand est la date limite pour postuler à la DST Informatique Licence/Master ?
+    - Quand est-ce que la période de candidature pour la DST Informatique prend fin ?
+    - Quand est la clôture des candidatures pour la DST Informatique ?
+    - Quand est la date limite pour déposer ma candidature pour la DST Informatique Licence/Master ?
+    - Quand est le dernier délai pour envoyer ma candidature pour la DST Informatique ?
+    - Quand est la clôture pour les demandes de la DST Informatique Licence/Master ?
+    - Quand est-ce que la période de candidature pour la DST Informatique prend fin ?
+    - Quand est-ce que je dois envoyer ma demande pour la DST Informatique ?
+    - Quand est la fin de la période de candidature pour la DST Informatique Licence/Master ?
+    - Quand est-ce que je dois terminer ma candidature pour la DST Informatique ?
+    - Quand est la date limite d'inscription pour la DST Informatique ?
+    - Quand est-ce que je dois soumettre ma candidature pour la DST Informatique ?
+    - Quand est la fin de la période de demande pour la DST Informatique ?
+    - Quand est-ce que je dois compléter ma demande pour la DST Informatique Licence/Master ?
+
 
 - intent: handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
   examples: |
-    - Quand commencent les inscriptions pour le semestre prochain?
-    - quand débutent les inscriptions pour le prochain semestre?
-    - à quelle date commencent les inscriptions pour le prochain semestre?
-    - pouvez-vous me dire quand commencent les inscriptions pour le semestre suivant?
-    - quand puis-je m'inscrire pour le prochain semestre?
+    - Quand commencent les inscriptions pour le semestre prochain ?
+    - Quand débutent les inscriptions pour le prochain semestre ?
+    - À quelle date commencent les inscriptions pour le prochain semestre ?
+    - Pouvez-vous me dire quand commencent les inscriptions pour le semestre suivant ?
+    - Quand puis-je m'inscrire pour le prochain semestre ?
+    - Quand est-ce que les inscriptions ouvrent pour le semestre prochain ?
+    - Quand est-ce que je peux commencer à m'inscrire pour le semestre suivant ?
+    - À partir de quand puis-je soumettre ma candidature pour le semestre prochain ?
+    - Quand est l'ouverture des inscriptions pour le semestre à venir ?
+    - Quand est-ce que je peux commencer à m'inscrire pour le semestre à venir ?
+    - Quand est-ce que les inscriptions débutent pour le semestre à venir ?
+    - Quand est-ce que je devrais postuler pour le semestre suivant ?
+    - Quand est l'ouverture des candidatures pour le prochain semestre ?
+    - Quand est-ce que je peux postuler pour le prochain semestre ?
+    - Quand est-ce que je peux commencer le processus d'inscription pour le semestre prochain ?
+    - Quand est l'ouverture des demandes d'inscription pour le semestre prochain ?
+    - Quand est-ce que les inscriptions commencent pour le semestre suivant ?
+    - Quand est-ce que je peux commencer à m'inscrire pour le semestre suivant ?
+    - Quand est-ce que je peux faire ma demande d'admission pour le semestre prochain ?
+    - Quand est l'ouverture des candidatures pour le semestre suivant ?
+    - Quand est-ce que les inscriptions seront ouvertes pour le semestre suivant ?
+    - Quand est-ce que je devrais faire ma demande pour le semestre prochain ?
+    - Quand est l'ouverture des inscriptions pour le semestre à venir ?
+    - Quand est-ce que je devrais soumettre ma candidature pour le semestre suivant ?
+    - Quand est-ce que je peux postuler pour le semestre à venir ?
+    - Quand est l'ouverture des candidatures pour le semestre à venir ?
+    - Quand est-ce que je peux postuler pour le semestre à venir ?
+    - Quand est-ce que les inscriptions ouvriront pour le semestre à venir ?
+    - Quand est l'ouverture des inscriptions pour le semestre suivant ?
+    - Quand est-ce que je peux commencer à m'inscrire pour le semestre suivant ?
+    - Quand est-ce que je peux faire ma demande pour le semestre à venir ?
+    - Quand est l'ouverture des inscriptions pour le semestre suivant ?
+    - Quand est-ce que les inscriptions débutent pour le semestre suivant ?
+    - Quand est-ce que je peux postuler pour le prochain semestre ?
+    - Quand est l'ouverture des candidatures pour le prochain semestre ?
+    - Quand est-ce que les inscriptions seront ouvertes pour le prochain semestre ?
+
 
 - intent: handle_comment_vérifier_le_statut_de_ma_candidature_?
   examples: |
-    - Comment vérifier le statut de ma candidature?
-    - comment puis-je savoir si ma candidature a été acceptée?
-    - où vérifier le statut de ma candidature?
-    - comment suivre ma candidature?
-    - comment voir l'avancement de ma candidature?
+    - Comment vérifier le statut de ma candidature ?
+    - Comment puis-je savoir si ma candidature a été acceptée ?
+    - Où vérifier le statut de ma candidature ?
+    - Comment suivre ma candidature ?
+    - Comment voir l'avancement de ma candidature ?
+    - Comment savoir si ma candidature a été approuvée ?
+    - Où puis-je consulter le statut de ma demande ?
+    - Comment puis-je connaître l'état de ma candidature ?
+    - Où est-ce que je peux voir où en est ma candidature ?
+    - Comment est-ce que je peux savoir si ma candidature a été validée ?
+    - Où est-ce que je peux vérifier le statut de ma demande ?
+    - Comment puis-je suivre l'évolution de ma candidature ?
+    - Où est-ce que je peux suivre l'avancement de ma candidature ?
+    - Comment est-ce que je peux vérifier si ma demande a été acceptée ?
+    - Où puis-je voir si ma demande a été approuvée ?
+    - Comment est-ce que je peux savoir si ma demande a été rejetée ?
+    - Où est-ce que je peux suivre l'état de ma candidature ?
+    - Comment est-ce que je peux voir si ma candidature a été reçue ?
+    - Où puis-je suivre l'état actuel de ma candidature ?
+    - Comment puis-je vérifier si ma candidature a été refusée ?
+    - Où puis-je suivre l'avancement de ma demande ?
+    - Comment puis-je voir si ma candidature est en cours de traitement ?
+    - Où est-ce que je peux voir si ma candidature est en attente ?
+    - Comment puis-je suivre la progression de ma demande ?
+    - Où puis-je voir si ma candidature est en cours d'examen ?
+    - Comment est-ce que je peux savoir si ma candidature est en attente ?
+    - Où est-ce que je peux vérifier si ma candidature est en cours ?
+    - Comment est-ce que je peux savoir si ma demande est en attente ?
+    - Où puis-je suivre si ma demande est en cours de traitement ?
+    - Comment puis-je vérifier l'état de ma candidature ?
+    - Où est-ce que je peux voir l'avancement de ma demande ?
+    - Comment est-ce que je peux vérifier si ma candidature est en cours ?
+    - Où est-ce que je peux voir si ma candidature est en attente de décision ?
+    - Comment puis-je suivre si ma candidature est en attente de validation ?
+    - Où puis-je vérifier si ma candidature est en cours d'examen ?
+    - Comment est-ce que je peux savoir si ma demande est en attente de réponse ?
+    - Où puis-je suivre si ma demande est en cours d'évaluation ?
+
 
 - intent: handle_combien_de_départements_lesp_dispose_?
   examples: |
-    - Combien de départements l'ESP dispose?
-    - combien de départements y a-t-il à l'ESP?
-    - quels sont les départements de l'ESP?
-    - combien de sections a l'ESP?
-    - pouvez-vous me dire le nombre de départements à l'ESP?
+    - Combien de départements l'ESP dispose-t-il ?
+    - Combien de départements y a-t-il à l'ESP ?
+    - Quels sont les départements de l'ESP ?
+    - Combien de sections a l'ESP ?
+    - Pouvez-vous me dire le nombre de départements à l'ESP ?
+    - Y a-t-il plusieurs départements à l'ESP ?
+    - Quel est le nombre de départements à l'ESP ?
+    - De combien de départements l'ESP est-il composé ?
+    - Quels sont les différents départements de l'ESP ?
+    - Est-ce que l'ESP a plusieurs départements ?
+    - Y a-t-il des départements spécifiques à l'ESP ?
+    - Combien de divisions l'ESP a-t-il ?
+    - Quel est le nombre total de départements à l'ESP ?
+    - L'ESP a-t-il plusieurs départements ?
+    - Quels sont les différents secteurs de l'ESP ?
+    - De combien de départements est constitué l'ESP ?
+    - Combien de départements l'ESP a-t-il en tout ?
+    - Est-ce qu'il y a plusieurs sections à l'ESP ?
+    - Combien de départements sont présents à l'ESP ?
+    - Y a-t-il plusieurs sections à l'ESP ?
+    - Quels sont les différents services offerts à l'ESP ?
+    - Combien de départements sont disponibles à l'ESP ?
+    - Y a-t-il plusieurs départements au sein de l'ESP ?
+    - Quelle est la répartition des départements à l'ESP ?
+    - Combien de départements sont opérationnels à l'ESP ?
+    - L'ESP comprend combien de départements ?
+    - Est-ce que l'ESP propose plusieurs départements ?
+    - Quels sont les départements actuellement à l'ESP ?
+    - Combien de départements sont là à l'ESP ?
+    - Y a-t-il différents départements à l'ESP ?
+
 
 - intent: handle_pourquoi_choisir_lesp_?
   examples: |
-    - Pourquoi choisir l'ESP?
-    - pourquoi devrais-je choisir l'ESP?
-    - quels sont les avantages de choisir l'ESP?
-    - qu'est-ce qui rend l'ESP spécial?
-    - pourquoi recommanderiez-vous l'ESP?
+    - Pourquoi choisir l'ESP ?
+    - Pourquoi devrais-je choisir l'ESP ?
+    - Quels sont les avantages de choisir l'ESP ?
+    - Qu'est-ce qui rend l'ESP spécial ?
+    - Pourquoi recommanderiez-vous l'ESP ?
+    - Qu'est-ce qui fait que l'ESP est une bonne option ?
+    - Pourquoi l'ESP est-il une bonne décision ?
+    - Quelles sont les raisons de choisir l'ESP ?
+    - Quels sont les points forts de l'ESP ?
+    - Quelles sont les qualités de l'ESP ?
+    - Quelles sont les raisons pour lesquelles je devrais choisir l'ESP ?
+    - Pourquoi est-ce que je devrais considérer l'ESP ?
+    - Pourquoi devrais-je opter pour l'ESP ?
+    - Qu'est-ce qui rend l'ESP différent des autres ?
+    - Qu'est-ce qui rend l'ESP unique ?
+    - Quelles sont les raisons pour lesquelles je devrais opter pour l'ESP ?
+    - Quelles sont les raisons pour lesquelles je devrais choisir l'ESP par rapport à d'autres ?
+    - Pourquoi est-ce que je devrais faire le choix de l'ESP ?
+    - Qu'est-ce qui distingue l'ESP des autres options ?
+    - Qu'est-ce qui rend l'ESP meilleur ?
+    - Pourquoi est-ce que je devrais choisir l'ESP plutôt qu'un autre établissement ?
+    - Quelles sont les raisons de choisir l'ESP pour mes études ?
+    - Pourquoi l'ESP est-il considéré comme une bonne école ?
+    - Quels sont les aspects positifs de choisir l'ESP ?
+    - Qu'est-ce qui fait que l'ESP est un bon choix ?
+    - Quelles sont les raisons pour lesquelles l'ESP est recommandé ?
+    - Pourquoi est-ce que l'ESP est un bon endroit pour étudier ?
+    - Pourquoi l'ESP est-il une option valable ?
+    - Quels sont les atouts de l'ESP ?
+    - Pourquoi est-ce que je devrais penser à l'ESP ?
+    - Quelles sont les raisons de choisir l'ESP plutôt qu'un autre ?
+    - Pourquoi l'ESP est-il une excellente option ?
+    - Qu'est-ce qui rend l'ESP une bonne décision ?
+    - Pourquoi devrais-je choisir l'ESP comme école ?
+
 
 - intent: handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
   examples: |
-    - Quelles sont les formations spécifiques proposées par le Département Génie Chimique?
-    - quelles formations offre le département Génie Chimique?
-    - pouvez-vous me dire les formations spécifiques du département Génie Chimique?
-    - quels cours sont proposés par le département Génie Chimique?
-    - quelles sont les spécialités du département Génie Chimique?
+    - Quelles sont les formations spécifiques proposées par le Département Génie Chimique ?
+    - Quelles formations offre le département Génie Chimique ?
+    - Pouvez-vous me dire les formations spécifiques du département Génie Chimique ?
+    - Quels cours sont proposés par le département Génie Chimique ?
+    - Quelles sont les spécialités du département Génie Chimique ?
+    - Quels sont les programmes offerts par le Département Génie Chimique ?
+    - Quelles sont les disciplines disponibles au Département Génie Chimique ?
+    - Quels sont les domaines d'étude offerts par le Département Génie Chimique ?
+    - Quels sont les parcours académiques du Département Génie Chimique ?
+    - Quels sont les cursus académiques du Département Génie Chimique ?
+    - Quels sont les enseignements spécifiques du Département Génie Chimique ?
+    - Quelles sont les formations proposées au Département Génie Chimique ?
+    - Quels sont les programmes académiques du Département Génie Chimique ?
+    - Quels sont les cours spécifiques du Département Génie Chimique ?
+    - Quels sont les programmes d'études du Département Génie Chimique ?
+    - Quels sont les programmes académiques spécifiques du Département Génie Chimique ?
+    - Quelles sont les spécialisations disponibles au Département Génie Chimique ?
+    - Quelles sont les options de formation du Département Génie Chimique ?
+    - Quels sont les domaines spécifiques du Département Génie Chimique ?
+    - Quels sont les programmes spéciaux du Département Génie Chimique ?
+    - Quelles sont les orientations académiques du Département Génie Chimique ?
+    - Quelles sont les disciplines offertes par le Département Génie Chimique ?
+    - Quelles sont les offres de formation du Département Génie Chimique ?
+    - Quelles sont les spécialités enseignées au Département Génie Chimique ?
+    - Quelles sont les matières proposées par le Département Génie Chimique ?
+    - Quelles sont les filières d'études du Département Génie Chimique ?
+    - Quelles sont les formations spécifiques dispensées par le Département Génie Chimique ?
+    - Quelles sont les options académiques du Département Génie Chimique ?
+    - Quelles sont les spécialités académiques du Département Génie Chimique ?
+    - Quelles sont les disciplines académiques du Département Génie Chimique ?
+    - Quelles sont les voies d'études disponibles au Département Génie Chimique ?
+
 
 - intent: handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
   examples: |
-    - Quels sont les objectifs pédagogiques des formations en Génie Chimique offertes par le Département?
-    - quels sont les buts pédagogiques des formations en Génie Chimique?
-    - quelles sont les ambitions pédagogiques des cours en Génie Chimique?
-    - pouvez-vous me dire les objectifs pédagogiques des formations en Génie Chimique?
-    - quels sont les objectifs éducatifs des cours en Génie Chimique?
+    - Quels sont les objectifs pédagogiques des formations en Génie Chimique offertes par le Département ?
+    - Quels sont les buts pédagogiques des formations en Génie Chimique ?
+    - Quelles sont les ambitions pédagogiques des cours en Génie Chimique ?
+    - Pouvez-vous me dire les objectifs pédagogiques des formations en Génie Chimique ?
+    - Quels sont les objectifs éducatifs des cours en Génie Chimique ?
+    - Quels sont les objectifs de formation en Génie Chimique ?
+    - Quels sont les objectifs académiques des formations en Génie Chimique ?
+    - Quels sont les objectifs d'apprentissage des formations en Génie Chimique ?
+    - Quels sont les objectifs pédagogiques spécifiques en Génie Chimique ?
+    - Quelles sont les orientations pédagogiques des formations en Génie Chimique ?
+    - Quels sont les objectifs didactiques des cours en Génie Chimique ?
+    - Quels sont les objectifs d'enseignement en Génie Chimique ?
+    - Quels sont les objectifs instructifs des formations en Génie Chimique ?
+    - Quels sont les objectifs éducatifs spécifiques des formations en Génie Chimique ?
+    - Quels sont les objectifs de développement académique en Génie Chimique ?
+    - Quels sont les objectifs de formation académique en Génie Chimique ?
+    - Quels sont les objectifs éducatifs des programmes en Génie Chimique ?
+    - Quels sont les objectifs de compétence en Génie Chimique ?
+    - Quels sont les objectifs de connaissance en Génie Chimique ?
+    - Quels sont les objectifs d'enseignement spécifiques en Génie Chimique ?
+    - Quels sont les objectifs de perfectionnement académique en Génie Chimique ?
+    - Quels sont les objectifs de formation pratique en Génie Chimique ?
+    - Quels sont les objectifs de développement professionnel en Génie Chimique ?
+    - Quels sont les objectifs d'acquisition de compétences en Génie Chimique ?
+    - Quels sont les objectifs d'éducation en Génie Chimique ?
+    - Quels sont les objectifs de maîtrise des connaissances en Génie Chimique ?
+    - Quels sont les objectifs de formation continue en Génie Chimique ?
+    - Quels sont les objectifs pédagogiques à atteindre en Génie Chimique ?
+    - Quels sont les objectifs académiques à réaliser en Génie Chimique ?
+    - Quels sont les objectifs de compétences à développer en Génie Chimique ?
+
 
 - intent: handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
   examples: |
-    - Quels sont les niveaux de formation disponibles en Génie Chimique dans le Département?
-    - quels sont les niveaux offerts en Génie Chimique?
-    - quels niveaux de formation propose le département de Génie Chimique?
-    - pouvez-vous me dire les niveaux disponibles en Génie Chimique?
-    - quels sont les diplômes offerts en Génie Chimique?
+    - Quels sont les niveaux de formation disponibles en Génie Chimique dans le Département ?
+    - Quels sont les niveaux offerts en Génie Chimique ?
+    - Quels niveaux de formation propose le département de Génie Chimique ?
+    - Pouvez-vous me dire les niveaux disponibles en Génie Chimique ?
+    - Quels sont les diplômes offerts en Génie Chimique ?
+    - Quels sont les niveaux académiques disponibles en Génie Chimique ?
+    - Quels sont les grades proposés par le département de Génie Chimique ?
+    - Quels sont les niveaux d'études en Génie Chimique ?
+    - Quels sont les niveaux de qualification en Génie Chimique ?
+    - Quels sont les niveaux éducatifs en Génie Chimique ?
+    - Quels sont les niveaux de diplôme en Génie Chimique ?
+    - Quels sont les niveaux de certificat en Génie Chimique ?
+    - Quels sont les niveaux d'accréditation en Génie Chimique ?
+    - Quels sont les niveaux de compétence en Génie Chimique ?
+    - Quels sont les niveaux de spécialisation en Génie Chimique ?
+    - Quels sont les niveaux de formation académique en Génie Chimique ?
+    - Quels sont les niveaux de programme en Génie Chimique ?
+    - Quels sont les niveaux de qualification académique en Génie Chimique ?
+    - Quels sont les niveaux de cours en Génie Chimique ?
+    - Quels sont les niveaux de certification en Génie Chimique ?
+    - Quels sont les niveaux de licence en Génie Chimique ?
+    - Quels sont les niveaux de master en Génie Chimique ?
+    - Quels sont les niveaux de doctorat en Génie Chimique ?
+    - Quels sont les niveaux de formation professionnelle en Génie Chimique ?
+    - Quels sont les niveaux de spécialisation académique en Génie Chimique ?
+    - Quels sont les niveaux de qualification professionnelle en Génie Chimique ?
+    - Quels sont les niveaux de formation continue en Génie Chimique ?
+    - Quels sont les niveaux de programme académique en Génie Chimique ?
+    - Quels sont les niveaux d'éducation en Génie Chimique ?
 
 - intent: handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
   examples: |
-    - Quelles compétences les étudiants acquièrent-ils en suivant les formations du Département Génie Chimique?
-    - quelles compétences développe-t-on en suivant les cours de Génie Chimique?
-    - quelles aptitudes acquièrent les étudiants en Génie Chimique?
-    - pouvez-vous me dire les compétences acquises en Génie Chimique?
-    - quelles sont les compétences des diplômés en Génie Chimique?
+    - Quelles compétences les étudiants acquièrent-ils en suivant les formations du Département Génie Chimique ?
+    - Quelles compétences développe-t-on en suivant les cours de Génie Chimique ?
+    - Quelles aptitudes acquièrent les étudiants en Génie Chimique ?
+    - Pouvez-vous me dire les compétences acquises en Génie Chimique ?
+    - Quelles sont les compétences des diplômés en Génie Chimique ?
+    - Quels sont les savoir-faire développés en Génie Chimique ?
+    - Quelles sont les compétences professionnelles acquises en Génie Chimique ?
+    - Quelles sont les compétences techniques enseignées en Génie Chimique ?
+    - Quelles sont les capacités pratiques enseignées en Génie Chimique ?
+    - Quelles sont les compétences spécifiques enseignées en Génie Chimique ?
+    - Quelles compétences sont nécessaires pour étudier en Génie Chimique ?
+    - Quelles sont les compétences clés pour les étudiants en Génie Chimique ?
+    - Quels sont les apprentissages clés en Génie Chimique ?
+    - Quelles sont les habiletés développées par les étudiants en Génie Chimique ?
+    - Quels sont les savoir-faire professionnels enseignés en Génie Chimique ?
+    - Quelles sont les aptitudes pratiques enseignées en Génie Chimique ?
+    - Quelles sont les compétences essentielles en Génie Chimique ?
+    - Quels sont les acquis professionnels en Génie Chimique ?
+    - Quelles sont les compétences transférables en Génie Chimique ?
+    - Quelles sont les compétences pratiques en Génie Chimique ?
+    - Quelles sont les compétences avancées en Génie Chimique ?
+    - Quelles sont les compétences en gestion enseignées en Génie Chimique ?
+    - Quelles sont les compétences spécialisées en Génie Chimique ?
+    - Quels sont les enseignements pratiques en Génie Chimique ?
+    - Quelles sont les compétences techniques en Génie Chimique ?
+    - Quelles sont les compétences analytiques en Génie Chimique ?
+    - Quelles sont les compétences critiques en Génie Chimique ?
+    - Quels sont les apprentissages essentiels en Génie Chimique ?
+    - Quelles sont les compétences de base en Génie Chimique ?
+    - Quels sont les savoir-faire techniques en Génie Chimique ?
+
 
 - intent: handle_qui_est_le_chef_du_département_génie_chimique_?
   examples: |
-    - Qui est le chef du département Génie Chimique?
-    - qui dirige le département Génie Chimique?
-    - pouvez-vous me dire le nom du chef du département Génie Chimique?
-    - qui est le responsable du département Génie Chimique?
-    - qui est à la tête du département Génie Chimique?
+    - Qui est le chef du département Génie Chimique ?
+    - Qui dirige le département Génie Chimique ?
+    - Pouvez-vous me dire le nom du chef du département Génie Chimique ?
+    - Qui est le responsable du département Génie Chimique ?
+    - Qui est à la tête du département Génie Chimique ?
+    - Qui est le directeur du département Génie Chimique ?
+    - Qui est le président du département Génie Chimique ?
+    - Qui est le gestionnaire du département Génie Chimique ?
+    - Qui est le superviseur du département Génie Chimique ?
+    - Qui est le coordinateur du département Génie Chimique ?
+    - Qui est le chef d'équipe du département Génie Chimique ?
+    - Qui est le responsable principal du département Génie Chimique ?
+    - Qui est le chef académique du département Génie Chimique ?
+    - Qui est le chef administratif du département Génie Chimique ?
+    - Qui est le chef opérationnel du département Génie Chimique ?
+    - Qui est le directeur général du département Génie Chimique ?
+    - Qui est le chef exécutif du département Génie Chimique ?
+    - Qui est le chef de service du département Génie Chimique ?
+    - Qui est le manager du département Génie Chimique ?
+    - Qui est le chef de projet du département Génie Chimique ?
+    - Qui est le chef de division du département Génie Chimique ?
+    - Qui est le superviseur principal du département Génie Chimique ?
+    - Qui est le responsable des opérations du département Génie Chimique ?
+    - Qui est le chef scientifique du département Génie Chimique ?
+    - Qui est le chef technique du département Génie Chimique ?
+    - Qui est le leader du département Génie Chimique ?
+    - Qui est le responsable académique du département Génie Chimique ?
+    - Qui est le chef de programme du département Génie Chimique ?
+    - Qui est le chef de recherche du département Génie Chimique ?
+    - Qui est le directeur académique du département Génie Chimique ?
+    - Qui est le directeur des études du département Génie Chimique ?
+
 
 - intent: handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
   examples: |
-    - Quels sont les domaines couverts par le Département de Génie Électrique?
-    - quels sont les champs d'étude du département de Génie Électrique?
-    - quelles sont les spécialités du département de Génie Électrique?
-    - pouvez-vous me dire les domaines du département de Génie Électrique?
-    - quels secteurs sont couverts par le Génie Électrique?
+    - Quels sont les domaines couverts par le Département de Génie Électrique ?
+    - Quels sont les champs d'étude du Département de Génie Électrique ?
+    - Quelles sont les spécialités du Département de Génie Électrique ?
+    - Pouvez-vous me dire les domaines du Département de Génie Électrique ?
+    - Quels secteurs sont couverts par le Génie Électrique ?
+    - Quels sont les secteurs d'expertise du Département de Génie Électrique ?
+    - Quels sont les domaines académiques du Département de Génie Électrique ?
+    - Quels sont les domaines de recherche du Département de Génie Électrique ?
+    - Quelles sont les branches d'études enseignées par le Département de Génie Électrique ?
+    - Quels sont les domaines professionnels du Département de Génie Électrique ?
+    - Quelles sont les domaines de spécialisation du Département de Génie Électrique ?
+    - Quelles sont les disciplines du Département de Génie Électrique ?
+    - Quels sont les champs de compétence du Département de Génie Électrique ?
+    - Quels sont les domaines techniques du Département de Génie Électrique ?
+    - Quelles sont les branches principales du Département de Génie Électrique ?
+    - Quels sont les domaines d'application du Département de Génie Électrique ?
+    - Quelles sont les spécialités académiques du Département de Génie Électrique ?
+    - Quels sont les axes de recherche du Département de Génie Électrique ?
+    - Quels sont les champs spécifiques du Département de Génie Électrique ?
+    - Quels sont les secteurs techniques du Département de Génie Électrique ?
+    - Quelles sont les branches d'expertise du Département de Génie Électrique ?
+    - Quels sont les thèmes principaux du Département de Génie Électrique ?
+    - Quelles sont les spécialisations du Département de Génie Électrique ?
+    - Quels sont les domaines d'étude principaux du Département de Génie Électrique ?
+    - Quels sont les champs académiques du Département de Génie Électrique ?
+    - Quelles sont les spécialités techniques du Département de Génie Électrique ?
+    - Quelles sont les expertises du Département de Génie Électrique ?
+    - Quels sont les secteurs de compétence du Département de Génie Électrique ?
+    - Quels sont les domaines de compétence du Département de Génie Électrique ?
+    - Où je peux savoir quels sont les expertises du Département de Génie Électrique ?
+    - Peux-tu me dire les spécialisations du Département de Génie Électrique ?
+    - Peux-tu m'informer sur les domaines académiques du Département de Génie Électrique ?
+    - Pourrais-je en apprendre plus sur les domaines d'études du Département de Génie Électrique ?
+    - Pourrais-je connaître les domaines professionnels du Département de Génie Électrique ?
+    - Serait-il possible de connaître les branches principales du Département de Génie Électrique ?
+    - Pourrais-je en apprendre plus sur les spécialités académiques du Département de Génie Électrique ?
+    - Serait-il possible de connaître les axes de recherche du Département de Génie Électrique ?
+    - Peux-tu me dire quels sont les domaines d'application du Département de Génie Électrique ?
+    - Est-ce que je peux savoir les domaines techniques du Département de Génie Électrique ?
+    - Peux-tu me dire quels sont les thèmes principaux du Département de Génie Électrique ?
+    - Est-ce que je peux savoir les spécialisations du Département de Génie Électrique ?
+    - Peux-tu m'informer sur les domaines d'étude principaux du Département de Génie Électrique ?
+    - Pourrais-je connaître les champs académiques du Département de Génie Électrique ?
+    - Serait-il possible de connaître les spécialités techniques du Département de Génie Électrique ?
+    - Peux-tu me dire les expertises du Département de Génie Électrique ?
+    - Est-ce que je peux savoir les secteurs de compétence du Département de Génie Électrique ?
+    - Pourrais-je connaître les domaines de compétence du Département de Génie Électrique ?
+
+
 
 - intent: handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
   examples: |
@@ -300,90 +971,417 @@ nlu:
     - quels sont les diplômes disponibles en Génie Électrique?
     - pouvez-vous me dire les diplômes offerts par le Génie Électrique?
     - quels niveaux de diplômes offre le département de Génie Électrique?
+    - Peux-tu me dire quels sont les niveaux d'études disponibles en Génie Électrique ?
+    - Pourrais-je connaître les programmes de diplôme disponibles en Génie Électrique ?
+    - Est-ce que je peux savoir quels diplômes je peux obtenir dans le département de Génie Électrique ?
+    - Peux-tu m'informer sur les niveaux académiques disponibles en Génie Électrique ?
+    - Je veux connaître les diplômes que je peux obtenir en Génie Électrique.
+    - Quelles sont les options de diplômes offertes par le Département de Génie Électrique ?
+    - Pourrais-je obtenir des informations sur les types de diplômes disponibles en Génie Électrique ?
+    - Quels programmes académiques propose le Département de Génie Électrique ?
+    - Quelles sont les qualifications académiques disponibles dans le domaine du Génie Électrique ?
+    - Je souhaite savoir quels sont les diplômes délivrés par le département de Génie Électrique.
+    - Quelles sont les offres de formation en termes de diplômes du département de Génie Électrique ?
+    - Est-ce que je peux obtenir des détails sur les niveaux d'études en Génie Électrique ?
+    - Quels sont les cursus diplômants proposés par le Département de Génie Électrique ?
+    - Pourrais-je savoir quels diplômes sont disponibles au Département de Génie Électrique ?
+    - Quelles sont les formations académiques dispensées par le Département de Génie Électrique ?
+    - Peux-tu me dire les types de certification que je peux obtenir en Génie Électrique ?
+    - Est-ce que je peux savoir quels diplômes sont accessibles dans le domaine du Génie Électrique ?
+    - Quels sont les programmes d'études proposés par le Département de Génie Électrique ?
+    - Pourrais-je obtenir des informations sur les parcours académiques offerts en Génie Électrique ?
+
 
 - intent: handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
   examples: |
-    - Combien d'enseignants compte le Département de Génie Électrique et quels sont leurs niveaux?
-    - combien de professeurs y a-t-il au département de Génie Électrique?
-    - combien d'enseignants y a-t-il en Génie Électrique et quels sont leurs titres?
-    - pouvez-vous me dire le nombre et les niveaux des enseignants en Génie Électrique?
-    - quels sont les niveaux des professeurs en Génie Électrique?
+    - Combien d'enseignants sont présents au Département de Génie Électrique et quels sont leurs niveaux ?
+    - Peux-tu me dire combien de professeurs travaillent au Département de Génie Électrique et quels sont leurs niveaux académiques ?
+    - Y a-t-il beaucoup d'enseignants au Département de Génie Électrique et quels diplômes possèdent-ils ?
+    - Combien y a-t-il de membres du corps enseignant dans le Département de Génie Électrique et quels sont leurs titres ?
+    - Quel est le nombre total d'enseignants au Département de Génie Électrique et quels niveaux d'enseignement ont-ils ?
+    - Pouvez-vous fournir des détails sur le nombre d'enseignants au Département de Génie Électrique et leurs qualifications ?
+    - Combien de professeurs sont là dans le Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants travaillent dans le Département de Génie Électrique et leurs rangs académiques ?
+    - Quel est le nombre d'enseignants au Département de Génie Électrique et quels titres académiques possèdent-ils ?
+    - Y a-t-il des enseignants au Département de Génie Électrique et quels diplômes détiennent-ils ?
+    - Combien de membres du personnel enseignant y a-t-il au Département de Génie Électrique et quelles sont leurs qualifications ?
+    - Peux-tu me dire le nombre d'enseignants dans le Département de Génie Électrique et leurs niveaux éducatifs ?
+    - Quel est le nombre d'enseignants au Département de Génie Électrique et quelles sont leurs compétences académiques ?
+    - Y a-t-il plusieurs enseignants dans le Département de Génie Électrique et quels sont leurs titres académiques ?
+    - Combien y a-t-il d'enseignants au Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants sont employés au Département de Génie Électrique et quels sont leurs titres ?
+    - Combien d'enseignants enseignent dans le Département de Génie Électrique et quels sont leurs niveaux de compétence ?
+    - Y a-t-il beaucoup d'enseignants au Département de Génie Électrique et quels sont leurs niveaux académiques ?
+    - Combien de membres du personnel enseignant y a-t-il au Département de Génie Électrique et quelles sont leurs spécialisations ?
+    - Peux-tu me dire combien d'enseignants travaillent au Département de Génie Électrique et quelles sont leurs qualifications ?
+    - Quel est le nombre total d'enseignants au Département de Génie Électrique et quels niveaux d'enseignement ont-ils ?
+    - Combien de professeurs sont là dans le Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants travaillent dans le Département de Génie Électrique et leurs rangs académiques ?
+    - Y a-t-il des enseignants au Département de Génie Électrique et quels diplômes détiennent-ils ?
+    - Combien de membres du personnel enseignant y a-t-il au Département de Génie Électrique et quelles sont leurs qualifications ?
+    - Peux-tu me dire le nombre d'enseignants dans le Département de Génie Électrique et leurs niveaux éducatifs ?
+    - Quel est le nombre d'enseignants au Département de Génie Électrique et quelles sont leurs compétences académiques ?
+    - Y a-t-il plusieurs enseignants dans le Département de Génie Électrique et quels sont leurs titres académiques ?
+    - Combien y a-t-il d'enseignants au Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants sont employés au Département de Génie Électrique et quels sont leurs titres ?
+    - Combien d'enseignants enseignent dans le Département de Génie Électrique et quels sont leurs niveaux de compétence ?
+    - Y a-t-il beaucoup d'enseignants au Département de Génie Électrique et quels sont leurs niveaux académiques ?
+    - Combien de membres du personnel enseignant y a-t-il au Département de Génie Électrique et quelles sont leurs spécialisations ?
+    - Peux-tu me dire combien d'enseignants travaillent au Département de Génie Électrique et quelles sont leurs qualifications ?
+    - Quel est le nombre total d'enseignants au Département de Génie Électrique et quels niveaux d'enseignement ont-ils ?
+    - Combien de professeurs sont là dans le Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants travaillent dans le Département de Génie Électrique et leurs rangs académiques ?
+    - Y a-t-il des enseignants au Département de Génie Électrique et quels diplômes détiennent-ils ?
+    - Combien de membres du personnel enseignant y a-t-il au Département de Génie Électrique et quelles sont leurs qualifications ?
+    - Peux-tu me dire le nombre d'enseignants dans le Département de Génie Électrique et leurs niveaux éducatifs ?
+    - Quel est le nombre d'enseignants au Département de Génie Électrique et quelles sont leurs compétences académiques ?
+    - Y a-t-il plusieurs enseignants dans le Département de Génie Électrique et quels sont leurs titres académiques ?
+    - Combien y a-t-il d'enseignants au Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
+    - Peux-tu me dire combien d'enseignants sont employés au Département de Génie Électrique et quels sont leurs titres ?
+
 
 - intent: handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
   examples: |
     - Quel est le rôle du personnel administratif, technique et de service au sein du Département?
-    - quels sont les rôles du personnel administratif et technique dans le département?
-    - quelles sont les fonctions du personnel de service dans le département?
-    - pouvez-vous me dire le rôle du personnel administratif au département?
-    - quels sont les rôles du personnel technique et de service au sein du département?
+    - Quels sont les rôles du personnel administratif et technique dans le département?
+    - Quelles sont les fonctions du personnel de service dans le département?
+    - Pouvez-vous me dire le rôle du personnel administratif au département?
+    - Quels sont les rôles du personnel technique et de service au sein du département?
+    - Y a-t-il des descriptions sur les rôles du personnel administratif, technique et de service au sein du département?
+    - Peux-tu décrire les fonctions du personnel administratif et technique dans le département?
+    - Quel est le rôle joué par le personnel administratif, technique et de service dans le département?
+    - Quelles sont les responsabilités du personnel administratif, technique et de service dans le département?
+    - Peux-tu m'expliquer les rôles du personnel administratif et technique dans le département?
+    - Quels sont les devoirs et responsabilités du personnel administratif, technique et de service au sein du département?
+    - Quel est le rôle assigné au personnel administratif, technique et de service dans le département?
+    - Quels sont les postes occupés par le personnel administratif, technique et de service dans le département?
+    - Quelles sont les contributions du personnel administratif, technique et de service dans le département?
+    - Pourriez-vous détailler les fonctions du personnel administratif et technique dans le département?
+    - Quel est le rôle que jouent le personnel administratif, technique et de service dans le département?
+    - Pouvez-vous fournir des informations sur les responsabilités du personnel administratif, technique et de service dans le département?
+    - Quelles sont les tâches accomplies par le personnel administratif, technique et de service dans le département?
+    - Est-ce que vous pouvez expliquer le travail du personnel administratif, technique et de service dans le département?
+    - Quels sont les rôles dévolus au personnel administratif, technique et de service dans le département?
+    - Quels sont les rôles et les responsabilités du personnel administratif, technique et de service dans le département?
+    - Peux-tu me dire en quoi consistent les rôles du personnel administratif, technique et de service dans le département?
+    - Quel est le rôle du personnel administratif, technique et de service et comment ils contribuent au département?
+    - Quels sont les devoirs et les tâches du personnel administratif, technique et de service dans le département?
+    - Est-ce que vous pouvez définir les fonctions du personnel administratif, technique et de service dans le département?
+    - Quel est le rôle et les responsabilités du personnel administratif, technique et de service au sein du département?
+    - Peux-tu me dire quels sont les rôles du personnel administratif, technique et de service et comment ils aident le département?
+
 
 - intent: handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
   examples: |
     - Quelles sont les possibilités d'évolution de carrière offertes par le Département de Génie Électrique?
-    - quelles sont les opportunités de carrière en Génie Électrique?
-    - quelles évolutions de carrière propose le département de Génie Électrique?
-    - pouvez-vous me dire les carrières possibles en Génie Électrique?
-    - quelles sont les perspectives d'évolution en Génie Électrique?
+    - Quelles sont les opportunités de carrière en Génie Électrique?
+    - Quelles évolutions de carrière propose le département de Génie Électrique?
+    - Pouvez-vous me dire les carrières possibles en Génie Électrique?
+    - Quelles sont les perspectives d'évolution en Génie Électrique?
+    - Y a-t-il des possibilités d'avancement de carrière dans le Département de Génie Électrique?
+    - Peux-tu me donner des informations sur les opportunités de carrière en Génie Électrique?
+    - Quelles sont les options pour faire évoluer sa carrière dans le domaine du Génie Électrique?
+    - Quelles sont les voies de progression professionnelle dans le Département de Génie Électrique?
+    - Quels chemins sont disponibles pour l'évolution de carrière en Génie Électrique?
+    - Quelles sont les options pour développer une carrière en Génie Électrique?
+    - Quels sont les parcours de carrière possibles après avoir étudié le Génie Électrique?
+    - Pourriez-vous me parler des perspectives de carrière dans le domaine du Génie Électrique?
+    - Quels sont les horizons de carrière dans le Génie Électrique?
+    - Quelles sont les perspectives professionnelles offertes par le Département de Génie Électrique?
+    - Quelles sont les opportunités de développement de carrière dans le domaine du Génie Électrique?
+    - Est-ce que vous pouvez me dire comment évoluer professionnellement après des études en Génie Électrique?
+    - Quelles sont les possibilités pour progresser dans sa carrière après avoir étudié le Génie Électrique?
+    - Quelles sont les voies pour faire avancer sa carrière dans le secteur du Génie Électrique?
+    - Quelles sont les options pour avancer dans sa carrière après avoir obtenu un diplôme en Génie Électrique?
+    - Quelles sont les perspectives de croissance professionnelle dans le Génie Électrique?
+    - Quelles sont les opportunités de progression dans le domaine du Génie Électrique?
+    - Comment peut-on évoluer professionnellement après avoir suivi un programme en Génie Électrique?
+    - Quelles sont les possibilités pour développer sa carrière dans le secteur du Génie Électrique?
+    - Quelles sont les perspectives d'avancement professionnel en Génie Électrique?
+    - Quels sont les chemins de carrière après des études en Génie Électrique?
+    - Peut-on progresser professionnellement après avoir suivi des cours en Génie Électrique?
+    - Quelles sont les options de carrière après avoir obtenu un diplôme en Génie Électrique?
+    - Quelles sont les possibilités de carrière disponibles pour les diplômés en Génie Électrique?
+    - Quelles sont les opportunités d'évolution professionnelle pour les ingénieurs en Génie Électrique?
+    - Quelles sont les voies possibles pour avancer dans le domaine de l'ingénierie électrique?
+    - Quelles sont les possibilités de développement professionnel offertes par le Génie Électrique?
+    - Quelles sont les opportunités de carrière à long terme pour les professionnels du Génie Électrique?
+    - Comment les ingénieurs en Génie Électrique peuvent-ils progresser dans leur carrière?
+    - Quelles sont les perspectives de progression pour les ingénieurs spécialisés en Génie Électrique?
+    - Quelles sont les possibilités de promotion pour les ingénieurs de Génie Électrique?
+
 
 - intent: handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
   examples: |
     - Comment le Département est-il soutenu au niveau des enseignements?
-    - comment le département bénéficie-t-il de soutien pédagogique?
-    - quels sont les supports pour les enseignements du département?
-    - pouvez-vous me dire comment le département est soutenu pour les cours?
-    - comment les enseignements sont-ils appuyés au département?
+    - Comment le département bénéficie-t-il de soutien pédagogique?
+    - Quels sont les supports pour les enseignements du département?
+    - Pouvez-vous me dire comment le département est soutenu pour les cours?
+    - Comment les enseignements sont-ils appuyés au département?
+    - De quelle manière le département reçoit-il un soutien pour ses enseignements?
+    - Est-ce que le département bénéficie de ressources pédagogiques spécifiques?
+    - Quelles formes de soutien sont offertes aux enseignants du département?
+    - Quels sont les moyens mis en place pour soutenir l'enseignement au département?
+    - Quel est l'appui pédagogique dont dispose le département?
+    - Comment est organisé le support pédagogique pour les cours du département?
+    - Quels sont les dispositifs d'accompagnement pour les programmes d'enseignement du département?
+    - Comment le département assure-t-il le soutien pédagogique nécessaire à ses étudiants?
+    - Quels sont les outils utilisés pour renforcer les enseignements au sein du département?
+    - Peux-tu m'expliquer comment le département assure la qualité de ses enseignements?
+    - Quelles initiatives sont prises pour améliorer l'enseignement au département de Génie Électrique?
+    - Quelles sont les ressources disponibles pour les professeurs du département afin d'améliorer l'enseignement?
+    - Comment les cours sont-ils organisés et soutenus au sein du département de Génie Électrique?
+    - Quels types de soutien sont offerts aux enseignants pour optimiser l'apprentissage des étudiants?
+    - Comment le département s'assure-t-il que les méthodes d'enseignement sont efficaces et pertinentes?
+    - Quel est le rôle du support académique au sein du département de Génie Électrique?
+    - Est-ce que le département utilise des technologies spécifiques pour améliorer l'enseignement?
+    - Comment les enseignants sont-ils formés pour utiliser les outils pédagogiques au sein du département?
+    - Quelles sont les politiques du département en matière de développement pédagogique?
+    - Quelles sont les initiatives récentes pour moderniser l'enseignement dans le département de Génie Électrique?
+    - Y a-t-il des programmes de mentorat pour soutenir les nouveaux enseignants dans le département?
+    - Comment les étudiants peuvent-ils donner leur avis sur la qualité des enseignements au département?
+    - Quelles sont les mesures prises pour assurer l'équité et l'inclusivité dans les enseignements du département?
+    - Comment le département évalue-t-il l'efficacité de ses méthodes d'enseignement?
+    - Quels sont les défis rencontrés par le département en matière de soutien pédagogique?
+    - Quels partenariats le département a-t-il avec l'industrie pour améliorer les enseignements?
+    - Comment le département s'adapte-t-il aux nouvelles méthodes d'enseignement numérique?
+    - Quel est le rôle des enseignants chercheurs dans le développement des programmes d'études du département?
+    - Quelles sont les politiques du département concernant l'utilisation des technologies éducatives?
+    - Comment le département utilise-t-il les retours d'expérience des étudiants pour améliorer les enseignements?
+    - Quelles sont les initiatives de développement professionnel offertes aux enseignants du département?
+    - Comment le département encourage-t-il l'innovation pédagogique parmi son corps enseignant?
+    - Quelles sont les perspectives d'avenir pour l'enseignement au sein du département de Génie Électrique?
+    - Quels sont les projets de recherche pédagogique en cours au département de Génie Électrique?
+    - Comment le département collabore-t-il avec d'autres institutions pour enrichir ses programmes d'enseignement?
+    - Quel est l'impact des politiques gouvernementales sur le soutien pédagogique du département?
+    - Comment le département mesure-t-il la satisfaction des étudiants à l'égard de ses enseignements?
+    - Quels sont les critères utilisés par le département pour sélectionner ses ressources pédagogiques?
+    - Comment le département intègre-t-il les avancées technologiques dans ses méthodes d'enseignement?
+    - Quelles sont les ressources disponibles pour les étudiants afin de les soutenir dans leur apprentissage?
+    - Comment le département assure-t-il l'accessibilité des enseignements à tous les étudiants?
+    - Quelles sont les initiatives de tutorat mises en place par le département pour soutenir les étudiants?
+    - Comment le département valorise-t-il l'innovation et la créativité dans ses cours?
+    - Quelles sont les mesures prises par le département pour garantir la qualité de ses enseignements à distance?
+    - Quel est le rôle des conseillers pédagogiques au sein du département de Génie Électrique?
+    - Comment le département assure-t-il la cohérence des programmes d'enseignement à travers ses différentes filières?
+    - Quelles sont les opportunités offertes aux étudiants pour participer à des projets d'enseignement innovants?
+    - Comment le département encourage-t-il la collaboration interdisciplinaire dans ses programmes d'enseignement?
+    - Quelles sont les formations continues disponibles pour les enseignants du département afin de perfectionner leurs compétences?
+    - Quelles sont les stratégies mises en œuvre par le département pour améliorer la rétention des connaissances des étudiants?
+
 
 - intent: handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
   examples: |
     - Quels sont les secteurs d'activité dans lesquels les diplômés du Département de Génie Électrique peuvent travailler?
-    - quels sont les domaines d'emploi pour les diplômés en Génie Électrique?
-    - quels secteurs recrutent les diplômés en Génie Électrique?
-    - pouvez-vous me dire les secteurs d'activité pour les diplômés en Génie Électrique?
-    - où peuvent travailler les diplômés en Génie Électrique?
+    - Quels sont les domaines d'emploi pour les diplômés en Génie Électrique?
+    - Quels secteurs recrutent les diplômés en Génie Électrique?
+    - Pouvez-vous me dire les secteurs d'activité pour les diplômés en Génie Électrique?
+    - Où peuvent travailler les diplômés en Génie Électrique?
+    - Dans quels secteurs les diplômés du Département de Génie Électrique peuvent-ils trouver un emploi?
+    - Quels sont les champs d'application professionnelle pour les diplômés en Génie Électrique?
+    - Quels sont les secteurs industriels qui embauchent des diplômés en Génie Électrique?
+    - Peut-on travailler dans quels domaines avec un diplôme en Génie Électrique?
+    - Quels sont les milieux professionnels accessibles aux diplômés du Département de Génie Électrique?
+    - Quels sont les secteurs d'activité où les compétences en Génie Électrique sont demandées?
+    - Quelles sont les industries qui recrutent des ingénieurs en Génie Électrique?
+    - Où peuvent trouver un emploi les diplômés du Département de Génie Électrique?
+    - Quels sont les domaines professionnels où les diplômés en Génie Électrique peuvent exercer?
+    - Quels sont les secteurs économiques où les diplômés du Département de Génie Électrique peuvent être employés?
+    - Peut-on travailler dans quels domaines après avoir étudié le Génie Électrique?
+    - Quels sont les secteurs technologiques qui recherchent des compétences en Génie Électrique?
+    - Dans quels domaines spécifiques les diplômés du Département de Génie Électrique peuvent-ils se spécialiser?
+    - Où les diplômés du Département de Génie Électrique peuvent-ils trouver des opportunités d'emploi?
+    - Quels sont les types d'industries qui nécessitent des compétences en Génie Électrique?
+    - Quelles sont les options de carrière disponibles pour les diplômés du Département de Génie Électrique?
+    - Où peuvent travailler les ingénieurs en Génie Électrique une fois diplômés?
+    - Quels sont les secteurs clés où les diplômés en Génie Électrique peuvent contribuer?
+    - Dans quels domaines les compétences en Génie Électrique sont-elles essentielles?
+    - Quels sont les environnements professionnels où les compétences techniques en Génie Électrique sont requises?
+    - Où peuvent exercer les ingénieurs spécialisés en Génie Électrique?
+    - Quels sont les secteurs de l'économie qui ont besoin de diplômés en Génie Électrique?
+    - Quelles sont les industries émergentes qui cherchent des talents en Génie Électrique?
+    - Où les diplômés du Département de Génie Électrique peuvent-ils se spécialiser professionnellement?
+    - Dans quels domaines les ingénieurs en Génie Électrique peuvent-ils apporter leur expertise?
+    - Quels sont les domaines d'application des compétences en Génie Électrique dans l'industrie?
+    - Où sont employés les diplômés en Génie Électrique après leurs études?
+    - Quelles sont les perspectives professionnelles pour les diplômés du Département de Génie Électrique?
+    - Quels sont les secteurs où les ingénieurs en Génie Électrique sont particulièrement recherchés?
+    - Dans quels secteurs les diplômés en Génie Électrique peuvent-ils avoir un impact significatif?
+
 
 - intent: handle_qui_est_le_chef_du_département_génie_électrique_?
   examples: |
     - Qui est le chef du département Génie Électrique?
-    - qui dirige le département Génie Électrique?
-    - pouvez-vous me dire le nom du chef du département Génie Électrique?
-    - qui est le responsable du département Génie Électrique?
-    - qui est à la tête du département Génie Électrique?
+    - Qui dirige le département Génie Électrique?
+    - Pouvez-vous me dire le nom du chef du département Génie Électrique?
+    - Qui est le responsable du département Génie Électrique?
+    - Qui est à la tête du département Génie Électrique?
+    - Quel est le nom du directeur du département Génie Électrique?
+    - Qui supervise le département Génie Électrique?
+    - Qui occupe le poste de chef au département Génie Électrique?
+    - Qui est le responsable principal du département Génie Électrique?
+    - Qui est en charge du département Génie Électrique?
+    - Qui est le leader du département Génie Électrique?
+    - Qui assure la direction du département Génie Électrique?
+    - Qui est le manager du département Génie Électrique?
+    - Qui est le supérieur hiérarchique au département Génie Électrique?
+    - Qui est le chef d'équipe au département Génie Électrique?
+    - Qui est la personne responsable du département Génie Électrique?
+    - Qui est le chef administratif du département Génie Électrique?
+    - Qui est le superviseur principal du département Génie Électrique?
+    - Qui est le directeur des opérations du département Génie Électrique?
+    - Qui est le gestionnaire principal du département Génie Électrique?
+    - Qui est le chef de service du département Génie Électrique?
+    - Qui est la tête pensante du département Génie Électrique?
+    - Qui est le directeur académique du département Génie Électrique?
+    - Qui est le coordinateur du département Génie Électrique?
+    - Qui est le responsable technique du département Génie Électrique?
+    - Qui est le responsable des ressources humaines au département Génie Électrique?
+    - Qui est le chef de projet principal du département Génie Électrique?
+    - Qui est le directeur exécutif du département Génie Électrique?
+    - Qui est le chef de division au département Génie Électrique?
+    - Qui est le directeur général du département Génie Électrique?
+    - Qui est l'administrateur principal du département Génie Électrique?
+    - Qui est le directeur technique du département Génie Électrique?
+    - Qui est le responsable financier du département Génie Électrique?
+    - Qui est le chef de département Génie Électrique?
+
+
 - intent: handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
   examples: |
     - Quels sont les objectifs du Département Informatique en termes de formation?
-    - quels sont les buts de formation du département Informatique?
-    - quelles sont les ambitions du département Informatique pour les formations?
-    - pouvez-vous me dire les objectifs de formation en Informatique?
-    - quels sont les objectifs pédagogiques du département Informatique?
+    - Quels sont les buts de formation du département Informatique?
+    - Quelles sont les ambitions du département Informatique pour les formations?
+    - Pouvez-vous me dire les objectifs de formation en Informatique?
+    - Quels sont les objectifs pédagogiques du département Informatique?
+    - Quels sont les objectifs d'apprentissage visés par le département Informatique?
+    - Quelles sont les priorités de formation du département Informatique?
+    - Quel est le plan de formation du département Informatique?
+    - Quelles sont les orientations pédagogiques du département Informatique?
+    - Quels sont les objectifs éducatifs du département Informatique?
+    - Quels sont les objectifs de développement professionnel du département Informatique?
+    - Quels sont les objectifs de compétences du département Informatique?
+    - Quels sont les objectifs de perfectionnement du département Informatique?
+    - Quelles sont les attentes en termes de formation du département Informatique?
+    - Quels sont les objectifs spécifiques du département Informatique pour ses formations?
+    - Quelles sont les directives pédagogiques du département Informatique?
+    - Quels sont les objectifs de croissance académique du département Informatique?
+    - Quelles sont les cibles de performance pour les formations du département Informatique?
+    - Quels sont les objectifs de qualité du département Informatique en matière de formation?
+    - Quelles sont les aspirations pédagogiques du département Informatique?
+    - Quelles sont les priorités éducatives du département Informatique?
+    - Quels sont les objectifs de carrière visés par les formations du département Informatique?
+    - Quels sont les objectifs d'enseignement du département Informatique?
+    - Quels sont les objectifs de compétences techniques du département Informatique?
+    - Quelles sont les stratégies d'apprentissage du département Informatique?
+    - Quels sont les objectifs professionnels du département Informatique pour ses étudiants?
+    - Quelles sont les ambitions pédagogiques du département Informatique en termes de compétences?
+    - Quelles sont les orientations de formation du département Informatique?
+    - Quels sont les objectifs de connaissance du département Informatique?
+    - Quels sont les objectifs de progression académique du département Informatique?
+    - Quels sont les résultats d'apprentissage visés par le département Informatique?
+
 
 - intent: handle_comment_peut_on_contacter_le_departement_genie_informatique_?
   examples: |
     - Comment peut-on contacter le département Génie Informatique?
-    - comment joindre le département Génie Informatique?
-    - pouvez-vous me dire comment contacter le département Génie Informatique?
-    - comment entrer en contact avec le département Génie Informatique?
-    - quels sont les contacts du département Génie Informatique?
-    - Comment peut on contacter le departement Genie Informatique?
+    - Comment joindre le département Génie Informatique?
+    - Pouvez-vous me dire comment contacter le département Génie Informatique?
+    - Comment entrer en contact avec le département Génie Informatique?
+    - Quels sont les contacts du département Génie Informatique?
+    - Comment peut-on contacter le département Génie Informatique?
+    - Quelle est la meilleure manière de joindre le département Génie Informatique?
+    - Comment puis-je contacter les responsables du département Génie Informatique?
+    - Quelle est l'adresse email du département Génie Informatique?
+    - Quel numéro de téléphone utiliser pour contacter le département Génie Informatique?
+    - Où puis-je trouver les informations de contact du département Génie Informatique?
+    - Comment puis-je obtenir des détails pour contacter le département Génie Informatique?
+    - Quelle est l'adresse postale du département Génie Informatique?
+    - Existe-t-il un formulaire en ligne pour contacter le département Génie Informatique?
+    - Y a-t-il un bureau spécifique pour le département Génie Informatique?
+    - Où puis-je trouver les heures d'ouverture du département Génie Informatique?
+    - Comment puis-je planifier une visite au département Génie Informatique?
+    - Quels sont les moyens de communication privilégiés par le département Génie Informatique?
+    - Est-il possible de prendre rendez-vous avec le département Génie Informatique?
+    - Où puis-je trouver des informations sur les réseaux sociaux du département Génie Informatique?
+    - Comment puis-je recevoir une réponse rapide du département Génie Informatique?
+    - Quels canaux de communication le département Génie Informatique utilise-t-il généralement?
+    - Quelle est la politique de réponse du département Génie Informatique pour les demandes de contact?
+    - Existe-t-il un numéro d'urgence pour contacter le département Génie Informatique?
+    - Comment puis-je obtenir une assistance immédiate du département Génie Informatique?
+    - Quelles sont les options pour contacter le service d'assistance du département Génie Informatique?
+    - Où puis-je trouver les informations sur les services offerts par le département Génie Informatique?
+    - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Informatique?
+    - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Informatique?
+
 
 - intent: handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
   examples: |
     - Comment peut-on contacter le département Génie Mécanique?
-    - comment joindre le département Génie Mécanique?
-    - pouvez-vous me dire comment contacter le département Génie Mécanique?
-    - comment entrer en contact avec le département Génie Mécanique?
-    - quels sont les contacts du département Génie Mécanique?
-    - Comment peut on contacter le departement Genie Mecanique?
+    - Comment joindre le département Génie Mécanique?
+    - Pouvez-vous me dire comment contacter le département Génie Mécanique?
+    - Comment entrer en contact avec le département Génie Mécanique?
+    - Quels sont les contacts du département Génie Mécanique?
+    - Comment peut-on contacter le département Génie Mécanique?
+    - Quelle est la meilleure manière de joindre le département Génie Mécanique?
+    - Comment puis-je contacter les responsables du département Génie Mécanique?
+    - Quelle est l'adresse email du département Génie Mécanique?
+    - Quel numéro de téléphone utiliser pour contacter le département Génie Mécanique?
+    - Où puis-je trouver les informations de contact du département Génie Mécanique?
+    - Comment puis-je obtenir des détails pour contacter le département Génie Mécanique?
+    - Quelle est l'adresse postale du département Génie Mécanique?
+    - Existe-t-il un formulaire en ligne pour contacter le département Génie Mécanique?
+    - Y a-t-il un bureau spécifique pour le département Génie Mécanique?
+    - Où puis-je trouver les heures d'ouverture du département Génie Mécanique?
+    - Comment puis-je planifier une visite au département Génie Mécanique?
+    - Quels sont les moyens de communication privilégiés par le département Génie Mécanique?
+    - Est-il possible de prendre rendez-vous avec le département Génie Mécanique?
+    - Où puis-je trouver des informations sur les réseaux sociaux du département Génie Mécanique?
+    - Comment puis-je recevoir une réponse rapide du département Génie Mécanique?
+    - Quels canaux de communication le département Génie Mécanique utilise-t-il généralement?
+    - Quelle est la politique de réponse du département Génie Mécanique pour les demandes de contact?
+    - Existe-t-il un numéro d'urgence pour contacter le département Génie Mécanique?
+    - Comment puis-je obtenir une assistance immédiate du département Génie Mécanique?
+    - Quelles sont les options pour contacter le service d'assistance du département Génie Mécanique?
+    - Où puis-je trouver les informations sur les services offerts par le département Génie Mécanique?
+    - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Mécanique?
+    - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Mécanique?
+
 
 - intent: handle_comment_peut_on_contacter_le_departement_genie_electrique_?
   examples: |
     - Comment peut-on contacter le département Génie Électrique?
-    - comment joindre le département Génie Électrique?
-    - pouvez-vous me dire comment contacter le département Génie Électrique?
-    - comment entrer en contact avec le département Génie Électrique?
-    - quels sont les contacts du département Génie Électrique?
-    - Comment peut on contacter le departement Genie Electrique?
+    - Comment joindre le département Génie Électrique?
+    - Pouvez-vous me dire comment contacter le département Génie Électrique?
+    - Comment entrer en contact avec le département Génie Électrique?
+    - Quels sont les contacts du département Génie Électrique?
+    - Comment peut-on contacter le département Génie Électrique?
+    - Quelle est la meilleure manière de joindre le département Génie Électrique?
+    - Comment puis-je contacter les responsables du département Génie Électrique?
+    - Quelle est l'adresse email du département Génie Électrique?
+    - Quel numéro de téléphone utiliser pour contacter le département Génie Électrique?
+    - Où puis-je trouver les informations de contact du département Génie Électrique?
+    - Comment puis-je obtenir des détails pour contacter le département Génie Électrique?
+    - Quelle est l'adresse postale du département Génie Électrique?
+    - Existe-t-il un formulaire en ligne pour contacter le département Génie Électrique?
+    - Y a-t-il un bureau spécifique pour le département Génie Électrique?
+    - Où puis-je trouver les heures d'ouverture du département Génie Électrique?
+    - Comment puis-je planifier une visite au département Génie Électrique?
+    - Quels sont les moyens de communication privilégiés par le département Génie Électrique?
+    - Est-il possible de prendre rendez-vous avec le département Génie Électrique?
+    - Où puis-je trouver des informations sur les réseaux sociaux du département Génie Électrique?
+    - Comment puis-je recevoir une réponse rapide du département Génie Électrique?
+    - Quels canaux de communication le département Génie Électrique utilise-t-il généralement?
+    - Quelle est la politique de réponse du département Génie Électrique pour les demandes de contact?
+    - Existe-t-il un numéro d'urgence pour contacter le département Génie Électrique?
+    - Comment puis-je obtenir une assistance immédiate du département Génie Électrique?
+    - Quelles sont les options pour contacter le service d'assistance du département Génie Électrique?
+    - Où puis-je trouver les informations sur les services offerts par le département Génie Électrique?
+    - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Électrique?
+    - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Électrique?
 
-- intent: handle_comment_peut_on_contacter_le_departement_genie_civil_?
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_civil
   examples: |
     - Comment peut-on contacter le département Génie Civil?
     - comment joindre le département Génie Civil?
@@ -391,8 +1389,37 @@ nlu:
     - comment entrer en contact avec le département Génie Civil?
     - quels sont les contacts du département Génie Civil?
     - Comment peut on contacter le departement Genie Civil?
+    - Où puis-je trouver les coordonnées pour le département Génie Civil?
+    - Quelles sont les informations de contact pour le département Génie Civil?
+    - Je cherche à contacter le département Génie Civil, comment puis-je procéder?
+    - Y a-t-il un numéro de téléphone pour le département Génie Civil?
+    - Quel est l'email pour le département Génie Civil?
+    - Je voudrais savoir comment envoyer un message au département Génie Civil.
+    - Où puis-je trouver les heures d'ouverture du département Génie Civil?
+    - Avez-vous des informations sur les heures de bureau du département Génie Civil?
+    - Je suis intéressé par des détails sur la localisation du département Génie Civil.
+    - Comment puis-je obtenir une réponse rapide du département Génie Civil?
+    - Y a-t-il un formulaire en ligne pour contacter le département Génie Civil?
+    - Quels sont les moyens de communication disponibles avec le département Génie Civil?
+    - Je cherche à planifier une visite au département Génie Civil, comment puis-je prendre rendez-vous?
+    - Pouvez-vous me dire comment accéder au département Génie Civil?
+    - Comment puis-je obtenir des informations supplémentaires sur le département Génie Civil?
+    - Où puis-je trouver les réseaux sociaux du département Génie Civil?
+    - Je voudrais parler à quelqu'un du département Génie Civil, comment puis-je le faire?
+    - Où puis-je trouver les informations de contact pour le département Génie Civil ?
+    - Je cherche à parler à un responsable du département Génie Civil, comment puis-je le contacter ?
+    - Comment puis-je obtenir des détails sur les services offerts par le département Génie Civil ?
+    - Y a-t-il une adresse physique pour le département Génie Civil ?
+    - Pouvez-vous me dire comment prendre rendez-vous avec un conseiller du département Génie Civil ?
+    - Quels sont les horaires d'ouverture du bureau du département Génie Civil ?
+    - Est-ce qu'il y a un numéro direct pour contacter le service d'orientation du département Génie Civil ?
+    - Comment puis-je m'inscrire pour une visite guidée du département Génie Civil ?
+    - Je suis intéressé par des informations sur les événements à venir organisés par le département Génie Civil, comment puis-je les obtenir ?
+    - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Génie Civil ?
 
-- intent: handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+
+
+- intent: handle_comment_peut_on_contacter_le_departement_genie_chimique
   examples: |
     - Comment peut-on contacter le département Génie Chimique?
     - comment joindre le département Génie Chimique?
@@ -400,8 +1427,36 @@ nlu:
     - comment entrer en contact avec le département Génie Chimique?
     - quels sont les contacts du département Génie Chimique?
     - Comment peut on contacter le departement Genie Chimique?
+    - Où puis-je trouver les coordonnées pour le département Génie Chimique?
+    - Quelles sont les informations de contact pour le département Génie Chimique?
+    - Je cherche à contacter le département Génie Chimique, comment puis-je procéder?
+    - Y a-t-il un numéro de téléphone pour le département Génie Chimique?
+    - Quel est l'email pour le département Génie Chimique?
+    - Je voudrais savoir comment envoyer un message au département Génie Chimique.
+    - Où puis-je trouver les heures d'ouverture du département Génie Chimique?
+    - Avez-vous des informations sur les heures de bureau du département Génie Chimique?
+    - Je suis intéressé par des détails sur la localisation du département Génie Chimique.
+    - Comment puis-je obtenir une réponse rapide du département Génie Chimique?
+    - Y a-t-il un formulaire en ligne pour contacter le département Génie Chimique?
+    - Quels sont les moyens de communication disponibles avec le département Génie Chimique?
+    - Je cherche à planifier une visite au département Génie Chimique, comment puis-je prendre rendez-vous?
+    - Pouvez-vous me dire comment accéder au département Génie Chimique?
+    - Comment puis-je obtenir des informations supplémentaires sur le département Génie Chimique?
+    - Où puis-je trouver les réseaux sociaux du département Génie Chimique?
+    - Je voudrais parler à quelqu'un du département Génie Chimique, comment puis-je le faire?
+    - Où puis-je trouver les informations de contact pour le département Génie Chimique ?
+    - Je cherche à parler à un responsable du département Génie Chimique, comment puis-je le contacter ?
+    - Comment puis-je obtenir des détails sur les services offerts par le département Génie Chimique ?
+    - Y a-t-il une adresse physique pour le département Génie Chimique ?
+    - Pouvez-vous me dire comment prendre rendez-vous avec un conseiller du département Génie Chimique ?
+    - Quels sont les horaires d'ouverture du bureau du département Génie Chimique ?
+    - Est-ce qu'il y a un numéro direct pour contacter le service d'orientation du département Génie Chimique ?
+    - Comment puis-je m'inscrire pour une visite guidée du département Génie Chimique ?
+    - Je suis intéressé par des informations sur les événements à venir organisés par le département Génie Chimique, comment puis-je les obtenir ?
+    - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Génie Chimique ?
 
-- intent: handle_comment_peut_on_contacter_le_departement_gestion_?
+
+- intent: handle_comment_peut_on_contacter_le_departement_gestion
   examples: |
     - Comment peut-on contacter le département Gestion?
     - comment joindre le département Gestion?
@@ -409,6 +1464,34 @@ nlu:
     - comment entrer en contact avec le département Gestion?
     - quels sont les contacts du département Gestion?
     - Comment peut on contacter le departement Gestion?
+    - Où puis-je trouver les coordonnées pour le département Gestion?
+    - Quelles sont les informations de contact pour le département Gestion?
+    - Je cherche à contacter le département Gestion, comment puis-je procéder?
+    - Y a-t-il un numéro de téléphone pour le département Gestion?
+    - Quel est l'email pour le département Gestion?
+    - Je voudrais savoir comment envoyer un message au département Gestion.
+    - Où puis-je trouver les heures d'ouverture du département Gestion?
+    - Avez-vous des informations sur les heures de bureau du département Gestion?
+    - Je suis intéressé par des détails sur la localisation du département Gestion.
+    - Comment puis-je obtenir une réponse rapide du département Gestion?
+    - Y a-t-il un formulaire en ligne pour contacter le département Gestion?
+    - Quels sont les moyens de communication disponibles avec le département Gestion?
+    - Je cherche à planifier une visite au département Gestion, comment puis-je prendre rendez-vous?
+    - Pouvez-vous me dire comment accéder au département Gestion?
+    - Comment puis-je obtenir des informations supplémentaires sur le département Gestion?
+    - Où puis-je trouver les réseaux sociaux du département Gestion?
+    - Je voudrais parler à quelqu'un du département Gestion, comment puis-je le faire?
+    - Où puis-je trouver les informations de contact pour le département Gestion ?
+    - Je cherche à parler à un responsable du département Gestion, comment puis-je le contacter ?
+    - Comment puis-je obtenir des détails sur les services offerts par le département Gestion ?
+    - Y a-t-il une adresse physique pour le département Gestion ?
+    - Pouvez-vous me dire comment prendre rendez-vous avec un conseiller du département Gestion ?
+    - Quels sont les horaires d'ouverture du bureau du département Gestion ?
+    - Est-ce qu'il y a un numéro direct pour contacter le service d'orientation du département Gestion ?
+    - Comment puis-je m'inscrire pour une visite guidée du département Gestion ?
+    - Je suis intéressé par des informations sur les événements à venir organisés par le département Gestion, comment puis-je les obtenir ?
+    - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Gestion ?
+
 
 - intent: handle_qui_est_le_chef_du_departement_genie_informatique_?
   examples: |
@@ -455,7 +1538,7 @@ nlu:
     - qui est à la tête du département Génie Chimique?
     - Qui est le chef du departement Genie Chimique?
 
-- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp
   examples: |
     - Quelles sont les formations qu'offre le département Génie Mécanique de l'ESP?
     - quelles formations propose le département Génie Mécanique?
@@ -463,8 +1546,23 @@ nlu:
     - pouvez-vous me dire les formations en Génie Mécanique?
     - quels sont les programmes d'études en Génie Mécanique?
     - Quelles sont les formations qu'offre le departement genie Mecanique de l'ESP?
+    - Y a-t-il des programmes de maîtrise en Génie Mécanique à l'ESP?
+    - Quels sont les diplômes offerts par le département Génie Mécanique de l'ESP?
+    - Est-ce que le département Génie Mécanique propose des cours de spécialisation?
+    - Pouvez-vous me donner des informations sur les études de doctorat en Génie Mécanique à l'ESP?
+    - Quelles sont les options pour les étudiants en Génie Mécanique à l'ESP?
+    - Existe-t-il des formations professionnelles dans le domaine du Génie Mécanique à l'ESP?
+    - Y a-t-il des programmes de formation continue en Génie Mécanique à l'ESP?
+    - Quelles sont les certifications disponibles dans le domaine du Génie Mécanique à l'ESP?
+    - Pouvez-vous détailler les cursus offerts par le département Génie Mécanique à l'ESP?
+    - Est-ce que le département Génie Mécanique propose des stages pratiques ou des formations en entreprise?
+    - Quelles sont les options de double diplôme offertes par le département Génie Mécanique de l'ESP?
+    - Est-ce que le département Génie Mécanique offre des formations en ligne ou à distance?
+    - Y a-t-il des partenariats internationaux pour les étudiants en Génie Mécanique à l'ESP?
+    - Quelles sont les spécialisations disponibles dans les formations en Génie Mécanique à l'ESP?
 
-- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp
   examples: |
     - Quelles sont les formations qu'offre le département Génie Informatique de l'ESP?
     - quelles formations propose le département Génie Informatique?
@@ -472,8 +1570,23 @@ nlu:
     - pouvez-vous me dire les formations en Génie Informatique?
     - quels sont les programmes d'études en Génie Informatique?
     - Quelles sont les formations qu'offre le departement genie Informatique de l'ESP?
+    - Y a-t-il des programmes de maîtrise en Génie Informatique à l'ESP?
+    - Quels sont les diplômes offerts par le département Génie Informatique de l'ESP?
+    - Est-ce que le département Génie Informatique propose des cours de spécialisation?
+    - Pouvez-vous me donner des informations sur les études de doctorat en Génie Informatique à l'ESP?
+    - Quelles sont les options pour les étudiants en Génie Informatique à l'ESP?
+    - Existe-t-il des formations professionnelles dans le domaine du Génie Informatique à l'ESP?
+    - Y a-t-il des programmes de formation continue en Génie Informatique à l'ESP?
+    - Quelles sont les certifications disponibles dans le domaine du Génie Informatique à l'ESP?
+    - Pouvez-vous détailler les cursus offerts par le département Génie Informatique à l'ESP?
+    - Est-ce que le département Génie Informatique propose des stages pratiques ou des formations en entreprise?
+    - Quelles sont les options de double diplôme offertes par le département Génie Informatique de l'ESP?
+    - Est-ce que le département Génie Informatique offre des formations en ligne ou à distance?
+    - Y a-t-il des partenariats internationaux pour les étudiants en Génie Informatique à l'ESP?
+    - Quelles sont les spécialisations disponibles dans les formations en Génie Informatique à l'ESP?
 
-- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp
   examples: |
     - Quelles sont les formations qu'offre le département Génie Chimique de l'ESP?
     - quelles formations propose le département Génie Chimique?
@@ -481,124 +1594,324 @@ nlu:
     - pouvez-vous me dire les formations en Génie Chimique?
     - quels sont les programmes d'études en Génie Chimique?
     - Quelles sont les formations qu'offre le departement genie chimique de l'ESP?
+    - Y a-t-il des programmes de maîtrise en Génie Chimique à l'ESP?
+    - Quels sont les diplômes offerts par le département Génie Chimique de l'ESP?
+    - Est-ce que le département Génie Chimique propose des cours de spécialisation?
+    - Pouvez-vous me donner des informations sur les études de doctorat en Génie Chimique à l'ESP?
+    - Quelles sont les options pour les étudiants en Génie Chimique à l'ESP?
+    - Existe-t-il des formations professionnelles dans le domaine du Génie Chimique à l'ESP?
+    - Y a-t-il des programmes de formation continue en Génie Chimique à l'ESP?
+    - Quelles sont les certifications disponibles dans le domaine du Génie Chimique à l'ESP?
+    - Pouvez-vous détailler les cursus offerts par le département Génie Chimique à l'ESP?
+    - Est-ce que le département Génie Chimique propose des stages pratiques ou des formations en entreprise?
+    - Quelles sont les options de double diplôme offertes par le département Génie Chimique de l'ESP?
+    - Est-ce que le département Génie Chimique offre des formations en ligne ou à distance?
+    - Y a-t-il des partenariats internationaux pour les étudiants en Génie Chimique à l'ESP?
+    - Quelles sont les spécialisations disponibles dans les formations en Génie Chimique à l'ESP?
 
-- intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+
+- intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp
   examples: |
     - Quelles sont les formations qu'offre le département de Gestion de l'ESP ?
     - Quelles formations propose le département de Gestion ?
     - Quels cours offre le département de Gestion ?
     - Pouvez-vous me dire les formations en Gestion ?
     - Quels sont les programmes d'études en Gestion ?
-- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+    - Y a-t-il des formations spécialisées en Management à l'ESP ?
+    - Est-ce que le département de Gestion offre des diplômes de bachelor ?
+    - Quels sont les domaines d'étude couverts par le département de Gestion de l'ESP ?
+    - Est-ce que l'ESP propose des formations en Gestion des Entreprises ?
+    - Quels sont les niveaux de diplômes disponibles dans le département de Gestion ?
+    - Pouvez-vous détailler les options de Master offertes par le département de Gestion ?
+    - Est-ce que le département de Gestion propose des formations en ligne ?
+    - Quelles sont les opportunités de double diplôme offertes par le département de Gestion ?
+    - Y a-t-il des programmes de formation continue en Gestion à l'ESP ?
+    - Est-ce que le département de Gestion organise des séminaires ou des workshops ?
+    - Quelles sont les spécialisations disponibles dans les formations de Gestion à l'ESP ?
+    - Quels sont les partenariats internationaux du département de Gestion ?
+    - Comment se déroulent les stages pratiques dans les programmes de Gestion à l'ESP ?
+    - Quels sont les débouchés professionnels après avoir étudié la Gestion à l'ESP ?
+    - Est-ce que le département de Gestion offre des cours de leadership ou de gestion d'équipe ?
+    - Pouvez-vous me parler des options de stage à l'international pour les étudiants en Gestion à l'ESP ?
+
+
+- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone
   examples: |
     - Quelle est l'une des plus prestigieuses écoles d'ingénieur et de management en Afrique francophone?
     - Pouvez-vous nommer une école d'ingénieur et de management très réputée en Afrique francophone?
     - Quelle institution est reconnue comme l'une des meilleures en ingénierie et management en Afrique francophone?
     - Quelle école d'ingénieur et de management est considérée prestigieuse en Afrique francophone?
+    - Quelle est l'école d'ingénieur et de management la plus renommée en Afrique francophone?
+    - Est-ce qu'il y a une école d'ingénieur et de management de renom en Afrique francophone?
+    - Quelle est la meilleure école pour étudier l'ingénierie et le management en Afrique francophone?
+    - Pouvez-vous recommander une école d'ingénieur et de management de premier plan en Afrique francophone?
+    - Quelle école d'ingénieur et de management est bien classée en Afrique francophone?
+    - Y a-t-il une école reconnue pour ses programmes en ingénierie et management en Afrique francophone?
 
-- intent: handle_quand_a_été_créée_lesp_de_dakar?
+- intent: handle_quand_a_été_créée_lesp_de_dakar
   examples: |
     - Quand a été créée l'ESP de Dakar?
     - Quelle est la date de création de l'ESP de Dakar?
     - En quelle année l'ESP de Dakar a-t-elle été fondée?
     - À quelle époque l'ESP de Dakar a-t-elle vu le jour?
+    - À quel moment l'ESP de Dakar a-t-elle été établie?
+    - Pouvez-vous me dire depuis quand existe l'ESP de Dakar?
+    - À partir de quelle année l'ESP de Dakar a-t-elle été établie?
+    - Quand est-ce que l'ESP de Dakar a été fondée?
+    - Quel est l'année de création de l'ESP de Dakar?
+    - Depuis quand l'ESP de Dakar existe-t-elle?
 
-- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins
   examples: |
     - Combien de diplômés l'ESP a-t-elle formés au moins?
     - Quel est le nombre minimum de diplômés formés par l'ESP?
     - Pouvez-vous indiquer combien de diplômés ont été formés par l'ESP au fil des années?
     - Combien d'anciens étudiants l'ESP a-t-elle déjà diplômés?
+    - Quel est le nombre total de diplômés de l'ESP?
+    - Y a-t-il beaucoup de diplômés de l'ESP?
+    - À combien s'élève le nombre de diplômés de l'ESP?
+    - Est-ce que l'ESP a formé beaucoup de diplômés?
+    - Pouvez-vous me dire combien de personnes ont obtenu leur diplôme de l'ESP?
+    - Quel est le total des diplômés de l'ESP?
+    - Combien de gens ont été diplômés de l'ESP?
+    - Quel est le nombre de diplômés de l'ESP?
 
-- intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
+
+- intent: handle_quels_types_de_diplômes_lesp_offre-t-elle
   examples: |
     - Quels types de diplômes l'ESP offre-t-elle?
     - Quels sont les diplômes disponibles à l'ESP?
     - Quels diplômes peut-on obtenir à l'ESP?
     - Quelles qualifications l'ESP propose-t-elle?
+    - Pouvez-vous me dire quels sont les diplômes proposés par l'ESP?
+    - Y a-t-il plusieurs types de diplômes à l'ESP?
+    - Quelles sont les options de diplômes à l'ESP?
+    - Quels sont les différents diplômes qu'on peut obtenir à l'ESP?
+    - Est-ce que l'ESP offre des diplômes différents?
+    - Quels diplômes sont disponibles à l'ESP?
+    - Quelles sont les qualifications que je peux obtenir à l'ESP?
+    - Quels genres de diplômes offre l'ESP?
+    - Quels types de qualifications puis-je obtenir de l'ESP?
+    - Est-ce que l'ESP propose une variété de diplômes?
+    - Quels types de diplômes sont disponibles à l'ESP?
 
-- intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+
+- intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp
   examples: |
     - Que présente la troisième édition du catalogue des formations de l'ESP?
     - Quelles informations contient la troisième édition du catalogue des formations de l'ESP?
     - Que trouve-t-on dans la troisième édition du catalogue des formations de l'ESP?
     - Que dévoile la troisième édition du catalogue des formations de l'ESP?
+    - Quels programmes sont inclus dans la troisième édition du catalogue des formations de l'ESP?
+    - Pouvez-vous me dire ce qui est inclus dans la troisième édition du catalogue des formations de l'ESP?
+    - Quelles sont les nouveautés dans la troisième édition du catalogue des formations de l'ESP?
+    - Quelles sont les offres spéciales dans la troisième édition du catalogue des formations de l'ESP?
+    - Y a-t-il des modifications dans la troisième édition du catalogue des formations de l'ESP?
+    - Quelles sont les mises à jour dans la troisième édition du catalogue des formations de l'ESP?
+    - Est-ce que la troisième édition du catalogue des formations de l'ESP présente de nouveaux programmes?
+    - Quelles sont les améliorations dans la troisième édition du catalogue des formations de l'ESP?
+    - Que puis-je attendre de la troisième édition du catalogue des formations de l'ESP?
+    - Quelles sont les informations les plus récentes dans la troisième édition du catalogue des formations de l'ESP?
+    - Quels sont les détails mis à jour dans la troisième édition du catalogue des formations de l'ESP?
+    - Qu'est-ce qui est différent dans la troisième édition du catalogue des formations de l'ESP?
 
-- intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+
+- intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il
   examples: |
     - Quelle preuve le document du catalogue de formations fournit-il?
     - Quel type de preuve est fourni par le document du catalogue de formations?
     - En quoi le document du catalogue de formations sert-il de preuve?
     - Qu'est-ce que le document du catalogue de formations prouve?
+    - À quoi le document du catalogue de formations est-il utile?
+    - Quelles informations sont vérifiables dans le document du catalogue de formations?
+    - Comment le document du catalogue de formations peut-il être utilisé comme preuve?
+    - Quelles données sont confirmées par le document du catalogue de formations?
+    - Que peut-on déduire du document du catalogue de formations?
+    - Est-ce que le document du catalogue de formations est une référence fiable?
+    - Quels détails sont inclus dans le document du catalogue de formations?
+    - Quelles certifications sont démontrées par le document du catalogue de formations?
+    - Comment le document du catalogue de formations confirme-t-il les informations?
+    - Est-ce que le document du catalogue de formations est authentique?
+    - Pourquoi est-il important de consulter le document du catalogue de formations?
 
-- intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+
+- intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp
   examples: |
     - À quoi sont régulièrement soumises les formations de l'ESP?
     - Quelles évaluations les formations de l'ESP subissent-elles régulièrement?
     - À quelles procédures sont assujetties les formations de l'ESP de manière régulière?
     - Quels contrôles sont effectués régulièrement sur les formations de l'ESP?
+    - Comment les formations de l'ESP sont-elles régulièrement évaluées?
+    - Quelles sont les vérifications périodiques auxquelles sont soumises les formations de l'ESP?
+    - Est-ce que les formations de l'ESP sont sujettes à des audits réguliers?
+    - Quels processus sont mis en place pour assurer la qualité des formations de l'ESP?
+    - Comment l'ESP garantit-elle la conformité continue de ses formations?
+    - Quelles normes sont appliquées dans l'évaluation régulière des formations de l'ESP?
+    - À quels examens les programmes de l'ESP sont-ils périodiquement soumis?
+    - Comment les standards de qualité sont-ils maintenus pour les formations de l'ESP?
+    - Quelles mesures sont prises pour assurer la qualité continue des programmes de l'ESP?
+    - Quelles sont les procédures de surveillance mises en place pour les formations de l'ESP?
+    - Quelles certifications sont régulièrement attribuées aux formations de l'ESP?
+    - Comment les programmes de l'ESP sont-ils évalués de manière continue?
 
-- intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+
+- intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup
   examples: |
     - Pourquoi les formations de l'ESP sont-elles soumises à l'évaluation de l'ANAQ-Sup?
     - Quelle est la raison pour laquelle les formations de l'ESP sont évaluées par l'ANAQ-Sup?
     - Pourquoi l'ANAQ-Sup évalue-t-elle les formations de l'ESP?
     - Pour quelle raison les formations de l'ESP doivent-elles être validées par l'ANAQ-Sup?
+    - Quel est l'objectif de l'évaluation des formations de l'ESP par l'ANAQ-Sup?
+    - Pourquoi est-il important que les formations de l'ESP soient évaluées par l'ANAQ-Sup?
+    - Quels sont les avantages de la validation des formations de l'ESP par l'ANAQ-Sup?
+    - Comment l'évaluation par l'ANAQ-Sup contribue-t-elle à l'amélioration des formations de l'ESP?
+    - Quelles sont les implications de l'évaluation de l'ANAQ-Sup sur les formations de l'ESP?
+    - Pourquoi les standards de qualité de l'ANAQ-Sup sont-ils appliqués aux formations de l'ESP?
+    - Qu'est-ce que l'évaluation de l'ANAQ-Sup apporte aux étudiants de l'ESP?
+    - En quoi l'évaluation de l'ANAQ-Sup garantit-elle la qualité des formations de l'ESP?
+    - Pourquoi les évaluations externes comme celles de l'ANAQ-Sup sont-elles nécessaires pour l'ESP?
+    - Quelles sont les attentes de l'ANAQ-Sup vis-à-vis des formations de l'ESP?
+    - Quelles sont les exigences spécifiques de l'ANAQ-Sup pour les formations de l'ESP?
+    - Comment l'ANAQ-Sup contribue-t-elle à la reconnaissance des formations de l'ESP?
+    - Quel est l'impact de l'évaluation de l'ANAQ-Sup sur la réputation des formations de l'ESP?
+    - Pourquoi les partenaires académiques de l'ESP valorisent-ils l'évaluation de l'ANAQ-Sup?
+    - Quelles sont les implications légales de l'évaluation de l'ANAQ-Sup pour l'ESP?
 
-- intent: handle_qui_participe_aux_formations_de_lesp?
+
+- intent: handle_qui_participe_aux_formations_de_lesp
   examples: |
     - Qui participe aux formations de l'ESP?
     - Quels individus participent aux formations de l'ESP?
     - Qui sont les participants aux formations de l'ESP?
     - Qui peut prendre part aux formations de l'ESP?
+    - Qui assiste aux cours de l'ESP?
+    - Quelles catégories de personnes sont concernées par les formations de l'ESP?
+    - Qui est invité à suivre les formations de l'ESP?
+    - Qui est éligible pour s'inscrire aux formations de l'ESP?
+    - Qui fréquente les cours dispensés à l'ESP?
+    - Qui est autorisé à participer aux programmes de formation de l'ESP?
+    - Quelles sont les personnes visées par les formations de l'ESP?
+    - Qui peut bénéficier des programmes de l'ESP?
+    - Qui sont les destinataires des formations proposées par l'ESP?
+    - Qui est encouragé à s'inscrire aux formations de l'ESP?
+    - Qui sont les étudiants potentiels de l'ESP?
 
-- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
+
+- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage
   examples: |
     - Comment l'ESP place-t-elle l'étudiant ou l'apprenant au cœur de son dispositif d'enseignement/apprentissage?
     - De quelle manière l'ESP centre-t-elle son enseignement sur l'étudiant?
     - Comment l'ESP assure-t-elle que l'étudiant est au centre de son dispositif d'apprentissage?
     - Par quels moyens l'ESP met-elle l'étudiant au cœur de son dispositif pédagogique?
+    - Comment l'ESP prend-elle en compte les besoins de l'apprenant dans son enseignement?
+    - Quelles stratégies l'ESP utilise-t-elle pour placer l'apprenant au centre de son dispositif d'enseignement?
+    - Quels sont les principes de l'ESP pour placer l'étudiant au cœur de son approche pédagogique?
+    - Comment l'ESP adapte-t-elle son enseignement pour répondre aux besoins individuels des étudiants?
+    - Comment l'ESP favorise-t-elle l'engagement des étudiants dans leur processus d'apprentissage?
+    - En quoi l'ESP différencie-t-elle son enseignement pour s'adapter aux divers styles d'apprentissage?
+    - Comment l'ESP assure-t-elle une personnalisation de l'enseignement en fonction des étudiants?
+    - Quelles sont les initiatives de l'ESP pour améliorer l'expérience d'apprentissage des étudiants?
+    - Comment l'ESP intègre-t-elle les retours des étudiants dans l'amélioration de ses méthodes d'enseignement?
+    - Quelles sont les pratiques pédagogiques de l'ESP pour favoriser l'autonomie et la responsabilisation des étudiants?
 
-- intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+
+- intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail
   examples: |
     - Comment l'ESP maintient-elle ses relations avec le milieu du travail?
     - Par quels moyens l'ESP entretient-elle ses liens avec le monde professionnel?
     - Comment l'ESP garde-t-elle contact avec le secteur professionnel?
     - Comment l'ESP reste-t-elle connectée avec le milieu du travail?
+    - Quelles sont les collaborations de l'ESP avec les entreprises?
+    - Comment l'ESP favorise-t-elle l'intégration des étudiants dans le milieu professionnel?
+    - Quels sont les partenariats de l'ESP avec les entreprises et organisations?
+    - Comment l'ESP assure-t-elle la pertinence de ses programmes vis-à-vis des besoins du marché du travail?
+    - Quelles initiatives l'ESP met-elle en place pour faciliter l'insertion professionnelle de ses étudiants?
+    - Comment l'ESP encourage-t-elle les stages et les opportunités de travail pour ses étudiants?
+    - Quels sont les programmes de collaboration entre l'ESP et les entreprises?
+    - Comment l'ESP utilise-t-elle les retours des entreprises pour améliorer ses programmes?
+    - Quels sont les avantages pour les étudiants grâce aux relations de l'ESP avec le milieu professionnel?
+    - Comment l'ESP promeut-elle l'employabilité de ses diplômés?
 
-- intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
+- intent: handle_que_prouve_le_réseau_des_alumni_de_lesp
   examples: |
     - Que prouve le réseau des alumni de l'ESP?
     - Qu'est-ce que le réseau des anciens élèves de l'ESP prouve?
     - Que démontre l'existence du réseau des alumni de l'ESP?
     - Quelle est la signification du réseau des alumni de l'ESP?
+    - Comment le réseau des anciens élèves de l'ESP contribue-t-il à l'institution?
+    - Quels bénéfices apporte le réseau des alumni de l'ESP aux étudiants actuels?
+    - Comment le réseau des alumni de l'ESP soutient-il la carrière des diplômés?
+    - Quelles sont les réussites notables des anciens élèves de l'ESP?
+    - Comment le réseau des alumni de l'ESP renforce-t-il l'image de l'institution?
+    - Quels sont les témoignages des anciens élèves de l'ESP concernant leur expérience?
+    - En quoi le réseau des alumni de l'ESP est-il un atout pour les diplômés?
+    - Comment l'ESP utilise-t-elle le réseau des anciens élèves pour ses activités?
+    - Quelles collaborations le réseau des alumni de l'ESP entretient-il avec l'institution?
+    - Comment les alumni de l'ESP contribuent-ils au développement de l'institution?
+    - Quels sont les avantages pour les étudiants actuels d'être connectés au réseau des alumni de l'ESP?
 
-- intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+
+- intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot
   examples: |
     - Quel message le directeur adresse-t-il aux étudiants à la fin de son mot?
     - Que dit le directeur aux étudiants pour conclure son discours?
     - Quel est le message final du directeur aux étudiants?
     - Quelle est la dernière remarque du directeur aux étudiants dans son discours?
+    - Quels conseils le directeur donne-t-il aux étudiants à la fin de son intervention?
+    - Comment le directeur encourage-t-il les étudiants à la fin de sa prise de parole?
+    - Quelle est la principale recommandation du directeur aux étudiants à la clôture de son discours?
+    - Quel est le ton général du message final du directeur aux étudiants?
+    - Quelles sont les attentes que le directeur exprime aux étudiants à la fin de son allocution?
+    - Quels encouragements le directeur adresse-t-il aux étudiants à la fin de son message?
+    - Comment le directeur conclut-il son discours avec les étudiants?
+    - Quelles valeurs le directeur souligne-t-il à la fin de son allocution envers les étudiants?
+    - Quels sont les objectifs que le directeur énonce aux étudiants à la fin de son discours?
+    - Quel est le sentiment que le directeur souhaite transmettre aux étudiants à la fin de son intervention?
+    - Comment le directeur motive-t-il les étudiants à la fin de sa présentation?
+    - Quelles sont les attentes du directeur envers les étudiants à la fin de son allocution?
+    - Quelle est la vision que le directeur partage avec les étudiants à la fin de son message?
+    - Quelles sont les aspirations que le directeur exprime aux étudiants à la clôture de son discours?
+    - Comment le directeur termine-t-il son discours envers les étudiants?
+    - Quelles sont les suggestions que le directeur offre aux étudiants à la fin de son intervention?
 
-- intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+- intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)
   examples: |
     - Quelles étaient les anciennes dénominations de l'École Supérieure Polytechnique (ESP)?
     - Quels noms l'École Supérieure Polytechnique (ESP) a-t-elle portés dans le passé?
     - Comment l'École Supérieure Polytechnique (ESP) était-elle appelée avant?
     - Quelles ont été les anciennes appellations de l'ESP?
-- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+    - Y a-t-il eu d'autres noms pour désigner l'École Supérieure Polytechnique (ESP) auparavant?
+    - Quels étaient les noms précédents de l'École Supérieure Polytechnique (ESP)?
+    - Pouvez-vous me dire comment l'École Supérieure Polytechnique (ESP) était nommée à ses débuts?
+    - Quels étaient les anciens noms utilisés pour désigner l'École Supérieure Polytechnique (ESP)?
+    - Comment l'École Supérieure Polytechnique (ESP) était-elle connue par le passé?
+    - Quelles étaient les dénominations antérieures de l'École Supérieure Polytechnique (ESP)?
+ 
+- intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone
   examples: |
     - Quelle est l'une des plus prestigieuses écoles d'ingénieur et de management en Afrique francophone?
     - Pouvez-vous nommer une école d'ingénieur et de management très réputée en Afrique francophone?
     - Quelle institution est reconnue comme l'une des meilleures en ingénierie et management en Afrique francophone?
     - Quelle école d'ingénieur et de management est considérée prestigieuse en Afrique francophone?
+    - Quelle est la meilleure école d'ingénieur et de management en Afrique francophone?
+    - Y a-t-il une école renommée en ingénierie et management en Afrique francophone?
+    - Quelle école offre une excellente formation en ingénierie et management en Afrique francophone?
+    - Pouvez-vous citer une école bien établie en ingénierie et management en Afrique francophone?
+    - Quelle est l'école la plus prestigieuse pour étudier l'ingénierie et le management en Afrique francophone?
+    - Où puis-je trouver une école de qualité pour étudier l'ingénierie et le management en Afrique francophone?
 
-- intent: handle_quand_a_été_créée_lesp_de_dakar?
+- intent: handle_quand_a_été_créée_lesp_de_dakar
   examples: |
     - Quand a été créée l'ESP de Dakar?
     - Quelle est la date de création de l'ESP de Dakar?
     - En quelle année l'ESP de Dakar a-t-elle été fondée?
     - À quelle époque l'ESP de Dakar a-t-elle vu le jour?
+    - Quand l'ESP de Dakar a-t-elle été établie?
+    - À quel moment l'ESP de Dakar a-t-elle commencé ses activités?
+    - Depuis combien de temps l'ESP de Dakar existe-t-elle?
+    - Quelle est l'année de fondation de l'ESP de Dakar?
+    - À quel moment l'ESP de Dakar a-t-elle été fondée?
+    - Quand l'ESP de Dakar a-t-elle été érigée?
 
 - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
   examples: |
@@ -691,12 +2004,17 @@ nlu:
     - Quel est l'objectif principal de l'ESP?
     - Quelle est la raison d'être de l'ESP?
 
-- intent: handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+- intent: handle_quand_a_été_créée_lesp_et_par_quelle_loi
   examples: |
     - Quand a été créée l'ESP et par quelle loi?
     - En quelle année et par quelle loi l'ESP a-t-elle été fondée?
     - Quelle loi a institué la création de l'ESP et quand?
     - Quelle est la date et la loi de création de l'ESP?
+    - À quel moment et sous quelle législation l'ESP a-t-elle été créée?
+    - Quand l'ESP a-t-elle été établie et selon quelle loi?
+    - Par quelle loi et en quelle année l'ESP a-t-elle été fondée?
+    - À quel moment précisément et sous quelle réglementation l'ESP a-t-elle été fondée?
+
 
 - intent: handle_quelle_est_la_personnalité_de_lesp?
   examples: |
@@ -1109,45 +2427,87 @@ nlu:
     - Y a-t-il des campagnes de sensibilisation à l'ESP ?
     - Quelles sont les prochaines activités de sensibilisation ?
 
-- intent: handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+- intent: handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_
   examples: |
     - Comment puis-je m'inscrire aux ateliers et séminaires ?
     - Quelle est la procédure pour participer aux ateliers et séminaires ?
     - Comment m'inscrire aux séminaires de l'ESP ?
     - Puis-je participer aux ateliers organisés par l'ESP ?
+    - Y a-t-il une démarche spécifique pour assister aux ateliers et séminaires ?
+    - Où puis-je trouver les détails pour m'inscrire aux ateliers et séminaires ?
+    - Quels sont les prérequis pour participer aux séminaires et ateliers de l'ESP ?
+    - Comment accéder aux informations sur les prochains ateliers et séminaires ?
+    - Est-il nécessaire de s'inscrire à l'avance pour les ateliers et séminaires ?
+    - Y a-t-il un calendrier pour les ateliers et séminaires de l'ESP ?
 
-- intent: handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+
+- intent: handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_
   examples: |
     - Quels sont les principaux domaines de recherche à l'ESP ?
     - Quels sont les axes de recherche prioritaires à l'ESP ?
     - Quelles sont les principales thématiques de recherche à l'ESP ?
     - Sur quels sujets de recherche l'ESP se concentre-t-elle ?
+    - Quels sont les grands thèmes de recherche explorés à l'ESP ?
+    - De quoi traitent principalement les recherches à l'ESP ?
+    - Quelles sont les spécialités de recherche à l'ESP ?
+    - Sur quels champs de recherche l'ESP met-elle l'accent ?
+    - Quels sont les secteurs de recherche prédominants à l'ESP ?
+    - Quels sont les domaines de recherche les plus développés à l'ESP ?
 
-- intent: handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+
+- intent: handle_comment_puis-je_postuler_pour_un_projet_de_recherche_
   examples: |
     - Comment puis-je postuler pour un projet de recherche ?
     - Quelle est la procédure pour candidater à un projet de recherche à l'ESP ?
     - Comment soumettre ma candidature pour un projet de recherche ?
     - Quels sont les critères pour postuler à un projet de recherche à l'ESP ?
+    - Y a-t-il des opportunités de recherche disponibles pour les étudiants à l'ESP ?
+    - Comment faire pour participer à un projet de recherche à l'ESP ?
+    - Où puis-je trouver les annonces de projets de recherche ouverts à candidature ?
+    - Quelles sont les étapes à suivre pour être sélectionné pour un projet de recherche à l'ESP ?
+    - Quelles sont les conditions pour être éligible à un projet de recherche à l'ESP ?
+    - Est-ce que l'ESP offre des bourses de recherche pour les projets ?
 
-- intent: handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+
+- intent: handle_y_a-t-il_des_collaborations_internationales_en_recherche_
   examples: |
     - Y a-t-il des collaborations internationales en recherche ?
     - L'ESP collabore-t-elle avec des institutions internationales en recherche ?
     - Existe-t-il des partenariats internationaux de recherche à l'ESP ?
     - Quels projets de recherche internationaux sont en cours à l'ESP ?
+    - Quelles sont les collaborations de recherche internationales de l'ESP ?
+    - L'ESP a-t-elle des partenariats de recherche avec des universités étrangères ?
+    - Comment l'ESP participe-t-elle aux initiatives de recherche internationale ?
+    - Quels sont les pays partenaires de l'ESP pour la recherche internationale ?
+    - Quels sont les domaines de recherche internationale de l'ESP ?
+    - Existe-t-il des programmes d'échange de chercheurs à l'international pour l'ESP ?
 
-- intent: handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+
+- intent: handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_
   examples: |
     - Comment puis-je accéder aux publications de recherche de l'ESP ?
     - Où puis-je trouver les publications de recherche de l'ESP ?
     - Comment consulter les articles de recherche publiés par l'ESP ?
     - Quels sont les moyens pour accéder aux travaux de recherche de l'ESP ?
+    - Est-ce possible de consulter les publications scientifiques de l'ESP ?
+    - Y a-t-il un accès en ligne aux publications de recherche de l'ESP ?
+    - Comment obtenir des copies des articles de recherche de l'ESP ?
+    - Où puis-je trouver la bibliothèque de publications de l'ESP ?
+    - Quelle est la procédure pour accéder aux articles de recherche de l'ESP ?
+    - Existe-t-il une base de données pour les publications de recherche de l'ESP ?
 
-- intent: handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+
+- intent: handle_quels_sont_les_laboratoires_de_recherche_disponibles_
   examples: |
     - Quels sont les laboratoires de recherche disponibles ?
     - Quels laboratoires de recherche sont accessibles aux étudiants ?
     - Quels sont les équipements des laboratoires de recherche de l'ESP ?
     - L'ESP dispose-t-elle de laboratoires de recherche spécifiques ?
+    - Quelles installations de recherche sont offertes par l'ESP ?
+    - Y a-t-il des laboratoires de recherche que les étudiants peuvent utiliser à l'ESP ?
+    - Quels sont les équipements disponibles dans les laboratoires de recherche de l'ESP ?
+    - Peut-on accéder à des installations de recherche spécialisées à l'ESP ?
+    - Est-ce que l'ESP offre des laboratoires de recherche pour les étudiants ?
+    - Où puis-je trouver des informations sur les laboratoires de recherche disponibles à l'ESP ?
+
 
