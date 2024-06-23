@@ -3,6 +3,7 @@ intents:
 - goodbye
 - affirm
 - deny
+- fallback 
 - mood_great
 - mood_unhappy
 - bot_challenge
@@ -133,6 +134,8 @@ intents:
 - handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
 - handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
 responses:
+  utter_fallback:
+    - text: "Je ne connais pas la réponse à cette question, veuillez reformuler ou poser une autre question."
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -147,14 +150,16 @@ responses:
   utter_handle_bonsoir:
   - text: Bonsoir, comment puis-je vous aider ?
   utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?:
-  - text: 'Deux centres : le centre de Dakar et celui de Thiès.'
+  - text: "L'ESP est composée de deux centres principaux : le centre de Dakar et celui de Thiès. Ces centres sont stratégiquement 
+  situés pour offrir un accès pratique à l'éducation supérieure et aux installations de recherche."
   utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?:
-  - text: Plus de 30 000 diplômés.
+  - text: "Au cours des années, l'ESP a formé plus de 30 000 diplômés, contribuant ainsi à la main-d'œuvre qualifiée dans divers secteurs professionnels."
   utter_handle_combien_de_départements_lesp_dispose_?:
-  - text: 'L''ESP dispose de six départements à savoir : Génie Informatique, Génie
-      Chimique, Gestion, Génie Mécanique, Génie Civil, Génie Électrique'
+  - text: "L'ESP dispose de six départements académiques : Génie Informatique, Génie Chimique, Gestion, Génie Mécanique, Génie Civil, et Génie Électrique. Chaque département offre des programmes 
+  d'études spécialisés et est équipé pour soutenir l'apprentissage pratique et théorique."
   utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?:
-  - text: 6 départements
+  - text: "L'École Supérieure Polytechnique propose six départements distincts pour garantir une excellence 
+  académique et une formation professionnelle de haute qualité."
   utter_handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?:
   - text: 'Le Département compte 21 enseignants, dont 20 de spécialité répartis en
       différentes catégories : 03 professeurs, 03 maîtres de conférences, 07 maîtres-assistants,
@@ -170,9 +175,8 @@ responses:
   - text: Grâce à l'existence de laboratoires, halls de technologie équipés et adaptés
       aux besoins des formations.
   utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?:
-  - text: 'Vous pouvez contacter le departement Genie Chimique par mail ou par appel
-      direct. Le mail du departement Genie Chimique est: genie.chimique@esp.sn et
-      leur contact est 00221 33 824 05 40'
+  - text: 'Vous pouvez contacter le departement Genie Chimique par mail ou par appel direct. Le mail du departement Genie Chimique est: [genie.chimique@esp.sn](mailto:genie.chimique@esp.sn) et leur contact est [00221 33 824 05 40](tel:+221338240540)'
+
   utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?:
   - text: 'Vous pouvez contacter le departement Genie Civil par mail ou par appel
       direct. Le mail du departement Genie Civil est: genie.civil@esp.sn et leur contact
@@ -182,9 +186,8 @@ responses:
       direct. Le mail du departement Genie Electrique est: genie.electrique@esp.sn
       et leur contact est 00221 33 824 05 40'
   utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?:
-  - text: 'Vous pouvez contacter le departement Genie Informatique par mail ou par
-      appel direct. Le mail du departement Genie Informatique est: genie.informatique@esp.sn
-      et leur contact est 00221 33 824 05 40'
+  - text: "Vous pouvez contacter le département Génie Informatique par mail ou par appel direct. Le mail du département Génie Informatique est: [genie.informatique@esp.sn](mailto:genie.informatique@esp.sn) et leur contact est [00221 33 824 05 40](tel:+221338240540)"
+
   utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?:
   - text: 'Vous pouvez contacter le departement Genie Mecanique par mail ou par appel
       direct. Le mail du departement Genie Mecanique est: genie.mecanique@esp.sn et
