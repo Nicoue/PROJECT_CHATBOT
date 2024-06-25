@@ -3,7 +3,6 @@ intents:
 - goodbye
 - affirm
 - deny
-- fallback 
 - mood_great
 - mood_unhappy
 - bot_challenge
@@ -54,7 +53,7 @@ intents:
 - handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
 - handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
 - handle_quand_a_été_créée_lesp_de_dakar?
-- handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+- handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - handle_quels_types_de_diplômes_lesp_offre-t-elle?
 - handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
 - handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
@@ -79,7 +78,7 @@ intents:
 - handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
 - handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
 - handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
-- handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+- handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
 - handle_quest-il_arrivé_à_lenset_en_2005?
 - handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
 - handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
@@ -134,8 +133,6 @@ intents:
 - handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
 - handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
 responses:
-  utter_fallback:
-    - text: "Je ne connais pas la réponse à cette question, veuillez reformuler ou poser une autre question."
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -144,16 +141,18 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey! How are you, comment puis-je vous aider ?
   utter_handle_bonjour:
   - text: Bonjour, comment puis-je vous aider ?
   utter_handle_bonsoir:
   - text: Bonsoir, comment puis-je vous aider ?
-  utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?:
+  utter_default:  # Réponse par défaut pour l'intention de repli
+  - text: "Je suis désolé, je ne comprends pas votre question. Pouvez-vous reformuler ou poser une autre question ?"
+  utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?:
   - text: "L'ESP est composée de deux centres principaux : le centre de Dakar et celui de Thiès. Ces centres sont stratégiquement 
   situés pour offrir un accès pratique à l'éducation supérieure et aux installations de recherche."
-  utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?:
-  - text: "Au cours des années, l'ESP a formé plus de 30 000 diplômés, contribuant ainsi à la main-d'œuvre qualifiée dans divers secteurs professionnels."
+  utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?:
+  - text: Au cours des années, l'ESP a formé plus de 30 000 diplômés, contribuant ainsi à la main-d'œuvre qualifiée dans divers secteurs professionnels.
   utter_handle_combien_de_départements_lesp_dispose_?:
   - text: "L'ESP dispose de six départements académiques : Génie Informatique, Génie Chimique, Gestion, Génie Mécanique, Génie Civil, et Génie Électrique. Chaque département offre des programmes 
   d'études spécialisés et est équipé pour soutenir l'apprentissage pratique et théorique."
@@ -187,7 +186,6 @@ responses:
       et leur contact est 00221 33 824 05 40'
   utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?:
   - text: "Vous pouvez contacter le département Génie Informatique par mail ou par appel direct. Le mail du département Génie Informatique est: [genie.informatique@esp.sn](mailto:genie.informatique@esp.sn) et leur contact est [00221 33 824 05 40](tel:+221338240540)"
-
   utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?:
   - text: 'Vous pouvez contacter le departement Genie Mecanique par mail ou par appel
       direct. Le mail du departement Genie Mecanique est: genie.mecanique@esp.sn et
@@ -627,7 +625,7 @@ responses:
   utter_handle_qui_est_le_chef_du_departement_genie_civil_?:
   - text: Le chef du departement Genie Civil est Libasse SOW
   utter_handle_qui_est_le_chef_du_departement_genie_electrique_?:
-  - text: Le chef du departement Genie Informatique est M. Khaly TALL
+  - text: Le chef du departement Genie Electrique est M. Khaly TALL
   utter_handle_qui_est_le_chef_du_departement_genie_informatique_?:
   - text: Le chef du departement Genie Informatique est Pr Ibrahima FALL
   utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?:
