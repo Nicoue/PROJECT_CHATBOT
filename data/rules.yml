@@ -12,7 +12,7 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Handle fallback
-  steps:
-  - intent: fallback
-  - action: utter_fallback
+# - rule: Activate Fallback Action
+#   steps:
+#     - intent: nlu_fallback  # Intention pour la repli détectée par FallbackClassifier
+#     - action: utter_fallback 
