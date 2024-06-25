@@ -50,6 +50,10 @@ stories:
   - action: utter_handle_que_vise_lesp_?
   story: Story for handle_que_vise_lesp_?
 - steps:
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+- steps:
   - intent: handle_queles_sont_les_objectifs_de_lesp_?
   - action: utter_handle_queles_sont_les_objectifs_de_lesp_?
   story: Story for handle_queles_sont_les_objectifs_de_lesp_?
@@ -214,9 +218,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
@@ -314,9 +318,9 @@ stories:
   - action: utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
   story: Story for handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
 - steps:
-  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
-  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
-  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
+  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
+  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
 - steps:
   - intent: handle_quest-il_arrivé_à_lenset_en_2005?
   - action: utter_handle_quest-il_arrivé_à_lenset_en_2005?
@@ -390,9 +394,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
