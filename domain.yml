@@ -1,667 +1,847 @@
+---
 intents:
-- greet
-- goodbye
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
-- handle_bonjour
-- handle_salut
-- handle_bonsoir
-- handle_infos_sur_lesp
-- handle_quels_sont_les_programmes_de_formation_de_lesp
-- handle_que_vise_lesp_?
-- handle_queles_sont_les_objectifs_de_lesp_?
-- handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
-- handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
-- handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
-- handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
-- handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
-- handle_comment_vérifier_le_statut_de_ma_candidature_?
-- handle_combien_de_départements_lesp_dispose_?
-- handle_pourquoi_choisir_lesp_?
-- handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
-- handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
-- handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
-- handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
-- handle_qui_est_le_chef_du_département_génie_chimique_?
-- handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
-- handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
-- handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
-- handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
-- handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
-- handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
-- handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
-- handle_qui_est_le_chef_du_département_génie_électrique_?
-- handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
-- handle_comment_peut_on_contacter_le_departement_genie_informatique_?
-- handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
-- handle_comment_peut_on_contacter_le_departement_genie_electrique_?
-- handle_comment_peut_on_contacter_le_departement_genie_civil_?
-- handle_comment_peut_on_contacter_le_departement_genie_chimique_?
-- handle_comment_peut_on_contacter_le_departement_gestion_?
-- handle_qui_est_le_chef_du_departement_genie_informatique_?
-- handle_qui_est_le_chef_du_departement_genie_mecanique_?
-- handle_qui_est_le_chef_du_departement_genie_electrique_?
-- handle_qui_est_le_chef_du_departement_genie_civil_?
-- handle_qui_est_le_chef_du_departement_genie_chimique_?
-- handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
-- handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
-- handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
-- handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
-- handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-- handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
-- handle_quand_a_été_créée_lesp_de_dakar?
-- handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-- handle_quels_types_de_diplômes_lesp_offre-t-elle?
-- handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
-- handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
-- handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
-- handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
-- handle_qui_participe_aux_formations_de_lesp?
-- handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
-- handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
-- handle_que_prouve_le_réseau_des_alumni_de_lesp?
-- handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
-- handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
-- handle_quelle_est_la_vocation_de_lesp?
-- handle_quand_a_été_créée_lesp_et_par_quelle_loi?
-- handle_quelle_est_la_personnalité_de_lesp?
-- handle_quand_lesp_a-t-elle_fêté_ses_50_années?
-- handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
-- handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
-- handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
-- handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
-- handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
-- handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
-- handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
-- handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
-- handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
-- handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
-- handle_quest-il_arrivé_à_lenset_en_2005?
-- handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
-- handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
-- handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
-- handle_quelles_sont_les_fonctions_préparées_par_lesp_?
-- handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
-- handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
-- handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
-- handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
-- handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
-- handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
-- handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
-- handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
-- handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
-- handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
-- handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
-- handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
-- handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
-- handle_combien_de_départements_propose_lécole_pour_lexcellence_?
-- handle_quels_sont_les_départements_de_lécole_?
-- handle_quels_sont_les_types_de_formations_offertes_?
-- handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
-- handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
-- handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
-- handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
-- handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
-- handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
-- handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
-- handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
-- handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
-- handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
-- handle_quels_événements_culturels_sont_organisés_par_lesp_?
-- handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
-- handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
-- handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
-- handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
-- handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
-- handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
-- handle_quels_services_de_carrière_sont_offerts_par_lesp_?
-- handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
-- handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
-- handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
-- handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
-- handle_quels_événements_académiques_sont_prévus_cette_année_?
-- handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
-- handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
-- handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
-- handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
-- handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
-- handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
-- handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
-- handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
-- handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+  - greet
+  - fallback
+  - goodbye
+  - affirm
+  - refuser
+  - humeur_excellente
+  - humeur_mecontente
+  - defi_bot
+  - handle_bonjour
+  - handle_bonsoir
+  - handle_infos_sur_lesp
+  - handle_quels_sont_les_programmes_de_formation_de_lesp
+  - handle_que_vise_lesp_?
+  - handle_queles_sont_les_objectifs_de_lesp_?
+  - handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+  - handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+  - handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+  - handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+  - handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+  - handle_comment_vérifier_le_statut_de_ma_candidature_?
+  - handle_combien_de_départements_lesp_dispose_?
+  - handle_pourquoi_choisir_lesp_?
+  - handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+  - handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+  - handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+  - handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+  - handle_qui_est_le_chef_du_département_génie_chimique_?
+  - handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+  - handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+  - handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+  - handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+  - handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+  - handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+  - handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+  - handle_qui_est_le_chef_du_département_génie_électrique_?
+  - handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+  - handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  - handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  - handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  - handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  - handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  - handle_comment_peut_on_contacter_le_departement_gestion_?
+  - handle_qui_est_le_chef_du_departement_genie_informatique_?
+  - handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  - handle_qui_est_le_chef_du_departement_genie_electrique_?
+  - handle_qui_est_le_chef_du_departement_genie_civil_?
+  - handle_qui_est_le_chef_du_departement_genie_chimique_?
+  - handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  - handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  - handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  - handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  - handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  - handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  - handle_quand_a_été_créée_lesp_de_dakar?
+  - handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  - handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  - handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  - handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
+  - handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  - handle_qui_participe_aux_formations_de_lesp?
+  - handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement_apprentissage?
+  - handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  - handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  - handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  - handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  - handle_quelle_est_la_vocation_de_lesp?
+  - handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+  - handle_quelle_est_la_personnalité_de_lesp?
+  - handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+  - handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+  - handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+  - handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+  - handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+  - handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+  - handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+  - handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+  - handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+  - handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+  - handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  - handle_quest-il_arrivé_à_lenset_en_2005?
+  - handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+  - handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+  - handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+  - handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+  - handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+  - handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+  - handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+  - handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+  - handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+  - handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+  - handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+  - handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+  - handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+  - handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+  - handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+  - handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+  - handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+  - handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  - handle_quels_sont_les_départements_de_lécole_?
+  - handle_quels_sont_les_types_de_formations_offertes_?
+  - handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  - handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  - handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  - handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+  - handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+  - handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+  - handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+  - handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+  - handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+  - handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+  - handle_quels_événements_culturels_sont_organisés_par_lesp_?
+  - handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+  - handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+  - handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+  - handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+  - handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+  - handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+  - handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+  - handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+  - handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+  - handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+  - handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+  - handle_quels_événements_académiques_sont_prévus_cette_année_?
+  - handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+  - handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+  - handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+  - handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+  - handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+  - handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+  - handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+  - handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+  - handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_happy
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_handle_bonjour
+  - utter_handle_bonsoir
+  - utter_fallback
+  - utter_iamabot
+  - utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  - utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - utter_handle_combien_de_départements_lesp_dispose_?
+  - utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?
+  - utter_handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
+  - utter_handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
+  - utter_handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
+  - utter_handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement_apprentissage?
+  - utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?
+  - utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?
+  - utter_handle_comment_peut_on_contacter_le_departement_genie_electrique_?
+  - utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?
+  - utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
+  - utter_handle_comment_peut_on_contacter_le_departement_gestion_?
+  - utter_handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
+  - utter_handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?
+  - utter_handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?
+  - utter_handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?
+  - utter_handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?
+  - utter_handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?
+  - utter_handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
+  - utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?
+  - utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?
+  - utter_handle_comment_vérifier_le_statut_de_ma_candidature_?
+  - utter_handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
+  - utter_handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?
+  - utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
+  - utter_handle_infos_sur_lesp
+  - utter_handle_pourquoi_choisir_lesp_?
+  - utter_handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
+  - utter_handle_quand_a_été_créée_lesp_de_dakar?
+  - utter_handle_quand_a_été_créée_lesp_et_par_quelle_loi?
+  - utter_handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
+  - utter_handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?
+  - utter_handle_quand_lesp_a-t-elle_fêté_ses_50_années?
+  - utter_handle_que_prouve_le_réseau_des_alumni_de_lesp?
+  - utter_handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
+  - utter_handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
+  - utter_handle_que_sest-il_passé_le_30_avril_1973_pour_liut?
+  - utter_handle_que_vise_lesp_?
+  - utter_handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
+  - utter_handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?
+  - utter_handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
+  - utter_handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?
+  - utter_handle_queles_sont_les_objectifs_de_lesp_?
+  - utter_handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?
+  - utter_handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?
+  - utter_handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
+  - utter_handle_quelle_est_la_personnalité_de_lesp?
+  - utter_handle_quelle_est_la_vocation_de_lesp?
+  - utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
+  - utter_handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
+  - utter_handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?
+  - utter_handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?
+  - utter_handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?
+  - utter_handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?
+  - utter_handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?
+  - utter_handle_quelles_sont_les_activités_de_sensibilisation_prévues_?
+  - utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?
+  - utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
+  - utter_handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
+  - utter_handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
+  - utter_handle_quelles_sont_les_fonctions_préparées_par_lesp_?
+  - utter_handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?
+  - utter_handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?
+  - utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
+  - utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
+  - utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
+  - utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
+  - utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?
+  - utter_handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
+  - utter_handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?
+  - utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?
+  - utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?
+  - utter_handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
+  - utter_handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
+  - utter_handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
+  - utter_handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?
+  - utter_handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?
+  - utter_handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?
+  - utter_handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?
+  - utter_handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?
+  - utter_handle_quels_services_de_carrière_sont_offerts_par_lesp_?
+  - utter_handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
+  - utter_handle_quels_sont_les_départements_de_lécole_?
+  - utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?
+  - utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?
+  - utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
+  - utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
+  - utter_handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?
+  - utter_handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
+  - utter_handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
+  - utter_handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
+  - utter_handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
+  - utter_handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
+  - utter_handle_quels_sont_les_programmes_de_formation_de_lesp
+  - utter_handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
+  - utter_handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?
+  - utter_handle_quels_sont_les_types_de_formations_offertes_?
+  - utter_handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?
+  - utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
+  - utter_handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
+  - utter_handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?
+  - utter_handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?
+  - utter_handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?
+  - utter_handle_quels_événements_académiques_sont_prévus_cette_année_?
+  - utter_handle_quels_événements_culturels_sont_organisés_par_lesp_?
+  - utter_handle_quest-il_arrivé_à_lenset_en_2005?
+  - utter_handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?
+  - utter_handle_qui_est_le_chef_du_departement_genie_chimique_?
+  - utter_handle_qui_est_le_chef_du_departement_genie_civil_?
+  - utter_handle_qui_est_le_chef_du_departement_genie_electrique_?
+  - utter_handle_qui_est_le_chef_du_departement_genie_informatique_?
+  - utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?
+  - utter_handle_qui_est_le_chef_du_département_génie_chimique_?
+  - utter_handle_qui_est_le_chef_du_département_génie_électrique_?
+  - utter_handle_qui_participe_aux_formations_de_lesp?
+  - utter_handle_salut
+  - utter_handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
+  - utter_handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?
+  - utter_handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?
+  - utter_handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?
+  - utter_handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?
+  - utter_handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
 responses:
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_goodbye:
-  - text: Bye
   utter_greet:
-  - text: Hey! How are you, comment puis-je vous aider ?
-  utter_handle_bonjour:
-  - text: Bonjour, comment puis-je vous aider ?
-  utter_handle_bonsoir:
-  - text: Bonsoir, comment puis-je vous aider ?
-  utter_default:  # Réponse par défaut pour l'intention de repli
-  - text: "Je suis désolé, je ne comprends pas votre question. Pouvez-vous reformuler ou poser une autre question ?"
-  utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?:
-  - text: "L'ESP est composée de deux centres principaux : le centre de Dakar et celui de Thiès. Ces centres sont stratégiquement 
-  situés pour offrir un accès pratique à l'éducation supérieure et aux installations de recherche."
-  utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?:
-  - text: Au cours des années, l'ESP a formé plus de 30 000 diplômés, contribuant ainsi à la main-d'œuvre qualifiée dans divers secteurs professionnels.
-  utter_handle_combien_de_départements_lesp_dispose_?:
-  - text: "L'ESP dispose de six départements académiques : Génie Informatique, Génie Chimique, Gestion, Génie Mécanique, Génie Civil, et Génie Électrique. Chaque département offre des programmes 
-  d'études spécialisés et est équipé pour soutenir l'apprentissage pratique et théorique."
-  utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?:
-  - text: "L'École Supérieure Polytechnique propose six départements distincts pour garantir une excellence 
-  académique et une formation professionnelle de haute qualité."
-  utter_handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?:
-  - text: 'Le Département compte 21 enseignants, dont 20 de spécialité répartis en
-      différentes catégories : 03 professeurs, 03 maîtres de conférences, 07 maîtres-assistants,
-      04 assistants dont deux titulaires, 01 professeur technique agrégé et 03 chefs
-      de travaux.'
-  utter_handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?:
-  - text: Le Département est appuyé par des vacataires pour compléter les enseignements
-      dispensés.
-  utter_handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?:
-  - text: Grâce à sa renommée et par la prise en charge des besoins de carrière dans
-      son curriculum de formation.
-  utter_handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?:
-  - text: Grâce à l'existence de laboratoires, halls de technologie équipés et adaptés
-      aux besoins des formations.
-  utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?:
-  - text: 'Vous pouvez contacter le departement Genie Chimique par mail ou par appel direct. Le mail du departement Genie Chimique est: [genie.chimique@esp.sn](mailto:genie.chimique@esp.sn) et leur contact est [00221 33 824 05 40](tel:+221338240540)'
-
-  utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?:
-  - text: 'Vous pouvez contacter le departement Genie Civil par mail ou par appel
-      direct. Le mail du departement Genie Civil est: genie.civil@esp.sn et leur contact
-      est 00221 33 824 05 40'
-  utter_handle_comment_peut_on_contacter_le_departement_genie_electrique_?:
-  - text: 'Vous pouvez contacter le departement Genie Electrique par mail ou par appel
-      direct. Le mail du departement Genie Electrique est: genie.electrique@esp.sn
-      et leur contact est 00221 33 824 05 40'
-  utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?:
-  - text: "Vous pouvez contacter le département Génie Informatique par mail ou par appel direct. Le mail du département Génie Informatique est: [genie.informatique@esp.sn](mailto:genie.informatique@esp.sn) et leur contact est [00221 33 824 05 40](tel:+221338240540)"
-  utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?:
-  - text: 'Vous pouvez contacter le departement Genie Mecanique par mail ou par appel
-      direct. Le mail du departement Genie Mecanique est: genie.mecanique@esp.sn et
-      leur contact est 00221 33 824 05 40'
-  utter_handle_comment_peut_on_contacter_le_departement_gestion_?:
-  - text: 'Vous pouvez contacter le departement Gestion par mail ou par appel direct.
-      Le mail du departement Gestion est: genie.gestion@esp.sn et leur contact est
-      00221 33 824 05 40'
-  utter_handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?:
-  - text: Les publications de recherche sont accessibles via la bibliothèque en ligne
-      de l'ESP.
-  utter_handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?:
-  - text: Pour accéder à la bibliothèque, vous devez être un étudiant ou un membre
-      du personnel de l'ESP et présenter votre carte d'identité.
-  utter_handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?:
-  - text: Pour vous impliquer dans les activités étudiantes, rejoignez une association
-      ou participez aux événements organisés par le bureau des affaires étudiantes.
-  utter_handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?:
-  - text: Pour vous inscrire aux ateliers et séminaires, consultez le calendrier des
-      événements sur le site web de l'ESP.
-  utter_handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?:
-  - text: Pour obtenir de l'aide pour la recherche d'emploi, consultez le bureau des
-      carrières de l'ESP.
-  utter_handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?:
-  - text: Pour participer aux conférences, inscrivez-vous en ligne via le site web
-      de l'ESP ou auprès du bureau des événements.
-  utter_handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?:
-  - text: Pour postuler à un projet de recherche, contactez le département de recherche
-      de l'ESP pour connaître les opportunités disponibles.
-  utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?:
-  - text: L'inscription et le dépôt en ligne sont possibles via la plateforme concours.esp.sn
-      accessible à partir du site web de l'ESP, Les dates d'inscription au concours
-      DUT sont communiquées par la scolarité de l'ESP. En général dans la période
-      allant de mi-février à mi-mai de chaque année
-  utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?:
-  - text: L'inscription et le dépôt en ligne sont possibles via le site web de l'ESP
-      www.esp.sn et sur my.esp.sn
-  utter_handle_comment_vérifier_le_statut_de_ma_candidature_?:
-  - text: 'Pour vérifier le statut de votre candidature à l''École Supérieure Polytechnique
-      (ESP) de Dakar, voici les étapes générales que vous pouvez suivre :'
-  ? utter_handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?
-  : - text: Les activités pédagogiques de l'École Supérieure Polytechnique se déroulent
-        dans six (6) départements.
-  utter_handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?:
-  - text: L'ESP procède à des expertises dans le cadre de la formation à l'intention
-      des entreprises publiques et privées.
-  utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?:
-  - text: De sa division tertiaire devenue Institut Supérieur de Gestion (ISG), rattachée
-      à la Faculté des Sciences Économiques de Gestion (FASEG).
-  utter_handle_infos_sur_lesp:
-  - text: L'École Supérieure Polytechnique (ESP) de Dakar a été créée en 1961. Elle
-      a été fondée dans le cadre de l'Université de Dakar, qui est devenue plus tard
-      l'Université Cheikh Anta Diop de Dakar (UCAD). L'ESP est l'une des premières
-      écoles d'ingénieurs à avoir été établies en Afrique de l'Ouest francophone,
-      et elle a joué un rôle important dans le développement de l'enseignement supérieur
-      technique et scientifique dans la région.
-  utter_handle_pourquoi_choisir_lesp_?:
-  - text: Choisir l'ESP, c'est intégrer un établissement pluridisciplinaire de renommée
-      mondiale, donner le meilleur de soi-même pour suivre une formation de haut niveau,
-      et rejoindre une communauté de plus de 20 617 étudiantes et étudiants, et 30
-      000 alumni dans le monde entier.
-  utter_handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?:
-  - text: Afin de garantir leur qualité, leur pertinence et leur adéquation aux besoins
-      des entreprises et des communautés.
-  utter_handle_quand_a_été_créée_lesp_de_dakar?:
-  - text: En 1964.
-  utter_handle_quand_a_été_créée_lesp_et_par_quelle_loi?:
-  - text: Le 24 novembre 1984 par la loi n°94-78.
-  utter_handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?:
-  - text: 'Début des inscriptions : Les inscriptions pour le cycle DUT commenceront
-      le 3 janvier 2024 et se poursuivront jusqu''au 1er février 2024. Dépôt des dossiers
-      : Les bacheliers et les candidats individuels au BAC peuvent dès à présent déposer
-      leurs dossiers de candidature à la Scolarité de l''ESP Dakar. Dates de téléversement
-      des pièces justificatives : Toutes les pièces justificatives doivent être téléversées
-      sur le site d''inscription entre le 9 décembre et le 23 janvier 2024 à 17h.'
-  utter_handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?:
-  - text: Le 20 novembre 1994.
-  utter_handle_quand_lesp_a-t-elle_fêté_ses_50_années?:
-  - text: En 2014.
-  utter_handle_que_prouve_le_réseau_des_alumni_de_lesp?:
-  - text: Que la majorité des diplômés de l'ESP travaillent dans de grandes entreprises,
-      tant au niveau national qu'international.
-  utter_handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?:
-  - text: L'ensemble des parcours de formation délivrés dans les six départements
-      de l'ESP, les missions de l'ESP, les différentes formations offertes et les
-      modalités d'admission à ces formations.
-  utter_handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?:
-  - text: Toute année entamée est due, même en cas d'abandon.
-  utter_handle_que_sest-il_passé_le_30_avril_1973_pour_liut?:
-  - text: La promulgation de la loi 73-17 et le décret 73-387 ont permis à l'IUT de
-      devenir un établissement public doté de la personnalité juridique et de l'autonomie
-      financière.
-  utter_handle_que_vise_lesp_?:
-  - text: L'école vise à former des ingénieurs et des techniciens de haut niveau capables
-      de contribuer au développement économique et technologique du Sénégal et de
-      la région ouest-africaine. Elle est réputée pour la qualité de son enseignement
-      et de sa recherche, et attire des étudiants non seulement du Sénégal mais aussi
-      de pays voisins.
-  utter_handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?:
-  - text: Le Département dispose de 02 PAS et 06 PT, dont 01 ingénieur de conception,
-      01 ingénieur technologue et 04 techniciens dont 03 supérieurs, qui assurent
-      le support administratif, technique et de service.
-  utter_handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?:
-  - text: L'un des objectifs de l'ESP est de servir la communauté.
-  utter_handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?:
-  - text: Bonne année universitaire.
-  utter_handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?:
-  - text: La création de l'Institut Polytechnique (IP), un établissement technique
-      supérieur dépendant de l'Université de Dakar.
-  utter_handle_queles_sont_les_objectifs_de_lesp_?:
-  - text: L'école vise à former des ingénieurs et des techniciens de haut niveau capables
-      de contribuer au développement économique et technologique du Sénégal et de
-      la région ouest-africaine. Elle est réputée pour la qualité de son enseignement
-      et de sa recherche, et attire des étudiants non seulement du Sénégal mais aussi
-      de pays voisins.
-  utter_handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?:
-  - text: La mission de l'École Supérieure Polytechnique (ESP) est de former des techniciens
-      supérieurs, des ingénieurs d'exécution, des managers et des ingénieurs de conception.
-  utter_handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?:
-  - text: Dans le cas des formations prises en charge par un tiers, toute année entamée
-      est due, même en cas d'abandon.
-  ? utter_handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?
-  : - text: L'École Nationale Supérieure Universitaire de Technologie (ENSUT).
-  utter_handle_quelle_est_la_personnalité_de_lesp?:
-  - text: L'ESP est dotée d'une personnalité juridique et de l'autonomie financière.
-  utter_handle_quelle_est_la_vocation_de_lesp?:
-  - text: Une vocation interafricaine de l'Université Cheikh Anta Diop de Dakar (UCAD).
-  utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?:
-  - text: L'École supérieure polytechnique (ESP) de l'Université Cheikh Anta Diop
-      de Dakar.
-  utter_handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?:
-  - text: La preuve que l'offre pédagogique de l'ESP est hautement professionnelle
-      et l'une des plus complètes au Sénégal et en Afrique francophone.
-  utter_handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?:
-  - text: L'École Nationale des Travaux Publics et Bâtiments (ENTPB) a été intégrée
-      au département de génie civil de l'IUT et d'autres réformes ont été mises en
-      place.
-  utter_handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?:
-  - text: La division tertiaire devenue Institut Supérieur de Gestion rattachée à
-      la FASEG est revenue dans l'ESP pour constituer son sixième département (Département
-      de gestion).
-  utter_handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?:
-  - text: Grâce à leur solide formation en sciences fondamentales et en sciences de
-      l'ingénieur, les étudiants sauront conduire et contrôler toutes les activités
-      qui touchent le domaine du génie des procédés. Formés aux sciences humaines
-      et à la gestion des entreprises, aux langues étrangères, aux nouvelles technologies
-      de l'information et de la communication, les diplômés du Département Génie Chimique
-      et Biologie Appliquée seront les cadres indispensables à l'entreprise, capables
-      de manager une équipe, de tisser de véritables relations humaines et sociales
-      mais également de transmettre leurs connaissances. Ils seront capables de dialoguer
-      avec les différents spécialistes qui interviennent dans les différentes étapes
-      du process industriel.
-  utter_handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?:
-  - text: De nombreuses entreprises locales et internationales recrutent régulièrement
-      des diplômés de l'ESP.
-  utter_handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?:
-  - text: Les installations sportives comprennent un terrain de football, des courts
-      de tennis et une salle de sport.
-  utter_handle_quelles_sont_les_activités_de_sensibilisation_prévues_?:
-  - text: Les activités de sensibilisation incluent des campagnes sur la santé, la
-      sécurité et l'environnement, organisées par l'ESP.
-  utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?:
-  - text: Les frais de scolarité sont gratuits pour l'étudiant qui y accède par concours
-      au niveau national.
-  utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?:
-  - text: Les frais de scolarité sont soit pris en charge par l'étudiant, ou par un
-      organisme public ou privé. L'étudiant y accède par test ou sélection de dossier.
-  utter_handle_quelles_sont_les_conditions_dadmission_pour_lesp_?:
-  - text: Les conditions d'admission à l'ESP incluent la réussite à un concours d'entrée
-      et la présentation des documents académiques requis.
-  utter_handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?:
-  - text: Les dates limites pour soumettre une candidature à l'ESP peuvent varier
-      d'une année à l'autre et selon le programme spécifique. Pour obtenir les dates
-      les plus récentes, il est crucial de consulter directement le site web de l'ESP
-      ou de contacter leur service des admissions.
-  utter_handle_quelles_sont_les_fonctions_préparées_par_lesp_?:
-  - text: L'ESP prépare aux fonctions dans la production, la recherche appliquée et
-      les services.
-  utter_handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?:
-  - text: Diplôme Universitaire de Technologie (DUT), Diplôme d'Ingénieur de Conception
-      (DIC), Diplôme d'Études Supérieures en Commerce, Administration et Finance (DESCAF),
-      Licence en Génie Biomédical, Master de Recherche
-  utter_handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?:
-  - text: Diplôme d'Ingénieur Technologue (DST), Diplôme d'Ingénieur Technologue (DIT),
-      Diplôme Élémentaire Comptable (DEC), Diplôme Supérieur Comptable (DSC), Licences,
-      Masters
-  utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?:
-  - text: 'Les formations qu''offre le departement de gestion Civil de l''ESP sont:
-      Diplôme Universitaire de Technologie (DUT) en Génie Civil : Niveau : Bac+2 Durée
-      : 2 ans Diplôme Supérieur de Technologie (DST) en Génie Civil : Niveau : Bac+2
-      Durée : 2 ans Licence Professionnelle en Génie Civil option Géomètre Topographe
-      : Niveau : Bac+3 Durée : 1 an Contenu : Sciences géographiques, photogrammétrie,
-      télédétection, topographie, DAO, droit foncier, hydraulique, stage professionnel
-      Diplôme d''Ingénieur Technologue (DIT) en Génie Civil : Niveau : Bac+4 Durée
-      : 4 ans Contenu : Mathématiques et sciences physiques, mise à niveau technologique,
-      génie urbain, communication, management, calcul de structures, hydraulique Diplôme
-      d’Ingénieur de Conception (DIC) en Génie Civil : Niveau : Bac+5 Durée : 5 ans'
-  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?:
-  - text: 'Les formations qu''offre le departement genie Chimique de l''ESP sont:
-      Diplôme Universitaire de Technologie (DUT) en Génie Chimique : Ce programme
-      est conçu pour les étudiants ayant un niveau Bac+2. Il fournit une base solide
-      en techniques et procédés chimiques. Diplôme Supérieur de Technologie (DST)
-      en Génie Chimique : Un autre programme Bac+2, orienté vers une formation plus
-      spécialisée et technique dans le domaine du génie chimique. Licence (Bac+3)
-      en Génie Chimique : Ce programme de trois ans permet aux étudiants de développer
-      des compétences avancées et une connaissance approfondie des procédés chimiques
-      et des technologies associées. Diplôme d’Ingénieur Technologue (DIT) en Génie
-      Chimique : Ce programme Bac+4 prépare les étudiants à des rôles techniques et
-      de gestion dans l''industrie chimique, combinant des connaissances théoriques
-      et des compétences pratiques. Diplôme d’Ingénieur de Conception (DIC) en Génie
-      Chimique : Ce programme de niveau Bac+5 vise à former des ingénieurs capables
-      de concevoir, optimiser et gérer des procédés chimiques complexes. Master en
-      Génie Chimique : Destiné aux étudiants ayant complété une licence, ce programme
-      de deux ans (Bac+5) se concentre sur des aspects avancés du génie chimique,
-      incluant la recherche et l''innovation.'
-  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?:
-  - text: 'Les formations qu''offre le departement genie Electrique de l''ESP sont:'
-  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?:
-  - text: 'Les formations qu''offre le departement genie Informatique de l''ESP sont
-      : Licence Genie des Donnees Technologies, Diplome d''Ingenieur de Technologie,
-      Master en Securite et Systeme d''Information, Master en Intelligence Artificielle
-      et Big Data, Master en Securite et Systeme d''Information, Master de Recherche
-      Sciences de l''Ingenieur, Master en Securite et Systeme d''Information, Licence
-      Professionelle et Genie Logiciel, Licence Professionnelle en Systeme, Reseaux'
-  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?:
-  - text: 'Les formations qu''offre le departement genie Mecanique de l''ESP sont
-      : Master En Bases Erienne Civile (MBAC), Licence Professionnelle Transport Logistique
-      et Mobilite, Diplome d''Ingenieur Technologue, Diplome Universitaire de Technologie,
-      Licence Professionnelle en Energie Renouvelable, Master de Recherche, Licence
-      Professionnnelle Conducteur des travaux en BTP, Licence Professionnelle en Genie
-      Civil Option Geometre Topographe.'
-  utter_handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?:
-  - text: 'Pour répondre aux besoins des industries chimiques, alimentaires et des
-      laboratoires d''analyses et de contrôle, le Département Génie Chimique et Biologie
-      Appliquée a mis en place différentes formations pour : le personnel technique
-      du niveau DUT (Diplôme Universitaire de Technologie) en Génie Chimique, en Industries
-      Alimentaires et en Analyses Biologiques, le personnel d''encadrement du niveau
-      DIC (Diplôme d''Ingénieur Technologie) en Génie des procédés appliqué aux industries
-      chimiques et aux industries agroalimentaire. Grâce à leur solide formation en
-      sciences fondamentales et en sciences de l''ingénieur, ils sauront conduire
-      et contrôler toutes les activités qui touchent le domaine du génie des procédés.
-      Formés aux sciences humaines et à la gestion des entreprises, aux langues étrangères,
-      aux nouvelles technologies de l''information et de la communication, les diplômés
-      du Département Génie Chimique et Biologie Appliquée seront les cadres indispensables
-      à l''entreprise, capables de manager une équipe, de tisser de véritables relations
-      humaines et sociales mais également de transmettre leurs connaissances. Ils
-      seront capables de dialoguer avec les différents spécialistes qui interviennent
-      dans les différentes étapes du process industriel.'
-  utter_handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?:
-  - text: Former des techniciens supérieurs, des ingénieurs d'exécution, des managers,
-      des ingénieurs de conception ; dispenser un enseignement supérieur et mener
-      des activités de recherche ; organiser des enseignements et des activités de
-      recherche pour le perfectionnement permanent ; procéder à des expertises ; servir
-      la communauté.
-  utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?:
-  - text: Fiche de candidature disponible à la scolarité ou au CAOSP, Photocopie légalisée
-      de l'attestation du Bac, Photocopie légalisée du relevé de notes du Bac, Bulletins
-      de notes des deux semestres des classes de Seconde, Première et Terminale, Cinq
-      mille francs CFA (5 000 F CFA) de frais de dossier non remboursables, Le dossier
-      complet devra être déposé par l'intéressé(e) à la scolarité de l'ESP à Dakar
-      ou au centre d'orientation régional
-  utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?:
-  - text: Fiche de candidature à remplir au niveau de votre établissement, Bulletin
-      de notes du 1er semestre de la classe de Terminale, Bulletins de notes des deux
-      semestres des classes de Première et de Seconde, Cinq mille francs CFA (5 000
-      F CFA) de frais de dossier non remboursables, Les dossiers, constitués au niveau
-      des établissements, devront être déposés par ces derniers, en un seul envoi,
-      à la scolarité de l'ESP à Dakar
-  utter_handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?:
-  - text: Le Département vise à faciliter la mobilité et l'évolution de carrière des
-      diplômés, en leur permettant de s'adapter à une grande variété d'emplois et
-      en offrant la possibilité de poursuivre des études ultérieures.
-  utter_handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?:
-  - text: 'Il y a généralement sept étapes à suivre pour postuler à un programme de
-      DST Informatique à l''ESP. Ces étapes sont : Recherche d''information : Vous
-      pouvez visiter le site Web de l''École Supérieure Polytechnique pour obtenir
-      des informations détaillées sur le programme de DST, y compris les prérequis,
-      les dates importantes et les documents nécessaires. Vérification des conditions
-      d''admission : Assurez-vous de répondre aux critères d''admission spécifiques
-      du programme, comme les qualifications académiques, l''expérience professionnelle,
-      ou les tests spécifiques. Préparation des documents : Il faut avoir nécessairement
-      à sa disposition ces documents pour avoir une chance d''être admis : Diplômes
-      et relevés de notes, Lettre de motivation, Curriculum Vitae (CV), Lettres de
-      recommandation, Photocopie de la pièce d''identité. Paiement des frais de dossier
-      : Payez les frais de dossier selon les modalités. Soumission de la candidature
-      : Soumettez votre candidature avant la date limite. Assurez-vous que tous les
-      champs sont correctement remplis et que tous les documents sont attachés. Examen
-      du dossier : L''école examine les dossiers de candidature. Vous pourriez être
-      convoqué pour un entretien ou un test supplémentaire en fonction des exigences
-      du programme. Réception de la réponse : Attendez la réponse de l''école. Si
-      vous êtes accepté, vous recevrez une lettre d''acceptation avec des instructions
-      supplémentaires sur les prochaines étapes. Voici donc les étapes à suivre pour
-      postuler à un programme de DST/Licence/Master.'
-  utter_handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?:
-  - text: ENSUT (École Nationale Supérieure Universitaire de Technologie), IUT (Institut
-      Universitaire de Technologie), IP (Institut Polytechnique).
-  utter_handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?:
-  - text: Diplôme d'Ingénieur en Technologie (DIT) et Diplôme d'Études Supérieures
-      de Commerce et d'Administration des Entreprises (DESCAE).
-  utter_handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?:
-  - text: Diplôme Universitaire de Technologie (DUT), Diplôme d'Ingénieur de Conception
-      (DIC), Diplôme d'Études Supérieures en Commerce, Administration et Finance (DESCAF),
-      Licence en Génie Biomédical, Master de Recherche.
-  utter_handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?:
-  - text: Diplôme d'Ingénieur Technologue (DST), Diplôme d'Ingénieur Technologue (DIT),
-      Diplôme Élémentaire Comptable (DEC), Diplôme Supérieur Comptable (DSC), Licences,
-      Masters.
-  utter_handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?:
-  - text: Les décrets présidentiels n°67-1230 et 67-1231 ont créé l'IUT le 15 novembre
-      1967.
-  utter_handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?:
-  - text: L'ESP offre des laboratoires modernes pour la chimie, la physique, l'électronique,
-      et bien d'autres domaines.
-  utter_handle_quels_services_de_carrière_sont_offerts_par_lesp_?:
-  - text: L'ESP propose des services de conseil en carrière, des ateliers de rédaction
-      de CV, et des salons de l'emploi.
-  utter_handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?:
-  - text: Le Département couvre les domaines de l'électronique, de l'électrotechnique,
-      des automatismes et de l'informatique industrielle.
-  utter_handle_quels_sont_les_départements_de_lécole_?:
-  - text: Département Génie Chimique et Biologie Appliquée, Département Génie Civil,
-      Département Génie Electrique, Département Génie Mécanique, Département Génie
-      Informatique, Département Gestion
-  utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?:
-  - text: Chimique & Biologie Appliquée, Civil, Électrique, Mécanique, Informatique,
-      Gestion.
-  utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?:
-  - text: 'Les départements de l''École Supérieure Polytechnique sont : Chimique &
-      Biologie Appliquée, Civil, Électrique, Mécanique, Informatique, et Gestion.'
-  utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?:
-  - text: Les frais de scolarité annuel de la formation DST Informatique s'élèvent
-      à 1.035.000 FCFA
-  utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?:
-  - text: Les frais de scolarité annuel de la formation Systèmes et réseaux s'élèvent
-      à 1.035.000 FCFA
-  utter_handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?:
-  - text: Les frais d'inscription pour les nouveaux étudiants varient selon le programme,
-      généralement autour de 150 000 FCFA.
-  utter_handle_quels_sont_les_laboratoires_de_recherche_disponibles_?:
-  - text: Les laboratoires de recherche à l'ESP comprennent des installations pour
-      la nanotechnologie, la biotechnologie, et l'ingénierie environnementale.
-  utter_handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?:
-  - text: 'Pour répondre aux besoins des industries chimiques, alimentaires et des
-      laboratoires d''analyses et de contrôle, le Département Génie Chimique et Biologie
-      Appliquée a mis en place différentes formations pour : le personnel technique
-      du niveau DUT (Diplôme Universitaire de Technologie) en Génie Chimique, en Industries
-      Alimentaires et en Analyses Biologiques, le personnel d''encadrement du niveau
-      DIC (Diplôme d''Ingénieur Technologie) en Génie des procédés appliqué aux industries
-      chimiques et aux industries agroalimentaire. Grâce à leur solide formation en
-      sciences fondamentales et en sciences de l''ingénieur, ils sauront conduire
-      et contrôler toutes les activités qui touchent le domaine du génie des procédés.
-      Formés aux sciences humaines et à la gestion des entreprises, aux langues étrangères,
-      aux nouvelles technologies de l''information et de la communication, les diplômés
-      du Département Génie Chimique et Biologie Appliquée seront les cadres indispensables
-      à l''entreprise, capables de manager une équipe, de tisser de véritables relations
-      humaines et sociales mais également de transmettre leurs connaissances. Ils
-      seront capables de dialoguer avec les différents spécialistes qui interviennent
-      dans les différentes étapes du process industriel.'
-  utter_handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?:
-  - text: 'Le Département Informatique a pour missions de : former des Techniciens
-      supérieurs, Assistants ingénieurs, des Ingénieurs en Informatique Télé-Informatique
-      et en Télécommunication ; mener des activités de recherche dans les domaines
-      sus-mentionnés visant au perfectionnement permanent, à l''adaptation et à la
-      participation à l''évolution scientifique et technologique ; procéder à des
-      expertises dans le cadre de la formation à l''intention des entreprises publiques
-      et privées.'
-  utter_handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?:
-  - text: 'Pour répondre aux besoins des industries chimiques, alimentaires et des
-      laboratoires d''analyses et de contrôle, le Département Génie Chimique et Biologie
-      Appliquée a mis en place différentes formations pour : le personnel technique
-      du niveau DUT (Diplôme Universitaire de Technologie) en Génie Chimique, en Industries
-      Alimentaires et en Analyses Biologiques, le personnel d''encadrement du niveau
-      DIC (Diplôme d''Ingénieur Technologie) en Génie des procédés appliqué aux industries
-      chimiques et aux industries agroalimentaire. Grâce à leur solide formation en
-      sciences fondamentales et en sciences de l''ingénieur, ils sauront conduire
-      et contrôler toutes les activités qui touchent le domaine du génie des procédés.
-      Formés aux sciences humaines et à la gestion des entreprises, aux langues étrangères,
-      aux nouvelles technologies de l''information et de la communication, les diplômés
-      du Département Génie Chimique et Biologie Appliquée seront les cadres indispensables
-      à l''entreprise, capables de manager une équipe, de tisser de véritables relations
-      humaines et sociales mais également de transmettre leurs connaissances. Ils
-      seront capables de dialoguer avec les différents spécialistes qui interviennent
-      dans les différentes étapes du process industriel.'
-  utter_handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?:
-  - text: Les principaux domaines de recherche incluent les énergies renouvelables,
-      les matériaux avancés et l'intelligence artificielle.
-  utter_handle_quels_sont_les_programmes_de_formation_de_lesp:
-  - text: L'ESP offre des programmes de formation dans divers domaines de formation
-      de l'ingénierie, tels que le génie civil, le génie électrique, le génie mécanique,
-      le génie informatique, le génie des télécommunications, le génie pétrolier,
-      etc. Elle propose également des formations dans des domaines connexes comme
-      la gestion de projet, la recherche opérationnelle, etc.
-  ? utter_handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
-  : - text: Les diplômés peuvent travailler dans des secteurs aussi divers que la
-        production, les services, les études, la recherche appliquée et les expertises.
-  utter_handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?:
-  - text: Les taux de placement des diplômés de l'ESP sont élevés, avec une majorité
-      des diplômés trouvant un emploi dans les six mois suivant l'obtention de leur
-      diplôme.
-  utter_handle_quels_sont_les_types_de_formations_offertes_?:
-  - text: Formations prises en charge par l'État du Sénégal, Formations prises en
-      charge par un Tiers
-  utter_handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?:
-  - text: L'ESP offre des salles informatiques avec des ordinateurs, des imprimantes
-      et des scanners pour les étudiants.
-  utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?:
-  - text: Diplôme universitaire de technologie (DUT), diplôme supérieur de technologie
-      (DST), licence, diplôme d'ingénieur technologue (DIT), master, diplôme d'ingénieur
-      de conception (DIC) et doctorat.
-  utter_handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?:
-  - text: Le Département offre des formations pour devenir technicien supérieur et
-      ingénieur de conception.
-  utter_handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?:
-  - text: L'École Supérieure Polytechnique délivre plusieurs formations diplômantes
-      classées en deux grandes catégories.
-  utter_handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?:
-  - text: L'ESP dispense un enseignement supérieur et mène des activités de recherche
-      visant au perfectionnement permanent, à l'adaptation et à la participation à
-      l'évolution scientifique et technologique.
-  utter_handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?:
-  - text: L'École Polytechnique de Thiès (EPT) et l'École Nationale Supérieure d'Enseignement
-      Technique Professionnel (ENSET).
-  utter_handle_quels_événements_académiques_sont_prévus_cette_année_?:
-  - text: Les événements académiques incluent des conférences, des ateliers et des
-      séminaires organisés tout au long de l'année.
-  utter_handle_quels_événements_culturels_sont_organisés_par_lesp_?:
-  - text: L'ESP organise divers événements culturels tels que des journées portes
-      ouvertes, des festivals de musique et des conférences.
-  utter_handle_quest-il_arrivé_à_lenset_en_2005?:
-  - text: L'ENSET a été reconstituée en reprenant sa partie industrielle qui était
-      dans l'ESP.
-  utter_handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?:
-  - text: Il est redevenu l'École Polytechnique de Thiès, rattachée à l'Université
-      de Thiès, puis directement au Ministère chargé de l'Enseignement Supérieur.
-  utter_handle_qui_est_le_chef_du_departement_genie_chimique_?:
-  - text: Le chef du departement Genie Chimique est M Saidou Moustapha SALL
-  utter_handle_qui_est_le_chef_du_departement_genie_civil_?:
-  - text: Le chef du departement Genie Civil est Libasse SOW
-  utter_handle_qui_est_le_chef_du_departement_genie_electrique_?:
-  - text: Le chef du departement Genie Electrique est M. Khaly TALL
-  utter_handle_qui_est_le_chef_du_departement_genie_informatique_?:
-  - text: Le chef du departement Genie Informatique est Pr Ibrahima FALL
-  utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?:
-  - text: Le chef du departement Genie Mecanique est M. Ousmane SOW
-  utter_handle_qui_est_le_chef_du_département_génie_chimique_?:
-  - text: 'Le chef du département du Génie Chimique est : M. Saidou Moustapha SALL'
-  utter_handle_qui_est_le_chef_du_département_génie_électrique_?:
-  - text: Le chef du département Génie Électrique est M. Khally TALL
-  utter_handle_qui_participe_aux_formations_de_lesp?:
-  - text: Des enseignants de métier et des professionnels issus des différents secteurs
-      du monde socio-économique.
-  utter_handle_salut:
-  - text: Salut, comment puis-je vous aider ?
-  utter_handle_y_a-t-il_des_collaborations_internationales_en_recherche_?:
-  - text: Oui, l'ESP collabore avec plusieurs universités et instituts de recherche
-      internationaux.
-  utter_handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?:
-  - text: Oui, des espaces de coworking sont disponibles pour les étudiants, équipés
-      de Wi-Fi et d'autres ressources.
-  utter_handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?:
-  - text: Oui, l'ESP organise des journées portes ouvertes deux fois par an pour permettre
-      aux futurs étudiants de visiter le campus.
-  utter_handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?:
-  - text: Oui, l'ESP offre des programmes de stage en collaboration avec des entreprises
-      locales et internationales.
-  utter_handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?:
-  - text: Oui, l'ESP dispose de résidences universitaires pour les étudiants, disponibles
-      sur demande.
-  utter_handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?:
-  - text: À l'évaluation de l'Autorité nationale d'assurance qualité de l'enseignement
-      supérieur (ANAQ-Sup).
+    - text: Bonjour ! Comment puis-je vous aider aujourd'hui ?
+  utter_goodbye:
+    - text: Au revoir ! Passez une bonne journée.
   utter_happy:
-  - text: Great, carry on!
+    - text: Je suis content d'entendre que vous allez bien !
+  utter_cheer_up:
+    - text: Ne vous inquiétez pas, tout ira bien !
+  utter_did_that_help:
+    - text: Est-ce que cela vous aide ?
+  utter_handle_bonjour:
+    - text: Bonjour ! Comment ça va ?
+  utter_handle_bonsoir:
+    - text: Bonsoir ! Comment s'est passée votre journée ?
+  utter_fallback:
+    - text: Désolé, je n'ai pas compris cela. Pouvez-vous reformuler ?
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+    - text: Je suis un assistant virtuel, prêt à vous aider !
+  utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?:
+    - text: "L'ESP est composée de deux centres principaux : le centre de Dakar et
+        celui de Thiès. Ces centres sont stratégiquement situés pour offrir un
+        accès pratique à l'éducation supérieure et aux installations de
+        recherche."
+  utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?:
+    - text: Au cours des années, l'ESP a formé plus de 30 000 diplômés, contribuant
+        ainsi à la main-d'œuvre qualifiée dans divers secteurs professionnels.
+  utter_handle_combien_de_départements_lesp_dispose_?:
+    - text: "L'ESP dispose de six départements académiques : Génie Informatique, Génie
+        Chimique, Gestion, Génie Mécanique, Génie Civil, et Génie Électrique.
+        Chaque département offre des programmes d'études spécialisés et est
+        équipé pour soutenir l'apprentissage pratique et théorique."
+  utter_handle_combien_de_départements_propose_lécole_pour_lexcellence_?:
+    - text: L'École Supérieure Polytechnique propose six départements distincts pour
+        garantir une excellence académique et une formation professionnelle de
+        haute qualité.
+  utter_handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?:
+    - text: "Le Département compte 21 enseignants, dont 20 de spécialité répartis en
+        différentes catégories : 03 professeurs, 03 maîtres de conférences, 07
+        maîtres-assistants, 04 assistants dont deux titulaires, 01 professeur
+        technique agrégé et 03 chefs de travaux."
+  utter_handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?:
+    - text: Le Département est appuyé par des vacataires pour compléter les
+        enseignements dispensés.
+  utter_handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?:
+    - text: Grâce à sa renommée et par la prise en charge des besoins de carrière dans
+        son curriculum de formation.
+  utter_handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement_apprentissage?:
+    - text: Grâce à l'existence de laboratoires, halls de technologie équipés et
+        adaptés aux besoins des formations.
+  utter_handle_comment_peut_on_contacter_le_departement_genie_chimique_?:
+    - text: "Vous pouvez contacter le departement Genie Chimique par mail ou par appel
+        direct. Le mail du departement Genie Chimique est:
+        [genie.chimique@esp.sn](mailto:genie.chimique@esp.sn) et leur contact
+        est [00221 33 824 05 40](tel:+221338240540)"
+  utter_handle_comment_peut_on_contacter_le_departement_genie_civil_?:
+    - text: "Vous pouvez contacter le departement Genie Civil par mail ou par appel
+        direct. Le mail du departement Genie Civil est: genie.civil@esp.sn et
+        leur contact est 00221 33 824 05 40"
+  utter_handle_comment_peut_on_contacter_le_departement_genie_electrique_?:
+    - text: "Vous pouvez contacter le departement Genie Electrique par mail ou par
+        appel direct. Le mail du departement Genie Electrique est:
+        genie.electrique@esp.sn et leur contact est 00221 33 824 05 40"
+  utter_handle_comment_peut_on_contacter_le_departement_genie_informatique_?:
+    - text: "Vous pouvez contacter le département Génie Informatique par mail ou par
+        appel direct. Le mail du département Génie Informatique est:
+        [genie.informatique@esp.sn](mailto:genie.informatique@esp.sn) et leur
+        contact est [00221 33 824 05 40](tel:+221338240540)"
+  utter_handle_comment_peut_on_contacter_le_departement_genie_mecanique_?:
+    - text: "Vous pouvez contacter le departement Genie Mecanique par mail ou par
+        appel direct. Le mail du departement Genie Mecanique est:
+        genie.mecanique@esp.sn et leur contact est 00221 33 824 05 40"
+  utter_handle_comment_peut_on_contacter_le_departement_gestion_?:
+    - text: "Vous pouvez contacter le departement Gestion par mail ou par appel
+        direct. Le mail du departement Gestion est: genie.gestion@esp.sn et leur
+        contact est 00221 33 824 05 40"
+  utter_handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?:
+    - text: Les publications de recherche sont accessibles via la bibliothèque en
+        ligne de l'ESP.
+  utter_handle_comment_puis-je_accéder_à_la_bibliothèque_de_lesp_?:
+    - text: Pour accéder à la bibliothèque, vous devez être un étudiant ou un membre
+        du personnel de l'ESP et présenter votre carte d'identité.
+  utter_handle_comment_puis-je_mimpliquer_dans_les_activités_étudiantes_?:
+    - text: Pour vous impliquer dans les activités étudiantes, rejoignez une
+        association ou participez aux événements organisés par le bureau des
+        affaires étudiantes.
+  utter_handle_comment_puis-je_minscrire_aux_ateliers_et_séminaires_?:
+    - text: Pour vous inscrire aux ateliers et séminaires, consultez le calendrier des
+        événements sur le site web de l'ESP.
+  utter_handle_comment_puis-je_obtenir_de_laide_pour_la_recherche_demploi_?:
+    - text: Pour obtenir de l'aide pour la recherche d'emploi, consultez le bureau des
+        carrières de l'ESP.
+  utter_handle_comment_puis-je_participer_aux_conférences_organisées_par_lesp_?:
+    - text: Pour participer aux conférences, inscrivez-vous en ligne via le site web
+        de l'ESP ou auprès du bureau des événements.
+  utter_handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?:
+    - text: Pour postuler à un projet de recherche, contactez le département de
+        recherche de l'ESP pour connaître les opportunités disponibles.
+  utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_bacheliers_?:
+    - text: L'inscription et le dépôt en ligne sont possibles via la plateforme
+        concours.esp.sn accessible à partir du site web de l'ESP, Les dates
+        d'inscription au concours DUT sont communiquées par la scolarité de
+        l'ESP. En général dans la période allant de mi-février à mi-mai de
+        chaque année
+  utter_handle_comment_se_fait_le_dépôt_électronique_pour_les_élèves_en_classe_de_terminale_?:
+    - text: L'inscription et le dépôt en ligne sont possibles via le site web de l'ESP
+        www.esp.sn et sur my.esp.sn
+  utter_handle_comment_vérifier_le_statut_de_ma_candidature_?:
+    - text: "Pour vérifier le statut de votre candidature à l'École Supérieure
+        Polytechnique (ESP) de Dakar, voici les étapes générales que vous pouvez
+        suivre :"
+  utter_handle_dans_combien_de_départements_les_activités_pédagogiques_de_lécole_supérieure_polytechnique_se_déroulent-elles_?:
+    - text: Les activités pédagogiques de l'École Supérieure Polytechnique se
+        déroulent dans six (6) départements.
+  utter_handle_dans_quel_cadre_lesp_procède-t-elle_à_des_expertises_?:
+    - text: L'ESP procède à des expertises dans le cadre de la formation à l'intention
+        des entreprises publiques et privées.
+  utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?:
+    - text: De sa division tertiaire devenue Institut Supérieur de Gestion (ISG),
+        rattachée à la Faculté des Sciences Économiques de Gestion (FASEG).
+  utter_handle_infos_sur_lesp:
+    - text: L'École Supérieure Polytechnique (ESP) de Dakar a été créée en 1961. Elle
+        a été fondée dans le cadre de l'Université de Dakar, qui est devenue
+        plus tard l'Université Cheikh Anta Diop de Dakar (UCAD). L'ESP est l'une
+        des premières écoles d'ingénieurs à avoir été établies en Afrique de
+        l'Ouest francophone, et elle a joué un rôle important dans le
+        développement de l'enseignement supérieur technique et scientifique dans
+        la région.
+  utter_handle_pourquoi_choisir_lesp_?:
+    - text: Choisir l'ESP, c'est intégrer un établissement pluridisciplinaire de
+        renommée mondiale, donner le meilleur de soi-même pour suivre une
+        formation de haut niveau, et rejoindre une communauté de plus de 20 617
+        étudiantes et étudiants, et 30 000 alumni dans le monde entier.
+  utter_handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?:
+    - text: Afin de garantir leur qualité, leur pertinence et leur adéquation aux
+        besoins des entreprises et des communautés.
+  utter_handle_quand_a_été_créée_lesp_de_dakar?:
+    - text: En 1964.
+  utter_handle_quand_a_été_créée_lesp_et_par_quelle_loi?:
+    - text: Le 24 novembre 1984 par la loi n°94-78.
+  utter_handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?:
+    - text: "Début des inscriptions : Les inscriptions pour le cycle DUT commenceront
+        le 3 janvier 2024 et se poursuivront jusqu'au 1er février 2024. Dépôt
+        des dossiers : Les bacheliers et les candidats individuels au BAC
+        peuvent dès à présent déposer leurs dossiers de candidature à la
+        Scolarité de l'ESP Dakar. Dates de téléversement des pièces
+        justificatives : Toutes les pièces justificatives doivent être
+        téléversées sur le site d'inscription entre le 9 décembre et le 23
+        janvier 2024 à 17h."
+  utter_handle_quand_la_loi_94-78_a-t-elle_créé_lécole_supérieure_polytechnique_(esp)?:
+    - text: Le 20 novembre 1994.
+  utter_handle_quand_lesp_a-t-elle_fêté_ses_50_années?:
+    - text: En 2014.
+  utter_handle_que_prouve_le_réseau_des_alumni_de_lesp?:
+    - text: Que la majorité des diplômés de l'ESP travaillent dans de grandes
+        entreprises, tant au niveau national qu'international.
+  utter_handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?:
+    - text: L'ensemble des parcours de formation délivrés dans les six départements de
+        l'ESP, les missions de l'ESP, les différentes formations offertes et les
+        modalités d'admission à ces formations.
+  utter_handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?:
+    - text: Toute année entamée est due, même en cas d'abandon.
+  utter_handle_que_sest-il_passé_le_30_avril_1973_pour_liut?:
+    - text: La promulgation de la loi 73-17 et le décret 73-387 ont permis à l'IUT de
+        devenir un établissement public doté de la personnalité juridique et de
+        l'autonomie financière.
+  utter_handle_que_vise_lesp_?:
+    - text: L'école vise à former des ingénieurs et des techniciens de haut niveau
+        capables de contribuer au développement économique et technologique du
+        Sénégal et de la région ouest-africaine. Elle est réputée pour la
+        qualité de son enseignement et de sa recherche, et attire des étudiants
+        non seulement du Sénégal mais aussi de pays voisins.
+  "utter_handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?":
+    - text: Le Département dispose de 02 PAS et 06 PT, dont 01 ingénieur de
+        conception, 01 ingénieur technologue et 04 techniciens dont 03
+        supérieurs, qui assurent le support administratif, technique et de
+        service.
+  utter_handle_quel_est_lun_des_objectifs_de_lesp_concernant_la_communauté_?:
+    - text: L'un des objectifs de l'ESP est de servir la communauté.
+  utter_handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?:
+    - text: Bonne année universitaire.
+  utter_handle_quel_événement_majeur_sest_produit_le_20_mai_1964_concernant_lesp?:
+    - text: La création de l'Institut Polytechnique (IP), un établissement technique
+        supérieur dépendant de l'Université de Dakar.
+  utter_handle_queles_sont_les_objectifs_de_lesp_?:
+    - text: L'école vise à former des ingénieurs et des techniciens de haut niveau
+        capables de contribuer au développement économique et technologique du
+        Sénégal et de la région ouest-africaine. Elle est réputée pour la
+        qualité de son enseignement et de sa recherche, et attire des étudiants
+        non seulement du Sénégal mais aussi de pays voisins.
+  utter_handle_quelle_est_la_mission_de_lécole_supérieure_polytechnique_(esp)_?:
+    - text: La mission de l'École Supérieure Polytechnique (ESP) est de former des
+        techniciens supérieurs, des ingénieurs d'exécution, des managers et des
+        ingénieurs de conception.
+  utter_handle_quelle_est_la_note_importante_à_retenir_pour_les_formations_prises_en_charge_par_un_tiers_?:
+    - text: Dans le cas des formations prises en charge par un tiers, toute année
+        entamée est due, même en cas d'abandon.
+  utter_handle_quelle_est_la_nouvelle_appellation_de_linstitut_après_avoir_dispensé_des_enseignements_en_commerce_et_administration_des_entreprises?:
+    - text: L'École Nationale Supérieure Universitaire de Technologie (ENSUT).
+  utter_handle_quelle_est_la_personnalité_de_lesp?:
+    - text: L'ESP est dotée d'une personnalité juridique et de l'autonomie financière.
+  utter_handle_quelle_est_la_vocation_de_lesp?:
+    - text: Une vocation interafricaine de l'Université Cheikh Anta Diop de Dakar
+        (UCAD).
+  utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?:
+    - text: L'École supérieure polytechnique (ESP) de l'Université Cheikh Anta Diop de
+        Dakar.
+  utter_handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?:
+    - text: La preuve que l'offre pédagogique de l'ESP est hautement professionnelle
+        et l'une des plus complètes au Sénégal et en Afrique francophone.
+  utter_handle_quelle_réforme_a_eu_lieu_en_1973-1974_concernant_lentpb?:
+    - text: L'École Nationale des Travaux Publics et Bâtiments (ENTPB) a été intégrée
+        au département de génie civil de l'IUT et d'autres réformes ont été
+        mises en place.
+  utter_handle_quelle_transformation_a_eu_lieu_en_2006_concernant_la_division_tertiaire_de_lensut?:
+    - text: La division tertiaire devenue Institut Supérieur de Gestion rattachée à la
+        FASEG est revenue dans l'ESP pour constituer son sixième département
+        (Département de gestion).
+  utter_handle_quelles_compétences_les_étudiants_acquièrent-ils_en_suivant_les_formations_du_département_génie_chimique_?:
+    - text: Grâce à leur solide formation en sciences fondamentales et en sciences de
+        l'ingénieur, les étudiants sauront conduire et contrôler toutes les
+        activités qui touchent le domaine du génie des procédés. Formés aux
+        sciences humaines et à la gestion des entreprises, aux langues
+        étrangères, aux nouvelles technologies de l'information et de la
+        communication, les diplômés du Département Génie Chimique et Biologie
+        Appliquée seront les cadres indispensables à l'entreprise, capables de
+        manager une équipe, de tisser de véritables relations humaines et
+        sociales mais également de transmettre leurs connaissances. Ils seront
+        capables de dialoguer avec les différents spécialistes qui interviennent
+        dans les différentes étapes du process industriel.
+  utter_handle_quelles_entreprises_recrutent_des_diplômés_de_lesp_?:
+    - text: De nombreuses entreprises locales et internationales recrutent
+        régulièrement des diplômés de l'ESP.
+  utter_handle_quelles_installations_sportives_sont_disponibles_sur_le_campus_?:
+    - text: Les installations sportives comprennent un terrain de football, des courts
+        de tennis et une salle de sport.
+  utter_handle_quelles_sont_les_activités_de_sensibilisation_prévues_?:
+    - text: Les activités de sensibilisation incluent des campagnes sur la santé, la
+        sécurité et l'environnement, organisées par l'ESP.
+  utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_létat_du_sénégal_?:
+    - text: Les frais de scolarité sont gratuits pour l'étudiant qui y accède par
+        concours au niveau national.
+  utter_handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?:
+    - text: Les frais de scolarité sont soit pris en charge par l'étudiant, ou par un
+        organisme public ou privé. L'étudiant y accède par test ou sélection de
+        dossier.
+  utter_handle_quelles_sont_les_conditions_dadmission_pour_lesp_?:
+    - text: Les conditions d'admission à l'ESP incluent la réussite à un concours
+        d'entrée et la présentation des documents académiques requis.
+  utter_handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?:
+    - text: Les dates limites pour soumettre une candidature à l'ESP peuvent varier
+        d'une année à l'autre et selon le programme spécifique. Pour obtenir les
+        dates les plus récentes, il est crucial de consulter directement le site
+        web de l'ESP ou de contacter leur service des admissions.
+  utter_handle_quelles_sont_les_fonctions_préparées_par_lesp_?:
+    - text: L'ESP prépare aux fonctions dans la production, la recherche appliquée et
+        les services.
+  utter_handle_quelles_sont_les_formations_prises_en_charge_par_létat_du_sénégal_?:
+    - text: Diplôme Universitaire de Technologie (DUT), Diplôme d'Ingénieur de
+        Conception (DIC), Diplôme d'Études Supérieures en Commerce,
+        Administration et Finance (DESCAF), Licence en Génie Biomédical, Master
+        de Recherche
+  utter_handle_quelles_sont_les_formations_prises_en_charge_par_un_tiers_?:
+    - text: Diplôme d'Ingénieur Technologue (DST), Diplôme d'Ingénieur Technologue
+        (DIT), Diplôme Élémentaire Comptable (DEC), Diplôme Supérieur Comptable
+        (DSC), Licences, Masters
+  utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?:
+    - text: "Les formations qu'offre le departement de gestion Civil de l'ESP sont:
+        Diplôme Universitaire de Technologie (DUT) en Génie Civil : Niveau :
+        Bac+2 Durée : 2 ans Diplôme Supérieur de Technologie (DST) en Génie
+        Civil : Niveau : Bac+2 Durée : 2 ans Licence Professionnelle en Génie
+        Civil option Géomètre Topographe : Niveau : Bac+3 Durée : 1 an Contenu :
+        Sciences géographiques, photogrammétrie, télédétection, topographie,
+        DAO, droit foncier, hydraulique, stage professionnel Diplôme d'Ingénieur
+        Technologue (DIT) en Génie Civil : Niveau : Bac+4 Durée : 4 ans Contenu
+        : Mathématiques et sciences physiques, mise à niveau technologique,
+        génie urbain, communication, management, calcul de structures,
+        hydraulique Diplôme d’Ingénieur de Conception (DIC) en Génie Civil :
+        Niveau : Bac+5 Durée : 5 ans"
+  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?:
+    - text: "Les formations qu'offre le departement genie Chimique de l'ESP sont:
+        Diplôme Universitaire de Technologie (DUT) en Génie Chimique : Ce
+        programme est conçu pour les étudiants ayant un niveau Bac+2. Il fournit
+        une base solide en techniques et procédés chimiques. Diplôme Supérieur
+        de Technologie (DST) en Génie Chimique : Un autre programme Bac+2,
+        orienté vers une formation plus spécialisée et technique dans le domaine
+        du génie chimique. Licence (Bac+3) en Génie Chimique : Ce programme de
+        trois ans permet aux étudiants de développer des compétences avancées et
+        une connaissance approfondie des procédés chimiques et des technologies
+        associées. Diplôme d’Ingénieur Technologue (DIT) en Génie Chimique : Ce
+        programme Bac+4 prépare les étudiants à des rôles techniques et de
+        gestion dans l'industrie chimique, combinant des connaissances
+        théoriques et des compétences pratiques. Diplôme d’Ingénieur de
+        Conception (DIC) en Génie Chimique : Ce programme de niveau Bac+5 vise à
+        former des ingénieurs capables de concevoir, optimiser et gérer des
+        procédés chimiques complexes. Master en Génie Chimique : Destiné aux
+        étudiants ayant complété une licence, ce programme de deux ans (Bac+5)
+        se concentre sur des aspects avancés du génie chimique, incluant la
+        recherche et l'innovation."
+  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?:
+    - text: "Les formations qu'offre le departement genie Electrique de l'ESP sont:"
+  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?:
+    - text: "Les formations qu'offre le departement genie Informatique de l'ESP sont :
+        Licence Genie des Donnees Technologies, Diplome d'Ingenieur de
+        Technologie, Master en Securite et Systeme d'Information, Master en
+        Intelligence Artificielle et Big Data, Master en Securite et Systeme
+        d'Information, Master de Recherche Sciences de l'Ingenieur, Master en
+        Securite et Systeme d'Information, Licence Professionelle et Genie
+        Logiciel, Licence Professionnelle en Systeme, Reseaux"
+  utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_mecanique_de_lesp_?:
+    - text: "Les formations qu'offre le departement genie Mecanique de l'ESP sont :
+        Master En Bases Erienne Civile (MBAC), Licence Professionnelle Transport
+        Logistique et Mobilite, Diplome d'Ingenieur Technologue, Diplome
+        Universitaire de Technologie, Licence Professionnelle en Energie
+        Renouvelable, Master de Recherche, Licence Professionnnelle Conducteur
+        des travaux en BTP, Licence Professionnelle en Genie Civil Option
+        Geometre Topographe."
+  utter_handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?:
+    - text: "Pour répondre aux besoins des industries chimiques, alimentaires et des
+        laboratoires d'analyses et de contrôle, le Département Génie Chimique et
+        Biologie Appliquée a mis en place différentes formations pour : le
+        personnel technique du niveau DUT (Diplôme Universitaire de Technologie)
+        en Génie Chimique, en Industries Alimentaires et en Analyses
+        Biologiques, le personnel d'encadrement du niveau DIC (Diplôme
+        d'Ingénieur Technologie) en Génie des procédés appliqué aux industries
+        chimiques et aux industries agroalimentaire. Grâce à leur solide
+        formation en sciences fondamentales et en sciences de l'ingénieur, ils
+        sauront conduire et contrôler toutes les activités qui touchent le
+        domaine du génie des procédés. Formés aux sciences humaines et à la
+        gestion des entreprises, aux langues étrangères, aux nouvelles
+        technologies de l'information et de la communication, les diplômés du
+        Département Génie Chimique et Biologie Appliquée seront les cadres
+        indispensables à l'entreprise, capables de manager une équipe, de tisser
+        de véritables relations humaines et sociales mais également de
+        transmettre leurs connaissances. Ils seront capables de dialoguer avec
+        les différents spécialistes qui interviennent dans les différentes
+        étapes du process industriel."
+  utter_handle_quelles_sont_les_missions_de_lécole_supérieure_polytechnique_(esp)_?:
+    - text: Former des techniciens supérieurs, des ingénieurs d'exécution, des
+        managers, des ingénieurs de conception ; dispenser un enseignement
+        supérieur et mener des activités de recherche ; organiser des
+        enseignements et des activités de recherche pour le perfectionnement
+        permanent ; procéder à des expertises ; servir la communauté.
+  utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_bacheliers_?:
+    - text: Fiche de candidature disponible à la scolarité ou au CAOSP, Photocopie
+        légalisée de l'attestation du Bac, Photocopie légalisée du relevé de
+        notes du Bac, Bulletins de notes des deux semestres des classes de
+        Seconde, Première et Terminale, Cinq mille francs CFA (5 000 F CFA) de
+        frais de dossier non remboursables, Le dossier complet devra être déposé
+        par l'intéressé(e) à la scolarité de l'ESP à Dakar ou au centre
+        d'orientation régional
+  utter_handle_quelles_sont_les_modalités_pour_le_dépôt_physique_pour_les_élèves_en_classe_de_terminale_?:
+    - text: Fiche de candidature à remplir au niveau de votre établissement, Bulletin
+        de notes du 1er semestre de la classe de Terminale, Bulletins de notes
+        des deux semestres des classes de Première et de Seconde, Cinq mille
+        francs CFA (5 000 F CFA) de frais de dossier non remboursables, Les
+        dossiers, constitués au niveau des établissements, devront être déposés
+        par ces derniers, en un seul envoi, à la scolarité de l'ESP à Dakar
+  utter_handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?:
+    - text: Le Département vise à faciliter la mobilité et l'évolution de carrière des
+        diplômés, en leur permettant de s'adapter à une grande variété d'emplois
+        et en offrant la possibilité de poursuivre des études ultérieures.
+  utter_handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?:
+    - text: "Il y a généralement sept étapes à suivre pour postuler à un programme de
+        DST Informatique à l'ESP. Ces étapes sont : Recherche d'information :
+        Vous pouvez visiter le site Web de l'École Supérieure Polytechnique pour
+        obtenir des informations détaillées sur le programme de DST, y compris
+        les prérequis, les dates importantes et les documents nécessaires.
+        Vérification des conditions d'admission : Assurez-vous de répondre aux
+        critères d'admission spécifiques du programme, comme les qualifications
+        académiques, l'expérience professionnelle, ou les tests spécifiques.
+        Préparation des documents : Il faut avoir nécessairement à sa
+        disposition ces documents pour avoir une chance d'être admis : Diplômes
+        et relevés de notes, Lettre de motivation, Curriculum Vitae (CV),
+        Lettres de recommandation, Photocopie de la pièce d'identité. Paiement
+        des frais de dossier : Payez les frais de dossier selon les modalités.
+        Soumission de la candidature : Soumettez votre candidature avant la date
+        limite. Assurez-vous que tous les champs sont correctement remplis et
+        que tous les documents sont attachés. Examen du dossier : L'école
+        examine les dossiers de candidature. Vous pourriez être convoqué pour un
+        entretien ou un test supplémentaire en fonction des exigences du
+        programme. Réception de la réponse : Attendez la réponse de l'école. Si
+        vous êtes accepté, vous recevrez une lettre d'acceptation avec des
+        instructions supplémentaires sur les prochaines étapes. Voici donc les
+        étapes à suivre pour postuler à un programme de DST/Licence/Master."
+  utter_handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?:
+    - text: ENSUT (École Nationale Supérieure Universitaire de Technologie), IUT
+        (Institut Universitaire de Technologie), IP (Institut Polytechnique).
+  utter_handle_quels_diplômes_complémentaires_linstitut_délivre-t-il?:
+    - text: Diplôme d'Ingénieur en Technologie (DIT) et Diplôme d'Études Supérieures
+        de Commerce et d'Administration des Entreprises (DESCAE).
+  utter_handle_quels_diplômes_sont_pris_en_charge_par_létat_du_sénégal_?:
+    - text: Diplôme Universitaire de Technologie (DUT), Diplôme d'Ingénieur de
+        Conception (DIC), Diplôme d'Études Supérieures en Commerce,
+        Administration et Finance (DESCAF), Licence en Génie Biomédical, Master
+        de Recherche.
+  utter_handle_quels_diplômes_sont_pris_en_charge_par_un_tiers_?:
+    - text: Diplôme d'Ingénieur Technologue (DST), Diplôme d'Ingénieur Technologue
+        (DIT), Diplôme Élémentaire Comptable (DEC), Diplôme Supérieur Comptable
+        (DSC), Licences, Masters.
+  utter_handle_quels_décrets_présidentiels_ont_créé_liut_et_quand?:
+    - text: Les décrets présidentiels n°67-1230 et 67-1231 ont créé l'IUT le 15
+        novembre 1967.
+  utter_handle_quels_laboratoires_sont_disponibles_pour_les_étudiants_en_ingénierie_?:
+    - text: L'ESP offre des laboratoires modernes pour la chimie, la physique,
+        l'électronique, et bien d'autres domaines.
+  utter_handle_quels_services_de_carrière_sont_offerts_par_lesp_?:
+    - text: L'ESP propose des services de conseil en carrière, des ateliers de
+        rédaction de CV, et des salons de l'emploi.
+  utter_handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?:
+    - text: Le Département couvre les domaines de l'électronique, de
+        l'électrotechnique, des automatismes et de l'informatique industrielle.
+  utter_handle_quels_sont_les_départements_de_lécole_?:
+    - text: Département Génie Chimique et Biologie Appliquée, Département Génie Civil,
+        Département Génie Electrique, Département Génie Mécanique, Département
+        Génie Informatique, Département Gestion
+  utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_(esp)_?:
+    - text: Chimique & Biologie Appliquée, Civil, Électrique, Mécanique, Informatique,
+        Gestion.
+  utter_handle_quels_sont_les_départements_de_lécole_supérieure_polytechnique_?:
+    - text: "Les départements de l'École Supérieure Polytechnique sont : Chimique &
+        Biologie Appliquée, Civil, Électrique, Mécanique, Informatique, et
+        Gestion."
+  utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?:
+    - text: Les frais de scolarité annuel de la formation DST Informatique s'élèvent à
+        1.035.000 FCFA
+  utter_handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?:
+    - text: Les frais de scolarité annuel de la formation Systèmes et réseaux
+        s'élèvent à 1.035.000 FCFA
+  utter_handle_quels_sont_les_frais_dinscription_pour_les_nouveaux_étudiants_?:
+    - text: Les frais d'inscription pour les nouveaux étudiants varient selon le
+        programme, généralement autour de 150 000 FCFA.
+  utter_handle_quels_sont_les_laboratoires_de_recherche_disponibles_?:
+    - text: Les laboratoires de recherche à l'ESP comprennent des installations pour
+        la nanotechnologie, la biotechnologie, et l'ingénierie environnementale.
+  utter_handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?:
+    - text: "Pour répondre aux besoins des industries chimiques, alimentaires et des
+        laboratoires d'analyses et de contrôle, le Département Génie Chimique et
+        Biologie Appliquée a mis en place différentes formations pour : le
+        personnel technique du niveau DUT (Diplôme Universitaire de Technologie)
+        en Génie Chimique, en Industries Alimentaires et en Analyses
+        Biologiques, le personnel d'encadrement du niveau DIC (Diplôme
+        d'Ingénieur Technologie) en Génie des procédés appliqué aux industries
+        chimiques et aux industries agroalimentaire. Grâce à leur solide
+        formation en sciences fondamentales et en sciences de l'ingénieur, ils
+        sauront conduire et contrôler toutes les activités qui touchent le
+        domaine du génie des procédés. Formés aux sciences humaines et à la
+        gestion des entreprises, aux langues étrangères, aux nouvelles
+        technologies de l'information et de la communication, les diplômés du
+        Département Génie Chimique et Biologie Appliquée seront les cadres
+        indispensables à l'entreprise, capables de manager une équipe, de tisser
+        de véritables relations humaines et sociales mais également de
+        transmettre leurs connaissances. Ils seront capables de dialoguer avec
+        les différents spécialistes qui interviennent dans les différentes
+        étapes du process industriel."
+  utter_handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?:
+    - text: "Le Département Informatique a pour missions de : former des Techniciens
+        supérieurs, Assistants ingénieurs, des Ingénieurs en Informatique
+        Télé-Informatique et en Télécommunication ; mener des activités de
+        recherche dans les domaines sus-mentionnés visant au perfectionnement
+        permanent, à l'adaptation et à la participation à l'évolution
+        scientifique et technologique ; procéder à des expertises dans le cadre
+        de la formation à l'intention des entreprises publiques et privées."
+  utter_handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?:
+    - text: "Pour répondre aux besoins des industries chimiques, alimentaires et des
+        laboratoires d'analyses et de contrôle, le Département Génie Chimique et
+        Biologie Appliquée a mis en place différentes formations pour : le
+        personnel technique du niveau DUT (Diplôme Universitaire de Technologie)
+        en Génie Chimique, en Industries Alimentaires et en Analyses
+        Biologiques, le personnel d'encadrement du niveau DIC (Diplôme
+        d'Ingénieur Technologie) en Génie des procédés appliqué aux industries
+        chimiques et aux industries agroalimentaire. Grâce à leur solide
+        formation en sciences fondamentales et en sciences de l'ingénieur, ils
+        sauront conduire et contrôler toutes les activités qui touchent le
+        domaine du génie des procédés. Formés aux sciences humaines et à la
+        gestion des entreprises, aux langues étrangères, aux nouvelles
+        technologies de l'information et de la communication, les diplômés du
+        Département Génie Chimique et Biologie Appliquée seront les cadres
+        indispensables à l'entreprise, capables de manager une équipe, de tisser
+        de véritables relations humaines et sociales mais également de
+        transmettre leurs connaissances. Ils seront capables de dialoguer avec
+        les différents spécialistes qui interviennent dans les différentes
+        étapes du process industriel."
+  utter_handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?:
+    - text: Les principaux domaines de recherche incluent les énergies renouvelables,
+        les matériaux avancés et l'intelligence artificielle.
+  utter_handle_quels_sont_les_programmes_de_formation_de_lesp:
+    - text: L'ESP offre des programmes de formation dans divers domaines de formation
+        de l'ingénierie, tels que le génie civil, le génie électrique, le génie
+        mécanique, le génie informatique, le génie des télécommunications, le
+        génie pétrolier, etc. Elle propose également des formations dans des
+        domaines connexes comme la gestion de projet, la recherche
+        opérationnelle, etc.
+  utter_handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?:
+    - text: Les diplômés peuvent travailler dans des secteurs aussi divers que la
+        production, les services, les études, la recherche appliquée et les
+        expertises.
+  utter_handle_quels_sont_les_taux_de_placement_des_diplômés_de_lesp_?:
+    - text: Les taux de placement des diplômés de l'ESP sont élevés, avec une majorité
+        des diplômés trouvant un emploi dans les six mois suivant l'obtention de
+        leur diplôme.
+  utter_handle_quels_sont_les_types_de_formations_offertes_?:
+    - text: Formations prises en charge par l'État du Sénégal, Formations prises en
+        charge par un Tiers
+  utter_handle_quels_sont_les_équipements_informatiques_disponibles_pour_les_étudiants_?:
+    - text: L'ESP offre des salles informatiques avec des ordinateurs, des imprimantes
+        et des scanners pour les étudiants.
+  utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?:
+    - text: Diplôme universitaire de technologie (DUT), diplôme supérieur de
+        technologie (DST), licence, diplôme d'ingénieur technologue (DIT),
+        master, diplôme d'ingénieur de conception (DIC) et doctorat.
+  utter_handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?:
+    - text: Le Département offre des formations pour devenir technicien supérieur et
+        ingénieur de conception.
+  utter_handle_quels_types_de_formations_lécole_supérieure_polytechnique_délivre-t-elle_?:
+    - text: L'École Supérieure Polytechnique délivre plusieurs formations diplômantes
+        classées en deux grandes catégories.
+  utter_handle_quels_types_denseignement_et_dactivités_de_recherche_lesp_dispense-t-elle_?:
+    - text: L'ESP dispense un enseignement supérieur et mène des activités de
+        recherche visant au perfectionnement permanent, à l'adaptation et à la
+        participation à l'évolution scientifique et technologique.
+  utter_handle_quels_établissements_composent_lesp_créée_par_la_loi_94-78?:
+    - text: L'École Polytechnique de Thiès (EPT) et l'École Nationale Supérieure
+        d'Enseignement Technique Professionnel (ENSET).
+  utter_handle_quels_événements_académiques_sont_prévus_cette_année_?:
+    - text: Les événements académiques incluent des conférences, des ateliers et des
+        séminaires organisés tout au long de l'année.
+  utter_handle_quels_événements_culturels_sont_organisés_par_lesp_?:
+    - text: L'ESP organise divers événements culturels tels que des journées portes
+        ouvertes, des festivals de musique et des conférences.
+  utter_handle_quest-il_arrivé_à_lenset_en_2005?:
+    - text: L'ENSET a été reconstituée en reprenant sa partie industrielle qui était
+        dans l'ESP.
+  utter_handle_quest-il_arrivé_à_lex_centre_de_thiès_de_lesp_en_2007?:
+    - text: Il est redevenu l'École Polytechnique de Thiès, rattachée à l'Université
+        de Thiès, puis directement au Ministère chargé de l'Enseignement
+        Supérieur.
+  utter_handle_qui_est_le_chef_du_departement_genie_chimique_?:
+    - text: Le chef du departement Genie Chimique est M Saidou Moustapha SALL
+  utter_handle_qui_est_le_chef_du_departement_genie_civil_?:
+    - text: Le chef du departement Genie Civil est Libasse SOW
+  utter_handle_qui_est_le_chef_du_departement_genie_electrique_?:
+    - text: Le chef du departement Genie Informatique est M. Khaly TALL
+  utter_handle_qui_est_le_chef_du_departement_genie_informatique_?:
+    - text: Le chef du departement Genie Informatique est Pr Ibrahima FALL
+  utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?:
+    - text: Le chef du departement Genie Mecanique est M. Ousmane SOW
+  utter_handle_qui_est_le_chef_du_département_génie_chimique_?:
+    - text: "Le chef du département du Génie Chimique est : M. Saidou Moustapha SALL"
+  utter_handle_qui_est_le_chef_du_département_génie_électrique_?:
+    - text: Le chef du département Génie Électrique est M. Khally TALL
+  utter_handle_qui_participe_aux_formations_de_lesp?:
+    - text: Des enseignants de métier et des professionnels issus des différents
+        secteurs du monde socio-économique.
+  utter_handle_salut:
+    - text: Salut, comment puis-je vous aider ?
+  utter_handle_y_a-t-il_des_collaborations_internationales_en_recherche_?:
+    - text: Oui, l'ESP collabore avec plusieurs universités et instituts de recherche
+        internationaux.
+  utter_handle_y_a-t-il_des_espaces_de_coworking_pour_les_étudiants_?:
+    - text: Oui, des espaces de coworking sont disponibles pour les étudiants, équipés
+        de Wi-Fi et d'autres ressources.
+  utter_handle_y_a-t-il_des_journées_portes_ouvertes_à_lesp_?:
+    - text: Oui, l'ESP organise des journées portes ouvertes deux fois par an pour
+        permettre aux futurs étudiants de visiter le campus.
+  utter_handle_y_a-t-il_des_programmes_de_stage_disponibles_pour_les_étudiants_?:
+    - text: Oui, l'ESP offre des programmes de stage en collaboration avec des
+        entreprises locales et internationales.
+  utter_handle_y_a-t-il_des_résidences_universitaires_sur_le_campus_?:
+    - text: Oui, l'ESP dispose de résidences universitaires pour les étudiants,
+        disponibles sur demande.
+  utter_handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?:
+    - text: À l'évaluation de l'Autorité nationale d'assurance qualité de
+        l'enseignement supérieur (ANAQ-Sup).
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
-version: '3.1'
+version: "3.1"

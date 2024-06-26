@@ -2,41 +2,42 @@ version: '3.1'
 
 stories:
 - steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
+  - intent: handle_bonjour
+  - action: utter_handle_bonjour
+  - intent: humeur_excellente
   - action: utter_happy
   story: happy path
+
 - steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - intent: handle_bonjour
+  - action: utter_handle_bonjour
+  - intent: humeur_mecontente
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   story: sad path 1
+
 - steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - intent: handle_bonjour
+  - action: utter_handle_bonjour
+  - intent: humeur_mecontente
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: deny
+  - intent: refuser
   - action: utter_goodbye
   story: sad path 2
+
 - steps:
   - intent: handle_bonjour
   - action: utter_handle_bonjour
   story: Story for handle_bonjour
-- steps:
-  - intent: handle_salut
-  - action: utter_handle_salut
-  story: Story for handle_salut
+
 - steps:
   - intent: handle_bonsoir
   - action: utter_handle_bonsoir
   story: Story for handle_bonsoir
+
 - steps:
   - intent: handle_infos_sur_lesp
   - action: utter_handle_infos_sur_lesp
@@ -49,10 +50,6 @@ stories:
   - intent: handle_que_vise_lesp_?
   - action: utter_handle_que_vise_lesp_?
   story: Story for handle_que_vise_lesp_?
-- steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_queles_sont_les_objectifs_de_lesp_?
   - action: utter_handle_queles_sont_les_objectifs_de_lesp_?
@@ -218,9 +215,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
@@ -318,9 +315,9 @@ stories:
   - action: utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
   story: Story for handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
 - steps:
-  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
-  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
-  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés_?
+  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
+  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
 - steps:
   - intent: handle_quest-il_arrivé_à_lenset_en_2005?
   - action: utter_handle_quest-il_arrivé_à_lenset_en_2005?
@@ -394,9 +391,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
