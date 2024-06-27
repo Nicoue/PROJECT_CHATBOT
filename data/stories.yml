@@ -2,42 +2,41 @@ version: '3.1'
 
 stories:
 - steps:
-  - intent: handle_bonjour
-  - action: utter_handle_bonjour
-  - intent: humeur_excellente
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
   - action: utter_happy
   story: happy path
-
 - steps:
-  - intent: handle_bonjour
-  - action: utter_handle_bonjour
-  - intent: humeur_mecontente
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   story: sad path 1
-
 - steps:
-  - intent: handle_bonjour
-  - action: utter_handle_bonjour
-  - intent: humeur_mecontente
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: refuser
+  - intent: deny
   - action: utter_goodbye
   story: sad path 2
-
 - steps:
   - intent: handle_bonjour
   - action: utter_handle_bonjour
   story: Story for handle_bonjour
-
+- steps:
+  - intent: handle_salut
+  - action: utter_handle_salut
+  story: Story for handle_salut
 - steps:
   - intent: handle_bonsoir
   - action: utter_handle_bonsoir
   story: Story for handle_bonsoir
-
 - steps:
   - intent: handle_infos_sur_lesp
   - action: utter_handle_infos_sur_lesp
@@ -50,6 +49,10 @@ stories:
   - intent: handle_que_vise_lesp_?
   - action: utter_handle_que_vise_lesp_?
   story: Story for handle_que_vise_lesp_?
+- steps:
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_queles_sont_les_objectifs_de_lesp_?
   - action: utter_handle_queles_sont_les_objectifs_de_lesp_?
@@ -175,10 +178,6 @@ stories:
   - action: utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?
   story: Story for handle_qui_est_le_chef_du_departement_genie_mecanique_?
 - steps:
-  - intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
-  - action: utter_handle_qui_est_le_chef_du_departement_genie_electrique_?
-  story: Story for handle_qui_est_le_chef_du_departement_genie_electrique_?
-- steps:
   - intent: handle_qui_est_le_chef_du_departement_genie_civil_?
   - action: utter_handle_qui_est_le_chef_du_departement_genie_civil_?
   story: Story for handle_qui_est_le_chef_du_departement_genie_civil_?
@@ -203,10 +202,6 @@ stories:
   - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
   story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
 - steps:
-  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-- steps:
   - intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
   - action: utter_handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
   story: Story for handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
@@ -215,9 +210,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
@@ -242,10 +237,6 @@ stories:
   - intent: handle_qui_participe_aux_formations_de_lesp?
   - action: utter_handle_qui_participe_aux_formations_de_lesp?
   story: Story for handle_qui_participe_aux_formations_de_lesp?
-- steps:
-  - intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
-  - action: utter_handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
-  story: Story for handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement/apprentissage?
 - steps:
   - intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
   - action: utter_handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
@@ -314,10 +305,6 @@ stories:
   - intent: handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
   - action: utter_handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
   story: Story for handle_de_quelle_division_lesp_sest-elle_séparée_au_moment_de_sa_création_en_1994?
-- steps:
-  - intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
-  - action: utter_handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
-  story: Story for handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
 - steps:
   - intent: handle_quest-il_arrivé_à_lenset_en_2005?
   - action: utter_handle_quest-il_arrivé_à_lenset_en_2005?
@@ -391,9 +378,9 @@ stories:
   - action: utter_handle_quand_a_été_créée_lesp_de_dakar?
   story: Story for handle_quand_a_été_créée_lesp_de_dakar?
 - steps:
-  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+  - intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  - action: utter_handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
+  story: Story for handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
 - steps:
   - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   - action: utter_handle_quels_types_de_diplômes_lesp_offre-t-elle?
@@ -519,10 +506,6 @@ stories:
   - action: utter_handle_qui_est_le_chef_du_departement_genie_mecanique_?
   story: Story for handle_qui_est_le_chef_du_departement_genie_mecanique_?
 - steps:
-  - intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
-  - action: utter_handle_qui_est_le_chef_du_departement_genie_electrique_?
-  story: Story for handle_qui_est_le_chef_du_departement_genie_electrique_?
-- steps:
   - intent: handle_qui_est_le_chef_du_departement_genie_civil_?
   - action: utter_handle_qui_est_le_chef_du_departement_genie_civil_?
   story: Story for handle_qui_est_le_chef_du_departement_genie_civil_?
@@ -547,9 +530,6 @@ stories:
   - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
   story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
 - steps:
-  - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-  - action: utter_handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
-  story: Story for handle_quelles_sont_les_formations_quoffre_le_departement_genie_electrique_de_lesp_?
 - steps:
   - intent: handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
   - action: utter_handle_quelles_sont_les_conditions_dadmission_pour_lesp_?
