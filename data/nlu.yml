@@ -1,271 +1,141 @@
 version: '3.1'
 
 nlu:
-- intent: handle_bonjour
+- intent: greet
   examples: |
-    - bonjour
-    - salut
-    - hello
-    - hi
-    - bonjour à tous
-    - bonjour tout le monde
     - hey
-    - coucou
-    - bon matin
-    - salutations
-    - bonjour, comment ça va ?
-    - salut les amis
-    - bonjour là-dedans
-    - salut tout le monde
-    - bonjour par ici
-    - bonjour mon ami
-    - salut, quoi de neuf ?
-    - bonjour à vous
-    - bonjour, comment allez-vous ?
-    - hey là-bas
-    - bonjour, j'espère que vous passez une bonne journée
-    - bonjour et bonne journée
-    - hello tout le monde
-    - salut à vous
-    - bonjour, comment tu vas ?
-    - bonjour tout le monde, quel plaisir de vous voir
-    - hey, bonjour
-    - bonjour, comment allez-vous aujourd'hui ?
-    - salut à tous
-    - bonjour, ça va bien ?
-    - bonjour tout le monde, ça fait plaisir de vous voir
-    - bonjour, comment ça va par ici ?
-    - salut, j'espère que tout va bien pour vous
-    - bonjour là-haut
-    - bonjour, comment se passe votre journée ?
-    - salut à tous, comment ça va ?
-    - bonjour, j'espère que vous avez passé une bonne journée
-    - bonjour à vous tous
-    - salut, comment ça va aujourd'hui ?
-    - bonjour tout le monde, j'espère que vous allez bien
-    - bonjour, j'espère que vous avez passé une bonne nuit
-
-- intent: handle_bonsoir
-  examples: |
-    - bonsoir
-    - bonne soirée
-    - salut
     - hello
     - hi
-    - bonsoir tout le monde
-    - bonsoir à tous
-    - bonsoir mes amis
-    - bonne soirée à vous
-    - salut à tous
-    - bonsoir là-dedans
-    - hello tout le monde
-    - bonsoir à vous tous
-    - bonsoir, comment ça va ?
-    - bonne soirée, j'espère que vous passez une bonne soirée
-    - bonsoir, j'espère que tout va bien pour vous
-    - bonsoir et bonne nuit
-    - bonsoir, quel plaisir de vous voir
-    - bonsoir, comment allez-vous ce soir ?
-    - salut là-haut
-    - bonsoir, j'espère que vous avez eu une bonne journée
-    - bonsoir tout le monde, quel plaisir de vous voir
-    - bonsoir, comment s'est passée votre journée ?
-    - salut à tous, bonne soirée
-    - bonsoir, comment allez-vous aujourd'hui ?
-    - bonsoir tout le monde, j'espère que vous allez bien
-    - bonsoir, comment se passe votre soirée ?
-    - salut, j'espère que tout va bien pour vous ce soir
-    - bonsoir là-bas
-    - bonsoir, comment s'est passé votre journée ?
-    - salut à tous, j'espère que vous avez passé une bonne journée
-    - bonsoir, j'espère que vous avez eu une bonne journée
-    - bonsoir tout le monde, comment ça va ?
-    - bonsoir, j'espère que vous avez passé une bonne journée
-    - bonsoir à vous tous, j'espère que vous allez bien
-    - salut, comment allez-vous ce soir ?
-    - bonsoir tout le monde, j'espère que vous avez passé une bonne journée
-    - bonsoir, comment s'est passée votre journée ?
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
 
 - intent: goodbye
   examples: |
     - cu
     - good bye
-    - à plus
-    - à bientôt
-    - au revoir
-    - à la prochaine
-    - à plus tard
-    - ciao
-    - à demain
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
     - bye bye
-    - à la revoyure
-    - adieu
-    - passe une bonne journée
-    - je file
-    - je m'en vais
-    - salut, je dois y aller
-    - bye, à la prochaine
-    - à tout à l'heure
-    - je vous laisse
-    - à la semaine prochaine
-    - bonne nuit
-    - je m'en vais maintenant
-    - à la prochaine fois
-    - bye, à la revoyure
-    - à plus tard tout le monde
-    - à demain alors
-    - ciao à tous
-    - je m'en vais là
-    - à bientôt, au revoir
-    - à la prochaine fois
-    - je m'en vais maintenant
+    - see you later
 
 - intent: affirm
   examples: |
-    - correcte
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
     - absolument
     - bien sûr
     - exactement
     - tout à fait
     - oui
     - en effet
-    - assurément
-    - exact
-    - tout à fait d'accord
-    - évidemment
-    - parfaitement
-    - absolument vrai
-    - tout à fait juste
-    - tout à fait certain
-    - sans aucun doute
-    - parfaitement exact
-    - oui bien sûr
-    - absolument correct
-    - tout à fait exact
-    - complètement vrai
-    - tout à fait certain
-    - c'est ça
-    - tout à fait d'accord avec ça
-    - je suis d'accord
-    - évidemment que oui
-    - tout à fait certain de cela
-    - c'est exact
-    - sans aucun doute là-dessus
 
-- intent: refuser
+- intent: deny
   examples: |
-    - non
+    - no
     - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - absolument pas
+    - non
     - jamais
     - je ne pense pas
     - pas vraiment
-    - absolument pas
-    - pas du tout
-    - aucune chance
-    - sans façon
-    - certainement pas
-    - vraiment pas
-    - loin de là
-    - loin d'être le cas
-    - pas du tout
-    - aucune possibilité
-    - pas envisageable
-    - impossible
-    - ça ne me semble pas
-    - définitivement non
-    - en aucune manière
-    - pas question
-    - pas du tout d'accord
-    - impossible
-    - pas du tout, vraiment
-    - absolument pas
 
-- intent: humeur_excellente
+- intent: mood_great
   examples: |
-    - super
-    - génial
-    - fantastique
-    - je vais très bien
-    - je me sens super
-    - je suis au top
-    - parfait
-    - je suis très heureux
-    - formidable
-    - excellent
-    - extraordinaire
-    - je suis dans une bonne humeur
-    - je suis de très bonne humeur
-    - je suis ravi
-    - je suis enchanté
-    - ça va super bien
-    - je suis dans mon élément
-    - je suis comblé
-    - je suis aux anges
-    - je suis euphorique
-    - je suis radieux
-    - je suis plein d'énergie
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - je vais super bien
     - je suis en pleine forme
-    - je suis dans un état formidable
-    - je suis dans un état génial
-    - je suis de très bonne humeur aujourd'hui
-    - je suis dans une forme olympique
-    - je suis dans un état fantastique
-    - je suis de très bonne humeur aujourd'hui
+    - tout va bien
+    - je me sens super
+    - je suis très heureux
 
-- intent: humeur_mecontente
+- intent: mood_unhappy
   examples: |
-    - horrible
-    - triste
-    - je me sens mal
-    - déçu
-    - très triste
-    - pas bon
-    - mauvaise journée
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so sad
     - ça ne va pas
-    - je suis mécontent
-    - je me sens déprimé
-    - je suis désolé
-    - je ne suis pas content
-    - je suis dans une mauvaise humeur
-    - je suis démoralisé
-    - je suis au plus bas
-    - je suis abattu
-    - je suis dans un mauvais état
-    - je suis dans un état déplorable
-    - je suis dans un mauvais jour
-    - je me sens déprimé aujourd'hui
-    - je suis découragé
-    - je suis dans un état de malaise
-    - je suis triste aujourd'hui
-    - je me sens déprimé
-    - je suis vraiment désolé
-    - je suis dans un mauvais jour
+    - je suis triste
+    - je me sens mal
+    - je suis déçu
+    - c'est une mauvaise journée
+    - je ne vais pas bien
 
-- intent: defi_bot
+- intent: bot_challenge
   examples: |
-    - es-tu un robot ?
-    - es-tu une IA ?
-    - est-ce que je parle à un humain ?
-    - es-tu réel ?
-    - es-tu un véritable être humain ?
-    - es-tu un vrai humain ?
-    - es-tu une intelligence artificielle ?
-    - es-tu un vrai robot ?
-    - es-tu un être vivant ?
-    - es-tu une personne ?
-    - est-ce que tu es réel ?
-    - est-ce que tu es un vrai robot ?
-    - est-ce que je parle à une machine ?
-    - est-ce que tu es une entité ?
-    - es-tu une entité vivante ?
-    - es-tu réellement un robot ?
-    - es-tu un individu ?
-    - es-tu une machine ?
-    - es-tu une personne réelle ?
-    - es-tu un vrai être humain ?
-    - est-ce que je parle à une IA ?
-    - es-tu un vrai être ?
-    - es-tu une personne vivante ?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - es-tu un robot?
+    - es-tu un humain?
+    - suis-je en train de parler à un robot?
+    - suis-je en train de parler à un humain?
+    - es-tu réel?
+    - es-tu une IA?
+
+- intent: handle_bonjour
+  examples: |
+    - bonjour
+    - bonjour à tous
+    - bonjour tout le monde
+
+- intent: handle_salut
+  examples: |
+    - salut
+    - salutations
+    - salut tout le monde
+    - salut à tous
+
+- intent: handle_bonsoir
+  examples: |
+    - bonsoir
+    - bonne soirée
+    - bonsoir tout le monde
+    - bonsoir à tous
 
 - intent: handle_infos_sur_lesp
   examples: |
@@ -305,6 +175,7 @@ nlu:
     - Avez-vous des infos sur l'ESP ?
     - Pouvez-vous me dire quelque chose sur l'ESP ?
     - Quels sont les points essentiels à savoir sur l'ESP ?
+
 - intent: handle_quels_sont_les_programmes_de_formation_de_lesp
   examples: |
     - Quels sont les programmes de formation de l'ESP ?
@@ -361,7 +232,6 @@ nlu:
 - intent: handle_que_vise_lesp_?
   examples: |
     - Que vise l'ESP ?
-    - Quels sont les objectifs de l'ESP ?
     - Quelles sont les missions de l'ESP ?
     - Quelles sont les ambitions de l'ESP ?
     - Quels sont les buts de l'ESP ?
@@ -370,11 +240,9 @@ nlu:
     - Que cherche à accomplir l'ESP ?
     - Quels sont les objectifs à long terme de l'ESP ?
     - Quelle est la mission de l'ESP ?
-    - Quels sont les objectifs stratégiques de l'ESP ?
     - Quelles sont les finalités de l'ESP ?
     - Quels sont les objectifs clés de l'ESP ?
     - Que veut réaliser l'ESP ?
-    - Quels sont les principaux objectifs de l'ESP ?
     - Quelles sont les priorités de l'ESP ?
     - Quels sont les objectifs à court terme de l'ESP ?
     - Quelles sont les grandes lignes des objectifs de l'ESP ?
@@ -409,12 +277,11 @@ nlu:
     - Comment l'ESP se distingue-t-elle des autres établissements ?
     - Comment l'ESP soutient-elle l'éducation ?
     - Pourquoi choisir l'ESP plutôt qu'un autre établissement ?
-    - Qu'est-ce qui rend l'ESP unique ?
     - Comment l'ESP aide-t-elle ses étudiants à réussir ?
     - Qu'est-ce qui motive l'ESP à innover ?
     - Comment l'ESP prépare-t-elle ses étudiants à l'avenir ?
 
-- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_a_lesp_?
+- intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_dst_informatique_à_lesp_?
   examples: |
     - Quels sont les frais de scolarité annuels de la formation DST Informatique à l'ESP ?
     - Combien coûte la formation DST Informatique à l'ESP ?
@@ -497,7 +364,6 @@ nlu:
     - Quel montant dois-je payer chaque année pour la formation DST Informatique à l'ESP ?
     - Pourriez-vous me dire combien ça coûte de faire la formation DST Informatique à l'ESP ?
     - Quel est le montant à verser chaque année pour la formation DST Informatique à l'ESP ?
-
 
 - intent: handle_quels_sont_les_frais_de_scolarité_annuel_de_la_formation_systèmes_et_réseaux_?
   examples: |
@@ -583,7 +449,6 @@ nlu:
     - Pourriez-vous me dire combien ça coûte de faire la formation Systèmes et réseaux à l'ESP ?
     - Quel est le montant à verser chaque année pour la formation Systèmes et réseaux à l'ESP ?
 
-
 - intent: handle_quelles_sont_les_étapes_à_suivre_pour_postuler_à_un_programme_de_dst_informatique_licence_master_à_lesp_?
   examples: |
     - Quelles sont les étapes à suivre pour postuler à un programme de DST Informatique Licence/Master à l'ESP ?
@@ -631,7 +496,6 @@ nlu:
     - Quels documents fournir pour postuler à la DST Informatique Licence/Master à l'ESP ?
     - Quels sont les délais à respecter pour postuler à la DST Informatique Licence/Master à l'ESP ?
     - Comment se passe le processus d'inscription pour la DST Informatique Licence/Master à l'ESP ?
-
 
 - intent: handle_quelles_sont_les_dates_limites_pour_soumettre_ma_candidature_?
   examples: |
@@ -697,7 +561,6 @@ nlu:
     - Quand est la fin de la période de demande pour la DST Informatique ?
     - Quand est-ce que je dois compléter ma demande pour la DST Informatique Licence/Master ?
 
-
 - intent: handle_quand_commencent_les_inscriptions_pour_le_semestre_prochain_?
   examples: |
     - Quand commencent les inscriptions pour le semestre prochain ?
@@ -737,9 +600,9 @@ nlu:
     - Quand est l'ouverture des candidatures pour le prochain semestre ?
     - Quand est-ce que les inscriptions seront ouvertes pour le prochain semestre ?
 
-
 - intent: handle_comment_vérifier_le_statut_de_ma_candidature_?
   examples: |
+    - Où puis-je suivre si ma demande est en cours d'évaluation ?
     - Comment vérifier le statut de ma candidature ?
     - Comment puis-je savoir si ma candidature a été acceptée ?
     - Où vérifier le statut de ma candidature ?
@@ -776,8 +639,6 @@ nlu:
     - Comment puis-je suivre si ma candidature est en attente de validation ?
     - Où puis-je vérifier si ma candidature est en cours d'examen ?
     - Comment est-ce que je peux savoir si ma demande est en attente de réponse ?
-    - Où puis-je suivre si ma demande est en cours d'évaluation ?
-
 
 - intent: handle_combien_de_départements_lesp_dispose_?
   examples: |
@@ -811,7 +672,6 @@ nlu:
     - Quels sont les départements actuellement à l'ESP ?
     - Combien de départements sont là à l'ESP ?
     - Y a-t-il différents départements à l'ESP ?
-
 
 - intent: handle_pourquoi_choisir_lesp_?
   examples: |
@@ -850,7 +710,6 @@ nlu:
     - Qu'est-ce qui rend l'ESP une bonne décision ?
     - Pourquoi devrais-je choisir l'ESP comme école ?
 
-
 - intent: handle_quelles_sont_les_formations_spécifiques_proposées_par_le_département_génie_chimique_?
   examples: |
     - Quelles sont les formations spécifiques proposées par le Département Génie Chimique ?
@@ -885,7 +744,6 @@ nlu:
     - Quelles sont les disciplines académiques du Département Génie Chimique ?
     - Quelles sont les voies d'études disponibles au Département Génie Chimique ?
 
-
 - intent: handle_quels_sont_les_objectifs_pédagogiques_des_formations_en_génie_chimique_offertes_par_le_département_?
   examples: |
     - Quels sont les objectifs pédagogiques des formations en Génie Chimique offertes par le Département ?
@@ -918,7 +776,6 @@ nlu:
     - Quels sont les objectifs pédagogiques à atteindre en Génie Chimique ?
     - Quels sont les objectifs académiques à réaliser en Génie Chimique ?
     - Quels sont les objectifs de compétences à développer en Génie Chimique ?
-
 
 - intent: handle_quels_sont_les_niveaux_de_formation_disponibles_en_génie_chimique_dans_le_département_?
   examples: |
@@ -985,7 +842,6 @@ nlu:
     - Quelles sont les compétences de base en Génie Chimique ?
     - Quels sont les savoir-faire techniques en Génie Chimique ?
 
-
 - intent: handle_qui_est_le_chef_du_département_génie_chimique_?
   examples: |
     - Qui est le chef du département Génie Chimique ?
@@ -1019,7 +875,6 @@ nlu:
     - Qui est le chef de recherche du département Génie Chimique ?
     - Qui est le directeur académique du département Génie Chimique ?
     - Qui est le directeur des études du département Génie Chimique ?
-
 
 - intent: handle_quels_sont_les_domaines_couverts_par_le_département_de_génie_électrique_?
   examples: |
@@ -1071,8 +926,6 @@ nlu:
     - Est-ce que je peux savoir les secteurs de compétence du Département de Génie Électrique ?
     - Pourrais-je connaître les domaines de compétence du Département de Génie Électrique ?
 
-
-
 - intent: handle_quels_types_de_diplômes_offre_le_département_de_génie_électrique_?
   examples: |
     - Quels types de diplômes offre le Département de Génie Électrique?
@@ -1099,7 +952,6 @@ nlu:
     - Est-ce que je peux savoir quels diplômes sont accessibles dans le domaine du Génie Électrique ?
     - Quels sont les programmes d'études proposés par le Département de Génie Électrique ?
     - Pourrais-je obtenir des informations sur les parcours académiques offerts en Génie Électrique ?
-
 
 - intent: handle_combien_denseignants_compte_le_département_de_génie_électrique_et_quels_sont_leurs_niveaux_?
   examples: |
@@ -1146,8 +998,6 @@ nlu:
     - Quel est le nombre d'enseignants au Département de Génie Électrique et quelles sont leurs compétences académiques ?
     - Y a-t-il plusieurs enseignants dans le Département de Génie Électrique et quels sont leurs titres académiques ?
     - Combien y a-t-il d'enseignants au Département de Génie Électrique et quels sont les niveaux de leurs qualifications ?
-    - Peux-tu me dire combien d'enseignants sont employés au Département de Génie Électrique et quels sont leurs titres ?
-
 
 - intent: handle_quel_est_le_rôle_du_personnel_administratif,_technique_et_de_service_au_sein_du_département_?
   examples: |
@@ -1178,7 +1028,6 @@ nlu:
     - Est-ce que vous pouvez définir les fonctions du personnel administratif, technique et de service dans le département?
     - Quel est le rôle et les responsabilités du personnel administratif, technique et de service au sein du département?
     - Peux-tu me dire quels sont les rôles du personnel administratif, technique et de service et comment ils aident le département?
-
 
 - intent: handle_quelles_sont_les_possibilités_dévolution_de_carrière_offertes_par_le_département_de_génie_électrique_?
   examples: |
@@ -1218,7 +1067,6 @@ nlu:
     - Comment les ingénieurs en Génie Électrique peuvent-ils progresser dans leur carrière?
     - Quelles sont les perspectives de progression pour les ingénieurs spécialisés en Génie Électrique?
     - Quelles sont les possibilités de promotion pour les ingénieurs de Génie Électrique?
-
 
 - intent: handle_comment_le_département_est-il_soutenu_au_niveau_des_enseignements_?
   examples: |
@@ -1278,7 +1126,6 @@ nlu:
     - Quelles sont les formations continues disponibles pour les enseignants du département afin de perfectionner leurs compétences?
     - Quelles sont les stratégies mises en œuvre par le département pour améliorer la rétention des connaissances des étudiants?
 
-
 - intent: handle_quels_sont_les_secteurs_dactivité_dans_lesquels_les_diplômés_du_département_de_génie_électrique_peuvent_travailler_?
   examples: |
     - Quels sont les secteurs d'activité dans lesquels les diplômés du Département de Génie Électrique peuvent travailler?
@@ -1317,7 +1164,6 @@ nlu:
     - Quels sont les secteurs où les ingénieurs en Génie Électrique sont particulièrement recherchés?
     - Dans quels secteurs les diplômés en Génie Électrique peuvent-ils avoir un impact significatif?
 
-
 - intent: handle_qui_est_le_chef_du_département_génie_électrique_?
   examples: |
     - Qui est le chef du département Génie Électrique?
@@ -1354,8 +1200,7 @@ nlu:
     - Qui est le directeur technique du département Génie Électrique?
     - Qui est le responsable financier du département Génie Électrique?
     - Qui est le chef de département Génie Électrique?
-
-
+    
 - intent: handle_quels_sont_les_objectifs_du_département_informatique_en_termes_de_formation_?
   examples: |
     - Quels sont les objectifs du Département Informatique en termes de formation?
@@ -1390,7 +1235,6 @@ nlu:
     - Quels sont les objectifs de progression académique du département Informatique?
     - Quels sont les résultats d'apprentissage visés par le département Informatique?
 
-
 - intent: handle_comment_peut_on_contacter_le_departement_genie_informatique_?
   examples: |
     - Comment peut-on contacter le département Génie Informatique?
@@ -1422,7 +1266,6 @@ nlu:
     - Où puis-je trouver les informations sur les services offerts par le département Génie Informatique?
     - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Informatique?
     - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Informatique?
-
 
 - intent: handle_comment_peut_on_contacter_le_departement_genie_mecanique_?
   examples: |
@@ -1456,7 +1299,6 @@ nlu:
     - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Mécanique?
     - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Mécanique?
 
-
 - intent: handle_comment_peut_on_contacter_le_departement_genie_electrique_?
   examples: |
     - Comment peut-on contacter le département Génie Électrique?
@@ -1488,7 +1330,6 @@ nlu:
     - Où puis-je trouver les informations sur les services offerts par le département Génie Électrique?
     - Y a-t-il un chat en direct ou une messagerie instantanée pour contacter le département Génie Électrique?
     - Comment puis-je obtenir des informations détaillées sur les programmes offerts par le département Génie Électrique?
-
 
 - intent: handle_comment_peut_on_contacter_le_departement_genie_civil_?
   examples: |
@@ -1526,8 +1367,6 @@ nlu:
     - Je suis intéressé par des informations sur les événements à venir organisés par le département Génie Civil, comment puis-je les obtenir ?
     - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Génie Civil ?
 
-
-
 - intent: handle_comment_peut_on_contacter_le_departement_genie_chimique_?
   examples: |
     - Comment peut-on contacter le département Génie Chimique?
@@ -1563,7 +1402,7 @@ nlu:
     - Comment puis-je m'inscrire pour une visite guidée du département Génie Chimique ?
     - Je suis intéressé par des informations sur les événements à venir organisés par le département Génie Chimique, comment puis-je les obtenir ?
     - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Génie Chimique ?
-
+    - Comment peut on contacter le departement Genie Chimique?
 
 - intent: handle_comment_peut_on_contacter_le_departement_gestion_?
   examples: |
@@ -1601,7 +1440,6 @@ nlu:
     - Je suis intéressé par des informations sur les événements à venir organisés par le département Gestion, comment puis-je les obtenir ?
     - Est-ce qu'il y a un formulaire en ligne pour poser des questions au département Gestion ?
 
-
 - intent: handle_qui_est_le_chef_du_departement_genie_informatique_?
   examples: |
     - Qui est le chef du département Génie Informatique?
@@ -1619,15 +1457,6 @@ nlu:
     - qui est le responsable du département Génie Mécanique?
     - qui est à la tête du département Génie Mécanique?
     - Qui est le chef du departement Genie Mecanique?
-
-- intent: handle_qui_est_le_chef_du_departement_genie_electrique_?
-  examples: |
-    - Qui est le chef du département Génie Électrique?
-    - qui dirige le département Génie Électrique?
-    - pouvez-vous me dire le nom du chef du département Génie Électrique?
-    - qui est le responsable du département Génie Électrique?
-    - qui est à la tête du département Génie Électrique?
-    - Qui est le chef du departement Genie Electrique?
 
 - intent: handle_qui_est_le_chef_du_departement_genie_civil_?
   examples: |
@@ -1670,7 +1499,6 @@ nlu:
     - Y a-t-il des partenariats internationaux pour les étudiants en Génie Mécanique à l'ESP?
     - Quelles sont les spécialisations disponibles dans les formations en Génie Mécanique à l'ESP?
 
-
 - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_informatique_de_lesp_?
   examples: |
     - Quelles sont les formations qu'offre le département Génie Informatique de l'ESP?
@@ -1693,7 +1521,6 @@ nlu:
     - Est-ce que le département Génie Informatique offre des formations en ligne ou à distance?
     - Y a-t-il des partenariats internationaux pour les étudiants en Génie Informatique à l'ESP?
     - Quelles sont les spécialisations disponibles dans les formations en Génie Informatique à l'ESP?
-
 
 - intent: handle_quelles_sont_les_formations_quoffre_le_departement_genie_chimique_de_lesp_?
   examples: |
@@ -1718,7 +1545,6 @@ nlu:
     - Y a-t-il des partenariats internationaux pour les étudiants en Génie Chimique à l'ESP?
     - Quelles sont les spécialisations disponibles dans les formations en Génie Chimique à l'ESP?
 
-
 - intent: handle_quelles_sont_les_formations_quoffre_le_departement_de_gestion_de_lesp_?
   examples: |
     - Quelles sont les formations qu'offre le département de Gestion de l'ESP ?
@@ -1742,7 +1568,6 @@ nlu:
     - Quels sont les débouchés professionnels après avoir étudié la Gestion à l'ESP ?
     - Est-ce que le département de Gestion offre des cours de leadership ou de gestion d'équipe ?
     - Pouvez-vous me parler des options de stage à l'international pour les étudiants en Gestion à l'ESP ?
-
 
 - intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
   examples: |
@@ -1770,7 +1595,7 @@ nlu:
     - Quel est l'année de création de l'ESP de Dakar?
     - Depuis quand l'ESP de Dakar existe-t-elle?
 
-- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
+- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins_?
   examples: |
     - Combien de diplômés l'ESP a-t-elle formés au moins?
     - Quel est le nombre minimum de diplômés formés par l'ESP?
@@ -1784,7 +1609,6 @@ nlu:
     - Quel est le total des diplômés de l'ESP?
     - Combien de gens ont été diplômés de l'ESP?
     - Quel est le nombre de diplômés de l'ESP?
-
 
 - intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
   examples: |
@@ -1803,7 +1627,6 @@ nlu:
     - Quels types de qualifications puis-je obtenir de l'ESP?
     - Est-ce que l'ESP propose une variété de diplômes?
     - Quels types de diplômes sont disponibles à l'ESP?
-
 
 - intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
   examples: |
@@ -1824,7 +1647,6 @@ nlu:
     - Quels sont les détails mis à jour dans la troisième édition du catalogue des formations de l'ESP?
     - Qu'est-ce qui est différent dans la troisième édition du catalogue des formations de l'ESP?
 
-
 - intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
   examples: |
     - Quelle preuve le document du catalogue de formations fournit-il?
@@ -1842,7 +1664,6 @@ nlu:
     - Comment le document du catalogue de formations confirme-t-il les informations?
     - Est-ce que le document du catalogue de formations est authentique?
     - Pourquoi est-il important de consulter le document du catalogue de formations?
-
 
 - intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
   examples: |
@@ -1862,7 +1683,6 @@ nlu:
     - Quelles sont les procédures de surveillance mises en place pour les formations de l'ESP?
     - Quelles certifications sont régulièrement attribuées aux formations de l'ESP?
     - Comment les programmes de l'ESP sont-ils évalués de manière continue?
-
 
 - intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
   examples: |
@@ -1886,7 +1706,6 @@ nlu:
     - Pourquoi les partenaires académiques de l'ESP valorisent-ils l'évaluation de l'ANAQ-Sup?
     - Quelles sont les implications légales de l'évaluation de l'ANAQ-Sup pour l'ESP?
 
-
 - intent: handle_qui_participe_aux_formations_de_lesp?
   examples: |
     - Qui participe aux formations de l'ESP?
@@ -1905,25 +1724,6 @@ nlu:
     - Qui est encouragé à s'inscrire aux formations de l'ESP?
     - Qui sont les étudiants potentiels de l'ESP?
 
-
-- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement_apprentissage?
-  examples: |
-    - Comment l'ESP place-t-elle l'étudiant ou l'apprenant au cœur de son dispositif d'enseignement/apprentissage?
-    - De quelle manière l'ESP centre-t-elle son enseignement sur l'étudiant?
-    - Comment l'ESP assure-t-elle que l'étudiant est au centre de son dispositif d'apprentissage?
-    - Par quels moyens l'ESP met-elle l'étudiant au cœur de son dispositif pédagogique?
-    - Comment l'ESP prend-elle en compte les besoins de l'apprenant dans son enseignement?
-    - Quelles stratégies l'ESP utilise-t-elle pour placer l'apprenant au centre de son dispositif d'enseignement?
-    - Quels sont les principes de l'ESP pour placer l'étudiant au cœur de son approche pédagogique?
-    - Comment l'ESP adapte-t-elle son enseignement pour répondre aux besoins individuels des étudiants?
-    - Comment l'ESP favorise-t-elle l'engagement des étudiants dans leur processus d'apprentissage?
-    - En quoi l'ESP différencie-t-elle son enseignement pour s'adapter aux divers styles d'apprentissage?
-    - Comment l'ESP assure-t-elle une personnalisation de l'enseignement en fonction des étudiants?
-    - Quelles sont les initiatives de l'ESP pour améliorer l'expérience d'apprentissage des étudiants?
-    - Comment l'ESP intègre-t-elle les retours des étudiants dans l'amélioration de ses méthodes d'enseignement?
-    - Quelles sont les pratiques pédagogiques de l'ESP pour favoriser l'autonomie et la responsabilisation des étudiants?
-
-
 - intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
   examples: |
     - Comment l'ESP maintient-elle ses relations avec le milieu du travail?
@@ -1941,6 +1741,18 @@ nlu:
     - Quels sont les avantages pour les étudiants grâce aux relations de l'ESP avec le milieu professionnel?
     - Comment l'ESP promeut-elle l'employabilité de ses diplômés?
 
+- intent: handle_queles_sont_les_objectifs_de_lesp_?
+  examples: |
+    - Quels sont les objectifs de l'ESP ?
+    - Quels objectifs l'ESP vise-t-elle ?
+    - Quels sont les buts de l'École Supérieure Polytechnique ?
+    - Pouvez-vous me dire quels sont les objectifs de l'ESP ?
+    - Quels sont les principaux objectifs de l'ESP ?
+    - Quelles sont les missions principales de l'ESP ?
+    - Quels objectifs l'ESP s'est-elle fixée ?
+    - Quels sont les objectifs éducatifs de l'ESP ?
+    - Quels sont les objectifs stratégiques de l'ESP ?
+    - Quels sont les objectifs académiques de l'ESP ? 
 - intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
   examples: |
     - Que prouve le réseau des alumni de l'ESP?
@@ -1958,7 +1770,6 @@ nlu:
     - Quelles collaborations le réseau des alumni de l'ESP entretient-il avec l'institution?
     - Comment les alumni de l'ESP contribuent-ils au développement de l'institution?
     - Quels sont les avantages pour les étudiants actuels d'être connectés au réseau des alumni de l'ESP?
-
 
 - intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
   examples: |
@@ -1995,7 +1806,7 @@ nlu:
     - Quels étaient les anciens noms utilisés pour désigner l'École Supérieure Polytechnique (ESP)?
     - Comment l'École Supérieure Polytechnique (ESP) était-elle connue par le passé?
     - Quelles étaient les dénominations antérieures de l'École Supérieure Polytechnique (ESP)?
- 
+
 - intent: handle_quelle_est_lune_des_plus_prestigieuses_écoles_dingénieur_et_de_management_en_afrique_francophone?
   examples: |
     - Quelle est l'une des plus prestigieuses écoles d'ingénieur et de management en Afrique francophone?
@@ -2022,90 +1833,6 @@ nlu:
     - À quel moment l'ESP de Dakar a-t-elle été fondée?
     - Quand l'ESP de Dakar a-t-elle été érigée?
 
-- intent: handle_combien_de_diplômés_lesp_a-t-elle_formés_au_moins?
-  examples: |
-    - Combien de diplômés l'ESP a-t-elle formés au moins?
-    - Quel est le nombre minimum de diplômés formés par l'ESP?
-    - Pouvez-vous indiquer combien de diplômés ont été formés par l'ESP au fil des années?
-    - Combien d'anciens étudiants l'ESP a-t-elle déjà diplômés?
-
-- intent: handle_quels_types_de_diplômes_lesp_offre-t-elle?
-  examples: |
-    - Quels types de diplômes l'ESP offre-t-elle?
-    - Quels sont les diplômes disponibles à l'ESP?
-    - Quels diplômes peut-on obtenir à l'ESP?
-    - Quelles qualifications l'ESP propose-t-elle?
-
-- intent: handle_que_présente_la_troisième_édition_du_catalogue_des_formations_de_lesp?
-  examples: |
-    - Que présente la troisième édition du catalogue des formations de l'ESP?
-    - Quelles informations contient la troisième édition du catalogue des formations de l'ESP?
-    - Que trouve-t-on dans la troisième édition du catalogue des formations de l'ESP?
-    - Que dévoile la troisième édition du catalogue des formations de l'ESP?
-
-- intent: handle_quelle_preuve_le_document_du_catalogue_de_formations_fournit-il?
-  examples: |
-    - Quelle preuve le document du catalogue de formations fournit-il?
-    - Quel type de preuve est fourni par le document du catalogue de formations?
-    - En quoi le document du catalogue de formations sert-il de preuve?
-    - Qu'est-ce que le document du catalogue de formations prouve?
-
-- intent: handle_à_quoi_sont_régulièrement_soumises_les_formations_de_lesp?
-  examples: |
-    - À quoi sont régulièrement soumises les formations de l'ESP?
-    - Quelles évaluations les formations de l'ESP subissent-elles régulièrement?
-    - À quelles procédures sont assujetties les formations de l'ESP de manière régulière?
-    - Quels contrôles sont effectués régulièrement sur les formations de l'ESP?
-
-- intent: handle_pourquoi_les_formations_de_lesp_sont-elles_soumises_à_lévaluation_de_lanaq-sup?
-  examples: |
-    - Pourquoi les formations de l'ESP sont-elles soumises à l'évaluation de l'ANAQ-Sup?
-    - Quelle est la raison pour laquelle les formations de l'ESP sont évaluées par l'ANAQ-Sup?
-    - Pourquoi l'ANAQ-Sup évalue-t-elle les formations de l'ESP?
-    - Pour quelle raison les formations de l'ESP doivent-elles être validées par l'ANAQ-Sup?
-
-- intent: handle_qui_participe_aux_formations_de_lesp?
-  examples: |
-    - Qui participe aux formations de l'ESP?
-    - Quels individus participent aux formations de l'ESP?
-    - Qui sont les participants aux formations de l'ESP?
-    - Qui peut prendre part aux formations de l'ESP?
-
-- intent: handle_comment_lesp_place-t-elle_létudiant_ou_lapprenant_au_cœur_de_son_dispositif_denseignement_apprentissage?
-  examples: |
-    - Comment l'ESP place-t-elle l'étudiant ou l'apprenant au cœur de son dispositif d'enseignement/apprentissage?
-    - De quelle manière l'ESP centre-t-elle son enseignement sur l'étudiant?
-    - Comment l'ESP assure-t-elle que l'étudiant est au centre de son dispositif d'apprentissage?
-    - Par quels moyens l'ESP met-elle l'étudiant au cœur de son dispositif pédagogique?
-
-- intent: handle_comment_lesp_maintient-elle_ses_relations_avec_le_milieu_du_travail?
-  examples: |
-    - Comment l'ESP maintient-elle ses relations avec le milieu du travail?
-    - Par quels moyens l'ESP entretient-elle ses liens avec le monde professionnel?
-    - Comment l'ESP garde-t-elle contact avec le secteur professionnel?
-    - Comment l'ESP reste-t-elle connectée avec le milieu du travail?
-
-- intent: handle_que_prouve_le_réseau_des_alumni_de_lesp?
-  examples: |
-    - Que prouve le réseau des alumni de l'ESP?
-    - Qu'est-ce que le réseau des anciens élèves de l'ESP prouve?
-    - Que démontre l'existence du réseau des alumni de l'ESP?
-    - Quelle est la signification du réseau des alumni de l'ESP?
-
-- intent: handle_quel_message_le_directeur_adresse-t-il_aux_étudiants_à_la_fin_de_son_mot?
-  examples: |
-    - Quel message le directeur adresse-t-il aux étudiants à la fin de son mot?
-    - Que dit le directeur aux étudiants pour conclure son discours?
-    - Quel est le message final du directeur aux étudiants?
-    - Quelle est la dernière remarque du directeur aux étudiants dans son discours?
-
-- intent: handle_quelles_étaient_les_anciennes_dénominations_de_lécole_supérieure_polytechnique_(esp)?
-  examples: |
-    - Quelles étaient les anciennes dénominations de l'École Supérieure Polytechnique (ESP)?
-    - Quels noms l'École Supérieure Polytechnique (ESP) a-t-elle portés dans le passé?
-    - Comment l'École Supérieure Polytechnique (ESP) était-elle appelée avant?
-    - Quelles ont été les anciennes appellations de l'ESP?
-
 - intent: handle_quelle_est_la_vocation_de_lesp?
   examples: |
     - Quelle est la vocation de l'ESP?
@@ -2119,11 +1846,6 @@ nlu:
     - En quelle année et par quelle loi l'ESP a-t-elle été fondée?
     - Quelle loi a institué la création de l'ESP et quand?
     - Quelle est la date et la loi de création de l'ESP?
-    - À quel moment et sous quelle législation l'ESP a-t-elle été créée?
-    - Quand l'ESP a-t-elle été établie et selon quelle loi?
-    - Par quelle loi et en quelle année l'ESP a-t-elle été fondée?
-    - À quel moment précisément et sous quelle réglementation l'ESP a-t-elle été fondée?
-
 
 - intent: handle_quelle_est_la_personnalité_de_lesp?
   examples: |
@@ -2202,12 +1924,6 @@ nlu:
     - De quelle division l'ESP a-t-elle été séparée en 1994?
     - Quelle division a été détachée de l'ESP en 1994?
 
-- intent: handle_combien_de_centres_compose_lesp_et_où_sont-ils_situés?
-  examples: |
-    - Combien de centres compose l'ESP et où sont-ils situés?
-    - Quel est le nombre de centres formant l'ESP et où se trouvent-ils?
-    - Combien de centres constituent l'ESP et où se localisent-ils?
-    - Quels sont les centres de l'ESP et leurs emplacements?
 
 - intent: handle_quest-il_arrivé_à_lenset_en_2005?
   examples: |
@@ -2289,12 +2005,10 @@ nlu:
   examples: |
     - Quelles sont les catégories de formations prises en charge par l'État du Sénégal ?
     - Quels types de formations sont financés par l'État du Sénégal ?
-    - Quelles formations sont subventionnées par l'État du Sénégal ?
     - Quelles catégories de formations sont couvertes par l'État du Sénégal ?
 
 - intent: handle_quelles_sont_les_catégories_de_formations_prises_en_charge_par_un_tiers_?
   examples: |
-    - Quelles sont les catégories de formations prises en charge par un tiers ?
     - Quels types de formations sont financés par un tiers ?
     - Quelles formations sont subventionnées par un tiers ?
     - Quelles catégories de formations sont couvertes par un tiers ?
@@ -2366,7 +2080,6 @@ nlu:
   examples: |
     - Quelles sont les formations prises en charge par un Tiers ?
     - Quelles formations sont financées par un tiers ?
-    - Quelles formations sont subventionnées par un tiers ?
     - Quelles formations un tiers prend-il en charge ?
 
 - intent: handle_que_se_passe-t-il_si_une_année_entamée_est_abandonnée_?
@@ -2549,7 +2262,6 @@ nlu:
     - Est-il nécessaire de s'inscrire à l'avance pour les ateliers et séminaires ?
     - Y a-t-il un calendrier pour les ateliers et séminaires de l'ESP ?
 
-
 - intent: handle_quels_sont_les_principaux_domaines_de_recherche_à_lesp_?
   examples: |
     - Quels sont les principaux domaines de recherche à l'ESP ?
@@ -2562,7 +2274,6 @@ nlu:
     - Sur quels champs de recherche l'ESP met-elle l'accent ?
     - Quels sont les secteurs de recherche prédominants à l'ESP ?
     - Quels sont les domaines de recherche les plus développés à l'ESP ?
-
 
 - intent: handle_comment_puis-je_postuler_pour_un_projet_de_recherche_?
   examples: |
@@ -2577,7 +2288,6 @@ nlu:
     - Quelles sont les conditions pour être éligible à un projet de recherche à l'ESP ?
     - Est-ce que l'ESP offre des bourses de recherche pour les projets ?
 
-
 - intent: handle_y_a-t-il_des_collaborations_internationales_en_recherche_?
   examples: |
     - Y a-t-il des collaborations internationales en recherche ?
@@ -2590,7 +2300,6 @@ nlu:
     - Quels sont les pays partenaires de l'ESP pour la recherche internationale ?
     - Quels sont les domaines de recherche internationale de l'ESP ?
     - Existe-t-il des programmes d'échange de chercheurs à l'international pour l'ESP ?
-
 
 - intent: handle_comment_puis-je_accéder_aux_publications_de_recherche_de_lesp_?
   examples: |
@@ -2605,7 +2314,6 @@ nlu:
     - Quelle est la procédure pour accéder aux articles de recherche de l'ESP ?
     - Existe-t-il une base de données pour les publications de recherche de l'ESP ?
 
-
 - intent: handle_quels_sont_les_laboratoires_de_recherche_disponibles_?
   examples: |
     - Quels sont les laboratoires de recherche disponibles ?
@@ -2618,3 +2326,5 @@ nlu:
     - Peut-on accéder à des installations de recherche spécialisées à l'ESP ?
     - Est-ce que l'ESP offre des laboratoires de recherche pour les étudiants ?
     - Où puis-je trouver des informations sur les laboratoires de recherche disponibles à l'ESP ?
+
+
