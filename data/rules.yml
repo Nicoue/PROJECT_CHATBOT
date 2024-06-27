@@ -9,25 +9,10 @@ rules:
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
-  - intent: defi_bot
+  - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Respond to utter_handle_bonjour
-  steps:
-  - intent: utter_handle_bonjour
-  - action: utter_handle_bonjour
-
-- rule: Respond to utter_handle_bonsoir
-  steps:
-  - intent: utter_handle_bonsoir
-  - action: utter_handle_bonsoir
-
-- rule: Respond to utter_happy
-  steps:
-  - intent: utter_happy
-  - action: utter_happy
-
-- rule: Respond to utter_cheer_up
-  steps:
-  - intent: utter_cheer_up
-  - action: utter_cheer_up
+# - rule: Handle out of scope messages
+#   steps:
+#   - intent: nlu_fallback
+#   - action: utter_default
