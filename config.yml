@@ -1,43 +1,34 @@
-# The config recipe.
-# https://rasa.com/docs/rasa/model-configuration/
 recipe: default.v1
 
-# The assistant project unique identifier
-# This default value must be replaced with a unique assistant name within your deployment
-assistant_id: 20240619-133818-central-radian
-
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
-language: "fr"
+language: fr
 
 pipeline:
-  - name: SpacyNLP
-    model: "fr_core_news_md"
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: "char_wb"
+  - name: WhitespaceTokenizer        # Tokeniseur simple pour le découpage des mots.
+  - name: RegexFeaturizer            # Utilisation de motifs réguliers pour extraire des caractéristiques.
+  - name: LexicalSyntacticFeaturizer # Extraction de caractéristiques lexicales et syntaxiques simples.
+  - name: CountVectorsFeaturizer     # Vectorisation des mots pour une représentation simple.
+    analyzer: word                   # Analyse des mots pour une vectorisation basique.
     min_ngram: 1
     max_ngram: 4
-  - name: DIETClassifier
-    epochs: 100
+  - name: DIETClassifier             # Classifieur pour les intentions et les entités.
+    epochs: 100                      # Réduction du nombre d'époques pour un entraînement plus rapide.
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
-  - name: FallbackClassifier
-    threshold: 0.3
-    ambiguity_threshold: 0.1
+    constrain_similarities: true
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
 policies:
   - name: MemoizationPolicy
-  - name: RulePolicy
-  - name: UnexpecTEDIntentPolicy
+  # - name: RulePolicy
+  #   core_fallback_threshold: 0.4     # Seuil pour le fallback côté dialogue.
+  #   nlu_threshold: 0.4               # Seuil pour le fallback côté NLU.
+  #   fallback_action_name: "action_default_fallback" # Action par défaut en cas de fallback.
+  - name: UnexpecTEDIntentPolicy     # Politique pour gérer les intentions inattendues.
     max_history: 5
     epochs: 100
-  - name: TEDPolicy
+  - name: TEDPolicy                  # Politique basée sur les transformations.
     max_history: 5
     epochs: 100
     constrain_similarities: true
+
+assistant_id: 20240625-110503-late-tap
